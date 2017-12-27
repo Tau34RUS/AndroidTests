@@ -20,7 +20,7 @@ public class CalculatorTests {
 
     private Logger logger;
 
-    WebDriver driver;
+    private WebDriver driver;
 
     @BeforeTest
     public void SetUp() throws Exception {
@@ -73,9 +73,9 @@ public class CalculatorTests {
     public void CalculatorTestUI() {
         logger.info("Second Test Start");
         int count = 1;
-        int random1 = 1;
-        int random2 = 2;
-        int random3 = 3;
+        int random1;
+        int random2;
+        int random3;
 
 
         while (count < 1001) {

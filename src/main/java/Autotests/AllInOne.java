@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class AllInOne {
 
-    public static Logger logger;
+    private static Logger logger;
 
     private Methods App = new Methods();
 

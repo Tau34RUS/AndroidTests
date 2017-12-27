@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1281d1c0-0985-4127-85c8-4c8ed24b88a6" name="Default" comment="">
+    <list default="true" id="1281d1c0-0985-4127-85c8-4c8ed24b88a6" name="Default" comment="Fixing warnings">
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/encodings.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/inspectionProfiles/Project_Default.xml" />
       <change beforePath="$PROJECT_DIR$/../AndroidTests/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/AllInOne.java" afterPath="$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/AllInOne.java" />
+      <change beforePath="$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/Methods.java" afterPath="$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/Methods.java" />
+      <change beforePath="$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/Variables.java" afterPath="$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/Variables.java" />
+      <change beforePath="$PROJECT_DIR$/../AndroidTests/src/test/java/Exploring/CalculatorTests.java" afterPath="$PROJECT_DIR$/../AndroidTests/src/test/java/Exploring/CalculatorTests.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,8 +27,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../AndroidTests/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="37" column="31" lean-forward="false" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+            <state relative-caret-position="17">
+              <caret line="21" column="9" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -41,8 +47,8 @@
       <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="10" />
+            <state relative-caret-position="153">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -51,23 +57,25 @@
       <file leaf-file-name="Methods.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/Methods.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1241">
-              <caret line="82" column="111" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="82" selection-end-column="111" />
+            <state relative-caret-position="158">
+              <caret line="50" column="59" lean-forward="false" selection-start-line="50" selection-start-column="59" selection-end-line="50" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4208#4209#0" expanded="true" />
-                <element signature="e#4241#4242#0" expanded="true" />
+                <element signature="e#4163#4164#0" expanded="true" />
+                <element signature="e#4196#4197#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Variables.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Variables.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/Variables.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-              <folding />
+            <state relative-caret-position="170">
+              <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+              <folding>
+                <element signature="e#50#101#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -75,21 +83,11 @@
       <file leaf-file-name="AllInOne.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/AllInOne.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+            <state relative-caret-position="150">
+              <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hs_err_pid3704.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../AndroidTests/hs_err_pid3704.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -97,22 +95,22 @@
       <file leaf-file-name="CalculatorTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../AndroidTests/src/test/java/Exploring/CalculatorTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="867">
-              <caret line="66" column="48" lean-forward="false" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="48" />
+            <state relative-caret-position="-281">
+              <caret line="74" column="22" lean-forward="true" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1690#1691#0" expanded="true" />
-                <element signature="e#1719#1720#0" expanded="true" />
+                <element signature="e#1698#1699#0" expanded="true" />
+                <element signature="e#1727#1728#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="log4j.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="log4j.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../AndroidTests/log4j.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+            <state relative-caret-position="51">
+              <caret line="3" column="33" lean-forward="false" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -163,6 +161,11 @@
         <option value="$PROJECT_DIR$/src/main/java/Autotests/AllInOne123.java" />
         <option value="$PROJECT_DIR$/src/main/java/Autotests/Methods.java" />
         <option value="$PROJECT_DIR$/src/main/java/Autotests/AllInOne.java" />
+        <option value="$PROJECT_DIR$/../AndroidTests/src/test/java/Exploring/CalculatorTests.java" />
+        <option value="$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/AllInOne.java" />
+        <option value="$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/Constants.java" />
+        <option value="$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/Methods.java" />
+        <option value="$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/Variables.java" />
       </list>
     </option>
   </component>
@@ -173,11 +176,32 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="129" />
-    <option name="y" value="99" />
-    <option name="width" value="1400" />
-    <option name="height" value="1039" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1913" />
+    <option name="width" value="1294" />
+    <option name="height" value="1047" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Performance issuesJava</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>StringEqualsEmptyString</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -259,6 +283,24 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Exploring" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
+              <item name="Exploring" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -272,15 +314,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.externalResources" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\AndroidTests\src\main\resources" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\AndroidTests" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Autotests" />
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\AndroidTests" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\AndroidTests\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -534,27 +576,34 @@
       <option name="project" value="LOCAL" />
       <updated>1514366129667</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Initial commit">
+      <created>1514366241465</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1514366241480</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AllInOne - 2017.12.27 at 11h 41m 48s.xml">
+    <history-entry file="AllInOne - 2017.12.27 at 12h 31m 22s.xml">
       <configuration name="AllInOne" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AllInOne123 - 2017.12.27 at 10h 52m 04s.xml">
-      <configuration name="AllInOne123" configurationId="TestNG" />
+    <history-entry file="AllInOne - 2017.12.27 at 12h 35m 06s.xml">
+      <configuration name="AllInOne" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AllInOne123 - 2017.12.27 at 11h 02m 36s.xml">
-      <configuration name="AllInOne123" configurationId="TestNG" />
+    <history-entry file="AllInOne - 2017.12.27 at 12h 37m 36s.xml">
+      <configuration name="AllInOne" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AllInOne123 - 2017.12.27 at 11h 07m 29s.xml">
-      <configuration name="AllInOne123" configurationId="TestNG" />
+    <history-entry file="AllInOne - 2017.12.27 at 13h 25m 06s.xml">
+      <configuration name="AllInOne" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AllInOne123 - 2017.12.27 at 11h 10m 10s.xml">
-      <configuration name="AllInOne123" configurationId="TestNG" />
+    <history-entry file="AllInOne - 2017.12.27 at 13h 27m 13s.xml">
+      <configuration name="AllInOne" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AllInOne123 - 2017.12.27 at 11h 13m 12s.xml">
-      <configuration name="AllInOne123" configurationId="TestNG" />
+    <history-entry file="AllInOne - 2017.12.27 at 13h 37m 19s.xml">
+      <configuration name="AllInOne" configurationId="TestNG" />
     </history-entry>
     <history-entry file="AllInOne123 - 2017.12.27 at 11h 23m 52s.xml">
       <configuration name="AllInOne123" configurationId="TestNG" />
@@ -570,19 +619,19 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1913" y="0" width="1294" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32767764" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3308351" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46553552" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37259102" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18020834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27073553" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -602,7 +651,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Fixing warnings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixing warnings" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -641,8 +691,8 @@
           <caret line="82" column="111" lean-forward="true" selection-start-line="81" selection-start-column="0" selection-end-line="82" selection-end-column="111" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4208#4209#0" expanded="true" />
-            <element signature="e#4241#4242#0" expanded="true" />
+            <element signature="e#4163#4164#0" expanded="true" />
+            <element signature="e#4196#4197#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -651,7 +701,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="43" lean-forward="true" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-          <folding />
+          <folding>
+            <element signature="e#50#101#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -661,8 +713,8 @@
           <caret line="66" column="48" lean-forward="true" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1690#1691#0" expanded="true" />
-            <element signature="e#1719#1720#0" expanded="true" />
+            <element signature="e#1698#1699#0" expanded="true" />
+            <element signature="e#1727#1728#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -717,8 +769,8 @@
           <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4208#4209#0" expanded="true" />
-            <element signature="e#4241#4242#0" expanded="true" />
+            <element signature="e#4163#4164#0" expanded="true" />
+            <element signature="e#4196#4197#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -729,8 +781,8 @@
           <caret line="34" column="89" lean-forward="true" selection-start-line="34" selection-start-column="89" selection-end-line="34" selection-end-column="89" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1690#1691#0" expanded="true" />
-            <element signature="e#1719#1720#0" expanded="true" />
+            <element signature="e#1698#1699#0" expanded="true" />
+            <element signature="e#1727#1728#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -757,8 +809,8 @@
           <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4208#4209#0" expanded="true" />
-            <element signature="e#4241#4242#0" expanded="true" />
+            <element signature="e#4163#4164#0" expanded="true" />
+            <element signature="e#4196#4197#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -779,8 +831,8 @@
           <caret line="22" column="62" lean-forward="true" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1690#1691#0" expanded="true" />
-            <element signature="e#1719#1720#0" expanded="true" />
+            <element signature="e#1698#1699#0" expanded="true" />
+            <element signature="e#1727#1728#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -807,8 +859,8 @@
           <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4208#4209#0" expanded="true" />
-            <element signature="e#4241#4242#0" expanded="true" />
+            <element signature="e#4163#4164#0" expanded="true" />
+            <element signature="e#4196#4197#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -829,17 +881,9 @@
           <caret line="26" column="79" lean-forward="false" selection-start-line="26" selection-start-column="79" selection-end-line="26" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1690#1691#0" expanded="true" />
-            <element signature="e#1719#1720#0" expanded="true" />
+            <element signature="e#1698#1699#0" expanded="true" />
+            <element signature="e#1727#1728#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../AndroidTests/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="31" lean-forward="false" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -855,70 +899,80 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/Sample_01.java" />
-    <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/Constants.java">
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/AllInOne123.java" />
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="10" />
+        <state relative-caret-position="17">
+          <caret line="21" column="9" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../AndroidTests/src/test/java/Exploring/CalculatorTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="66" column="48" lean-forward="false" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="48" />
+        <state relative-caret-position="-281">
+          <caret line="74" column="22" lean-forward="true" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1690#1691#0" expanded="true" />
-            <element signature="e#1719#1720#0" expanded="true" />
+            <element signature="e#1698#1699#0" expanded="true" />
+            <element signature="e#1727#1728#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/log4j.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="33" lean-forward="false" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/hs_err_pid3704.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2151">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/AllInOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/Methods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="50" column="59" lean-forward="false" selection-start-line="50" selection-start-column="59" selection-end-line="50" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4163#4164#0" expanded="true" />
+            <element signature="e#4196#4197#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/Variables.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/Methods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="82" column="111" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="82" selection-end-column="111" />
+        <state relative-caret-position="170">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4208#4209#0" expanded="true" />
-            <element signature="e#4241#4242#0" expanded="true" />
+            <element signature="e#50#101#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/AllInOne123.java" />
-    <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/AllInOne.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../AndroidTests/hs_err_pid3704.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../AndroidTests/log4j.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>

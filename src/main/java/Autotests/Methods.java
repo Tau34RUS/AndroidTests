@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
-import java.util.Random;
 
 import java.net.URL;
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 public class Methods {
@@ -29,7 +29,7 @@ public class Methods {
 
         /* selenium driver setup */
         driver = new RemoteWebDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
 
     void SplashScreen() {
@@ -48,9 +48,7 @@ public class Methods {
 
         String alphabet = "1234567890";
         Variables.userlogin = "";
-        for (int i = 0; i < 16; i++) {
-            Variables.userlogin = Variables.userlogin + login.nextInt(alphabet.length());
-        }
+        for (int i = 0; i < 16; i++) Variables.userlogin += login.nextInt(alphabet.length());
         Variables.userlogin = Variables.userlogin + "@test.user";
 
         Assert.assertEquals("Регистрация", driver.findElement(By.id("ru.averia.collars.stg:id/bt_register")).getText());
@@ -104,6 +102,20 @@ public class Methods {
     void Restart() throws Exception{
         Quit();
         SetUp();
+    }
+
+    void AddPet() {
+        driver.findElement(By.id("ru.averia.collars.stg:id/maim_menu_action_pet")).click();
+/*        ru.averia.collars.stg:id/bt_add_pet
+        List<WebElement> add_pet_button = (List<WebElement>) driver.findElement(By.id("ru.averia.collars.stg:id/tv_add_collar"));
+        if (add_pet_button.size()>0) {
+            //action 1
+        }
+        else {}
+*/
+        Assert.assertEquals("Добавить питомца", driver.findElement(By.id("ru.averia.collars.stg:id/tv_description_large")).getText());
+        driver.findElement(By.id("ru.averia.collars.stg:id/bt_login")).click();
+
     }
 
 }
