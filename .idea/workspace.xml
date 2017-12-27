@@ -1,0 +1,1063 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1281d1c0-0985-4127-85c8-4c8ed24b88a6" name="Default" comment="Initial commit">
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/compiler.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/dictionaries/.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__cglib_cglib_3_2_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__cglib_cglib_nodep_2_1_3.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__com_beust_jcommander_1_48.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__com_google_code_gson_gson_2_6_2.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__com_google_guava_guava_19_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_2.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__commons_digester_commons_digester_1_8_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__commons_validator_commons_validator_1_5_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__io_appium_java_client_3_4_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__io_netty_netty_3_5_7_Final.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__junit_junit_4_10.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__log4j_log4j_1_2_12.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__net_java_dev_jna_jna_4_1_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__net_java_dev_jna_jna_platform_4_1_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__net_sourceforge_cssparser_cssparser_0_9_18.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_2_20.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_core_js_2_17.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__net_sourceforge_nekohtml_nekohtml_1_9_22.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_apache_ant_ant_1_7_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_apache_ant_ant_launcher_1_7_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_apache_commons_commons_exec_1_3.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_4.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_2.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_4.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_2.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_beanshell_bsh_2_0b4.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_9_2_15_v20160210.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_9_2_15_v20160210.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_api_9_2_15_v20160210.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_client_9_2_15_v20160210.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_common_9_2_15_v20160210.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_ow2_asm_asm_5_0_3.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_seleniumhq_selenium_htmlunit_driver_2_20.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_api_2_53_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_chrome_driver_2_53_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_edge_driver_2_53_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_firefox_driver_2_53_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_ie_driver_2_53_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_java_2_53_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_leg_rc_2_53_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_remote_driver_2_53_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_safari_driver_2_53_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_2_53_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_testng_testng_6_9_9.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_w3c_css_sac_1_3.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_yaml_snakeyaml_1_15.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__xalan_serializer_2_7_2.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__xalan_xalan_2_7_2.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__xerces_xercesImpl_2_11_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/misc.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/modules.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/workspace.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/AndroidTests.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/hs_err_pid3704.log" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/log4j.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/pom.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/AllInOne.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/Constants.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/Methods.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/Variables.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/src/main/resources/log4j.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/src/test/java/Exploring/CalculatorTests.java" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../AndroidTests/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="37" column="31" lean-forward="false" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/resources/log4j.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/Constants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Methods.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/Methods.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1241">
+              <caret line="82" column="111" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="82" selection-end-column="111" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#4208#4209#0" expanded="true" />
+                <element signature="e#4241#4242#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Variables.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/Variables.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AllInOne.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/AllInOne.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hs_err_pid3704.log" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../AndroidTests/hs_err_pid3704.log">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CalculatorTests.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../AndroidTests/src/test/java/Exploring/CalculatorTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="867">
+              <caret line="66" column="48" lean-forward="false" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1690#1691#0" expanded="true" />
+                <element signature="e#1719#1720#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log4j.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../AndroidTests/log4j.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>driver</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Methods.driver</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../AndroidTests" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/Exploring/CalculatorTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Exploring/CalculatorTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Exploring/CalculatorTests.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/XmlHtmlParser.log" />
+        <option value="$PROJECT_DIR$/src/main/java/CalculatorTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Autotests/CalculatorTests.java" />
+        <option value="$PROJECT_DIR$/src/log4j.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/Exploring/CalculatorTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Autotests/Constants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Autotests/Sample_01.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Autotests/Variables.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Autotests/AllInOne123.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Autotests/Methods.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Autotests/AllInOne.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="129" />
+    <option name="y" value="99" />
+    <option name="width" value="1400" />
+    <option name="height" value="1039" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Autotests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Exploring" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.34367815" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalResources" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\AndroidTests\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Autotests" />
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\AndroidTests" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="TestNG.AllInOne">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration name="AllInOne" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Autotests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="AndroidTests" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="Autotests" />
+      <option name="MAIN_CLASS_NAME" value="Autotests.AllInOne" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="AllInOne123" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Autotests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="AndroidTests" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="Autotests" />
+      <option name="MAIN_CLASS_NAME" value="Autotests.AllInOne123" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="CalculatorTests" type="TestNG" factoryName="TestNG" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Exploring.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="AndroidTests" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="Exploring" />
+      <option name="MAIN_CLASS_NAME" value="Exploring.CalculatorTests" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="Sample_01" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Autotests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="AndroidTests" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="Autotests" />
+      <option name="MAIN_CLASS_NAME" value="Autotests.Sample_01" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    </configuration>
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="TestNG.CalculatorTests" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.Sample_01" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.AllInOne123" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.AllInOne" />
+    </list>
+    <recent_temporary>
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="TestNG.AllInOne" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.AllInOne123" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.Sample_01" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1281d1c0-0985-4127-85c8-4c8ed24b88a6" name="Default" comment="" />
+      <created>1514205693620</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1514205693620</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="AllInOne - 2017.12.27 at 11h 41m 48s.xml">
+      <configuration name="AllInOne" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AllInOne123 - 2017.12.27 at 10h 52m 04s.xml">
+      <configuration name="AllInOne123" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AllInOne123 - 2017.12.27 at 11h 02m 36s.xml">
+      <configuration name="AllInOne123" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AllInOne123 - 2017.12.27 at 11h 07m 29s.xml">
+      <configuration name="AllInOne123" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AllInOne123 - 2017.12.27 at 11h 10m 10s.xml">
+      <configuration name="AllInOne123" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AllInOne123 - 2017.12.27 at 11h 13m 12s.xml">
+      <configuration name="AllInOne123" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AllInOne123 - 2017.12.27 at 11h 23m 52s.xml">
+      <configuration name="AllInOne123" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AllInOne123 - 2017.12.27 at 11h 26m 58s.xml">
+      <configuration name="AllInOne123" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AllInOne123 - 2017.12.27 at 11h 37m 17s.xml">
+      <configuration name="AllInOne123" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AllInOne123 - 2017.12.27 at 11h 38m 00s.xml">
+      <configuration name="AllInOne123" configurationId="TestNG" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32767764" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46553552" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18020834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16614583" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="31" lean-forward="false" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/Methods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1241">
+          <caret line="82" column="111" lean-forward="true" selection-start-line="81" selection-start-column="0" selection-end-line="82" selection-end-column="111" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4208#4209#0" expanded="true" />
+            <element signature="e#4241#4242#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/Variables.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="43" lean-forward="true" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/src/test/java/Exploring/CalculatorTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="66" column="48" lean-forward="true" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1690#1691#0" expanded="true" />
+            <element signature="e#1719#1720#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/log4j.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/AllInOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="19" lean-forward="false" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/AllInOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/Methods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4208#4209#0" expanded="true" />
+            <element signature="e#4241#4242#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/src/test/java/Exploring/CalculatorTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="89" lean-forward="true" selection-start-line="34" selection-start-column="89" selection-end-line="34" selection-end-column="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1690#1691#0" expanded="true" />
+            <element signature="e#1719#1720#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="19" lean-forward="false" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/Methods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4208#4209#0" expanded="true" />
+            <element signature="e#4241#4242#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/AllInOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/src/test/java/Exploring/CalculatorTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" column="62" lean-forward="true" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1690#1691#0" expanded="true" />
+            <element signature="e#1719#1720#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="19" lean-forward="false" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/Methods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4208#4209#0" expanded="true" />
+            <element signature="e#4241#4242#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/AllInOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/src/test/java/Exploring/CalculatorTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="79" lean-forward="false" selection-start-line="26" selection-start-column="79" selection-end-line="26" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1690#1691#0" expanded="true" />
+            <element signature="e#1719#1720#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="31" lean-forward="false" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/XmlHtmlParser.log" />
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/resources/log4j.resources" />
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/CalculatorTests.java" />
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/Sample_01.java" />
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/src/test/java/Exploring/CalculatorTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="66" column="48" lean-forward="false" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1690#1691#0" expanded="true" />
+            <element signature="e#1719#1720#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/Variables.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/Methods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1241">
+          <caret line="82" column="111" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="82" selection-end-column="111" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4208#4209#0" expanded="true" />
+            <element signature="e#4241#4242#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/AllInOne123.java" />
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/AllInOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/hs_err_pid3704.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidTests/log4j.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>AndroidTests</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.34367815" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: log4j:log4j:1.2.17</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.34367815" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
