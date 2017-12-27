@@ -1,78 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1281d1c0-0985-4127-85c8-4c8ed24b88a6" name="Default" comment="Initial commit">
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/compiler.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/dictionaries/.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__cglib_cglib_3_2_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__cglib_cglib_nodep_2_1_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__com_beust_jcommander_1_48.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__com_google_code_gson_gson_2_6_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__com_google_guava_guava_19_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__commons_digester_commons_digester_1_8_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__commons_validator_commons_validator_1_5_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__io_appium_java_client_3_4_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__io_netty_netty_3_5_7_Final.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__junit_junit_4_10.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__log4j_log4j_1_2_12.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__net_java_dev_jna_jna_4_1_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__net_java_dev_jna_jna_platform_4_1_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__net_sourceforge_cssparser_cssparser_0_9_18.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_2_20.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_core_js_2_17.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__net_sourceforge_nekohtml_nekohtml_1_9_22.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_apache_ant_ant_1_7_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_apache_ant_ant_launcher_1_7_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_apache_commons_commons_exec_1_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_4.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_4.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_beanshell_bsh_2_0b4.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_9_2_15_v20160210.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_9_2_15_v20160210.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_api_9_2_15_v20160210.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_client_9_2_15_v20160210.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_common_9_2_15_v20160210.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_ow2_asm_asm_5_0_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_seleniumhq_selenium_htmlunit_driver_2_20.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_api_2_53_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_chrome_driver_2_53_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_edge_driver_2_53_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_firefox_driver_2_53_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_ie_driver_2_53_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_java_2_53_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_leg_rc_2_53_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_remote_driver_2_53_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_safari_driver_2_53_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_2_53_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_testng_testng_6_9_9.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_w3c_css_sac_1_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__org_yaml_snakeyaml_1_15.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__xalan_serializer_2_7_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__xalan_xalan_2_7_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__xerces_xercesImpl_2_11_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/AndroidTests.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/hs_err_pid3704.log" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/log4j.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/pom.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/AllInOne.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/Constants.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/Methods.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/src/main/java/Autotests/Variables.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/src/main/resources/log4j.properties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AndroidTests/src/test/java/Exploring/CalculatorTests.java" />
+    <list default="true" id="1281d1c0-0985-4127-85c8-4c8ed24b88a6" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../AndroidTests/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../AndroidTests/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -597,6 +527,14 @@
       <option name="presentableId" value="Default" />
       <updated>1514205693620</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1514366129667</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1514366129667</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -662,6 +600,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Initial commit" />
     <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
