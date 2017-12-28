@@ -29,7 +29,7 @@
             <groupId>io.appium</groupId>
             <artifactId>java-client</artifactId>
             <version>3.4.1</version>
-            <scope>test</scope>
+
         </dependency>
         <dependency>
             <groupId>log4j</groupId>

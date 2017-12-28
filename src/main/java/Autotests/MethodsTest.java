@@ -5,7 +5,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class AllInOne {
+public class MethodsTest {
 
     private static Logger logger;
 
@@ -33,44 +33,17 @@ public class AllInOne {
 
         logger.info("-----");
         logger.info("Closing Application");
-        App.Quit();
-
+    //    App.Quit();
     }
 
     @Test
-    public void AndroidTestRegister() {
-
-        logger.info("-----");
-        logger.info("Starting Autotests");
-        logger.info("-   -");
-        logger.info("Splash Screen");
-
+    public void AndroidTestLogin() {
 
         App.SplashScreen();
-
-        logger.info("-   -");
-        logger.info("Registering a user");
-
         App.Register();
-
-    }
-
-    @Test(dependsOnMethods = "AndroidTestRegister")
-    public void AndroidTestLogin() throws Exception{
-
-        logger.info("- - -");
-        logger.info("Restarting App");
-        App.Restart();
-        logger.info("-   -");
-        logger.info("Splash Screen");
-
-
-        App.SplashScreen();
-
-        logger.info("-   -");
-        logger.info("Logging with a user");
-
-        App.Login();
+        logger.info("-----");
+        logger.info("Breed: " + Variables.breed);
+        App.AddPet();
 
     }
 
