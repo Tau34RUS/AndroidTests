@@ -1,10 +1,11 @@
 package Autotests;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.touch.TouchActions;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
 
@@ -17,6 +18,7 @@ import java.util.concurrent.TimeUnit;
 public class Methods {
 
     private static WebDriver driver;
+
     //private static AndroidDriver adriver;
 
     void SetUp() throws Exception {
@@ -34,8 +36,7 @@ public class Methods {
         /* selenium and appium driver setup */
         driver = new RemoteWebDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
         driver.manage().timeouts().implicitlyWait(Constants.Timeout, TimeUnit.SECONDS);
-        //adriver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-        //adriver.manage().timeouts().implicitlyWait(Constants.Timeout, TimeUnit.SECONDS);
+        Variables.screensize = driver.manage().window().getSize();
     }
 
     void SplashScreen() {
@@ -143,7 +144,7 @@ public class Methods {
         Assert.assertEquals("Добавить питомца", driver.findElement(By.id("ru.averia.collars.stg:id/tv_title")).getText());
         driver.findElement(By.id("ru.averia.collars.stg:id/bt_next")).click();
 
- /*     TODO dig out text input issue
+ /*     TODO dig out text input issue, Antons shitty code?
         WebElement breed = driver.findElement(By.id("ru.averia.collars.stg:id/et_breed_title"));
         breed.click();
         breed.sendKeys(Variables.breed);
@@ -173,7 +174,6 @@ public class Methods {
         driver.navigate().back();
         driver.findElement(By.id("ru.averia.collars.stg:id/bt_next")).click();
 
-        //Assert.assertEquals("Возраст и дата рождения", driver.findElement(By.id("ru.averia.collars.stg:id/til_weight")).getText());
         WebElement petweight = driver.findElement(By.id("ru.averia.collars.stg:id/til_weight"));
         petweight.click();
         petweight.sendKeys(Variables.petweight);
@@ -189,9 +189,14 @@ public class Methods {
         Assert.assertEquals(Variables.petname, driver.findElement(By.id("ru.averia.collars.stg:id/tv_pet_name")).getText());
     }
 
-    public void HorizontalScroll() {
+    //TODO Port to appium, selenium does not support good swipe
+    public void HorizontalScrollL2R () {
         Dimension ScreenSize = driver.manage().window().getSize();
-
+        //Find swipe start and end point from screen's with and height
+        int startx = (int) (ScreenSize.width * 0.70);
+        int endx = (int) (ScreenSize.width * 0.30);
+        int starty = ScreenSize.height / 2;
+        new TouchActions(driver).down(startx, starty).move(endx, starty).perform();
     }
 
 }

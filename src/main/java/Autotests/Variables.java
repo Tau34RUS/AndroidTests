@@ -1,5 +1,7 @@
 package Autotests;
 
+import org.openqa.selenium.Dimension;
+
 @SuppressWarnings({"WeakerAccess", "CanBeFinal"})
 public class Variables {
     //TODO add random values
@@ -13,6 +15,7 @@ public class Variables {
     static String birthmonth;
     static String birthyear;
     static String petage;
+    static Dimension screensize;
 
     static {
         userpass = "123456";

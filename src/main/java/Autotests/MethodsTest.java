@@ -21,6 +21,7 @@ public class MethodsTest {
         logger.info("-----");
         logger.info("Initial Settings and App Startup");
         App.SetUp();
+        logger.info("Screen size: " + Variables.screensize);
         logger.info("Settings Applied");
 
     }
@@ -42,8 +43,8 @@ public class MethodsTest {
         App.SplashScreen();
         App.Register();
         logger.info("-----");
-        logger.info("Breed: " + Variables.breed);
-        App.AddPet();
+        App.HorizontalScrollL2R();
+        //App.AddPet();
 
     }
 

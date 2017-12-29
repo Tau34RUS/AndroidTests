@@ -21,6 +21,7 @@ public class AllInOne {
         logger.info("-----");
         logger.info("Initial Settings and App Startup");
         App.SetUp();
+        logger.info("Screen size: " + Variables.screensize);
         logger.info("Settings Applied");
 
     }
