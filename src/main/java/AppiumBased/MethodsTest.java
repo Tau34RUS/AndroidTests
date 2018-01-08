@@ -1,4 +1,4 @@
-package Autotests;
+package AppiumBased;
 
 import org.apache.log4j.Logger;
 import org.testng.annotations.AfterTest;
@@ -34,17 +34,33 @@ public class MethodsTest {
 
         logger.info("-----");
         logger.info("Closing Application");
-    //    App.Quit();
+        //App.Quit();
     }
 
     @Test
-    public void AndroidTestLogin() {
-
-        App.SplashScreen();
-        App.Register();
-        logger.info("-----");
-        App.HorizontalScrollL2R();
-        //App.AddPet();
+    public void AndroidTestLogin() throws Exception {
+        int a;
+        int i=1;
+        a = 1;
+        while (a<10) {
+            logger.info("SplashScreen");
+            App.SplashScreen();
+            logger.info("Registering");
+            App.Register();
+            logger.info("AppRestart");
+            App.Restart();
+            logger.info("SplashScreen");
+            App.SplashScreen();
+            logger.info("Login");
+            App.Login();
+            logger.info("Adding new pet");
+            //App.HorizontalScrollL2R();
+            App.AddPet();
+            logger.info("Restarting");
+            App.Restart();
+            logger.info("Iteration: "+i);
+            i++;
+        }
 
     }
 

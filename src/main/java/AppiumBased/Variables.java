@@ -1,4 +1,4 @@
-package Autotests;
+package AppiumBased;
 
 import org.openqa.selenium.Dimension;
 

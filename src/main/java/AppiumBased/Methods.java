@@ -1,10 +1,9 @@
-package Autotests;
+package AppiumBased;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.touch.TouchActions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
@@ -196,7 +195,7 @@ public class Methods {
         int startx = (int) (ScreenSize.width * 0.70);
         int endx = (int) (ScreenSize.width * 0.30);
         int starty = ScreenSize.height / 2;
-        new TouchActions(driver).down(startx, starty).move(endx, starty).perform();
+        //new TouchActions(driver).down(startx, starty).move(endx, starty).perform();
     }
 
 }

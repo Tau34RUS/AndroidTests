@@ -1,4 +1,4 @@
-package Autotests;
+package AppiumBased;
 
 import org.apache.log4j.Logger;
 import org.testng.annotations.AfterTest;
@@ -42,7 +42,7 @@ public class AllInOne {
     public void AndroidTestRegister() {
 
         logger.info("-----");
-        logger.info("Starting Autotests");
+        logger.info("Starting SeleniumBased");
         logger.info("-   -");
         logger.info("Splash Screen");
 
