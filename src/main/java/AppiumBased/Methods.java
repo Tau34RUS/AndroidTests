@@ -1,11 +1,12 @@
 package AppiumBased;
 
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.android.AndroidDriver;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
 
 import java.net.URL;
@@ -16,26 +17,38 @@ import java.util.concurrent.TimeUnit;
 @SuppressWarnings("WeakerAccess")
 public class Methods {
 
-    private static WebDriver driver;
 
-    //private static AndroidDriver adriver;
+
+    AppiumDriver<WebElement> driver;
+    protected static Logger logger;
+
 
     void SetUp() throws Exception {
+
+        logger = Logger.getLogger("MethodsTestLogger");
+
         /* appium setup */
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
-        capabilities.setCapability("deviceName", "Asus");
-        capabilities.setCapability("browserName", "Android");
-        capabilities.setCapability("platformVersion", "5.0.2");
+        capabilities.setCapability("deviceName", "Android");
+        //capabilities.setCapability("browserName", "Android");
+        //capabilities.setCapability("platformVersion", "5.0.2");
+        //capabilities.setCapability("udid", "G1NPFP1202437HN");
         capabilities.setCapability("platformName", "Android");
+        capabilities.setCapability("app", Constants.appath);
 
         capabilities.setCapability("appPackage", "ru.averia.collars.stg");
         capabilities.setCapability("appActivity", "ru.averia.collars.ui.activities.SplashActivity");
 
         /* selenium and appium driver setup */
-        driver = new RemoteWebDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+        //driver = new AndroidDriver<WebElement>(new URL("http://192.168.99.100:4723/wd/hub"), capabilities);
+        driver = new AndroidDriver<WebElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
         driver.manage().timeouts().implicitlyWait(Constants.Timeout, TimeUnit.SECONDS);
         Variables.screensize = driver.manage().window().getSize();
+        Variables.devicename = driver.getCapabilities().getCapability("deviceName").toString();
+        logger.info("Screen size: " + Variables.screensize);
+        logger.info("Device name: " + Variables.devicename);
+
     }
 
     void SplashScreen() {
@@ -102,8 +115,7 @@ public class Methods {
 
     void Quit() {
         driver.quit();
-        //adriver.quit();
-        }
+    }
 
     void Restart() throws Exception{
         Quit();
@@ -123,18 +135,30 @@ public class Methods {
         driver.navigate().back();
         driver.findElement(By.id("ru.averia.collars.stg:id/bt_next")).click();
 
-//        Assert.assertEquals("android.widget.ImageView", driver.findElement(By.id("ru.averia.collars.stg:id/iv_pet_ava")).getAttribute(class));
         driver.findElement(By.id("ru.averia.collars.stg:id/iv_pet_ava")).click();
 
         Assert.assertEquals("Выбрать источник", driver.findElement(By.id("android:id/title")).getText());
 
         List<WebElement> choiseslist = driver.findElements(By.className("android.widget.LinearLayout"));
+
+        logger.info("List: " + choiseslist);
+
         choiseslist.get(1).click();
 
+
         //TODO check cameras on different brands - try -> catch
+
+        //Asus
         driver.findElement(By.id("com.asus.camera:id/button_capture")).click();
 
         driver.findElement(By.id("com.asus.camera:id/button_used")).click();
+
+        //Xiomi
+
+        //HTC
+
+        //LG
+
 
         driver.findElement(By.id("ru.averia.collars.stg:id/crop_image_menu_crop")).click();
 

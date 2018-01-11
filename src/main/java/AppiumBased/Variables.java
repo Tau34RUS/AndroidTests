@@ -16,6 +16,7 @@ public class Variables {
     static String birthyear;
     static String petage;
     static Dimension screensize;
+    static String devicename;
 
     static {
         userpass = "123456";

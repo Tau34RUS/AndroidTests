@@ -17,9 +17,9 @@ public class MethodsTest {
         /* log4j setup */
         logger = Logger.getLogger("AndroidTestLogger");
 
-
         logger.info("-----");
         logger.info("Initial Settings and App Startup");
+        // Starts appium server
         App.SetUp();
         logger.info("Screen size: " + Variables.screensize);
         logger.info("Settings Applied");
