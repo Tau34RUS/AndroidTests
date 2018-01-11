@@ -47,7 +47,6 @@ public class AllInOne {
 
         App.SplashScreen();
 
-        logger.info("-   -");
         logger.info("Registering a user");
 
         App.Register();

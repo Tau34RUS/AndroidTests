@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1281d1c0-0985-4127-85c8-4c8ed24b88a6" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/DevelopingTests/Constants.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/DevelopingTests/Methods.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/DevelopingTests/ScreenshotOnPassFail.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/DevelopingTests/ScreenshotUtility.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/DevelopingTests/Variables.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/AppiumBased/AllInOne.java" afterPath="$PROJECT_DIR$/src/main/java/AppiumBased/AllInOne.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AppiumBased/AppiumParallelExecution.java" afterPath="$PROJECT_DIR$/src/main/java/DevelopingTests/AppiumParallelExecution.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AppiumBased/CommandLine.java" afterPath="$PROJECT_DIR$/src/main/java/DevelopingTests/CommandLine.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AppiumBased/Methods.java" afterPath="$PROJECT_DIR$/src/main/java/AppiumBased/Methods.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AppiumBased/MethodsTest.java" afterPath="$PROJECT_DIR$/src/main/java/DevelopingTests/MethodsTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AppiumBased/Test.java" afterPath="$PROJECT_DIR$/src/main/java/DevelopingTests/Test.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,11 +25,21 @@
       <file leaf-file-name="AllInOne.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/AppiumBased/AllInOne.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="46" lean-forward="false" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
+            <state relative-caret-position="68">
+              <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="31" lean-forward="false" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -65,25 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScreenshotOnPassFail.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/DevelopingTests/ScreenshotOnPassFail.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3406#3407#0" expanded="true" />
-                <element signature="e#3435#3436#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MethodsTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/DevelopingTests/MethodsTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,7 +84,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/AppiumBased/Variables.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
-              <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+              <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -208,9 +197,6 @@
         <option value="$PROJECT_DIR$/src/test/java/AppiumBased/MethodsTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/AppiumBased/Constants.java" />
         <option value="$PROJECT_DIR$/TestNG.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/AppiumBased/AllInOne.java" />
         <option value="$PROJECT_DIR$/src/main/java/AppiumBased/ScreenshotUtility.java" />
         <option value="$PROJECT_DIR$/src/main/java/AppiumBased/ScreenshotOnPassFail.java" />
         <option value="$PROJECT_DIR$/src/main/java/DevelopingTests/AppiumParallelExecution.java" />
@@ -221,6 +207,9 @@
         <option value="$PROJECT_DIR$/src/main/java/AppiumBased/MethodsTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/DevelopingTests/MethodsTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/DevelopingTests/Test.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/AppiumBased/AllInOne.java" />
       </list>
     </option>
   </component>
@@ -366,7 +355,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.AllInOne">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -414,6 +403,38 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+    </configuration>
+    <configuration name="AllInOne" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="AppiumBased.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="AndroidTests" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="AppiumBased" />
+      <option name="MAIN_CLASS_NAME" value="AppiumBased.AllInOne" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
     </configuration>
     <configuration name="MethodsTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -477,9 +498,14 @@
     <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
     </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="TestNG.MethodsTest" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.AllInOne" />
+    </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.MethodsTest" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="TestNG.AllInOne" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.MethodsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -532,12 +558,19 @@
       <option name="project" value="LOCAL" />
       <updated>1515660579242</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Project Refactoring">
+      <created>1515663103010</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1515663103010</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MethodsTest - 2018.01.10 at 15h 50m 08s.xml">
-      <configuration name="MethodsTest" configurationId="TestNG" />
+    <history-entry file="AllInOne - 2018.01.11 at 13h 12m 56s.xml">
+      <configuration name="AllInOne" configurationId="TestNG" />
     </history-entry>
     <history-entry file="MethodsTest - 2018.01.10 at 16h 00m 52s.xml">
       <configuration name="MethodsTest" configurationId="TestNG" />
@@ -576,13 +609,13 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4312115" sideWeight="0.5082418" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28950158" sideWeight="0.49175823" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28950158" sideWeight="0.49175823" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.128125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16614583" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32921812" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921812" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -603,7 +636,8 @@
     <MESSAGE value="Fixing warnings" />
     <MESSAGE value="Ubuntu control + swipe action" />
     <MESSAGE value="Maven Settings for Jenkins" />
-    <option name="LAST_COMMIT_MESSAGE" value="Maven Settings for Jenkins" />
+    <MESSAGE value="Project Refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project Refactoring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -854,22 +888,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/DevelopingTests/AppiumParallelExecution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1810#1811#0" expanded="true" />
-            <element signature="e#1833#1834#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1810#1811#0" expanded="false" />
+            <element signature="e#1833#1834#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -879,11 +905,11 @@
         <state relative-caret-position="238">
           <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#778#779#0" expanded="true" />
-            <element signature="e#823#824#0" expanded="true" />
-            <element signature="e#936#937#0" expanded="true" />
-            <element signature="e#981#982#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#778#779#0" expanded="false" />
+            <element signature="e#823#824#0" expanded="false" />
+            <element signature="e#936#937#0" expanded="false" />
+            <element signature="e#981#982#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -893,9 +919,9 @@
         <state relative-caret-position="289">
           <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3406#3407#0" expanded="true" />
-            <element signature="e#3435#3436#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#3368#3369#0" expanded="false" />
+            <element signature="e#3397#3398#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -949,7 +975,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/DevelopingTests/MethodsTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -959,7 +985,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/AppiumBased/Variables.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
-          <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+          <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -974,10 +1000,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="31" lean-forward="false" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/AppiumBased/AllInOne.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="46" lean-forward="false" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
+        <state relative-caret-position="68">
+          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
