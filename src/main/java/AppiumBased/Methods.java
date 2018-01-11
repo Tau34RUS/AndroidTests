@@ -35,7 +35,7 @@ public class Methods {
         //capabilities.setCapability("platformVersion", "5.0.2");
         //capabilities.setCapability("udid", "G1NPFP1202437HN");
         capabilities.setCapability("platformName", "Android");
-        capabilities.setCapability("app", Constants.appath);
+        //capabilities.setCapability("app", Constants.appath);
 
         capabilities.setCapability("appPackage", "ru.averia.collars.stg");
         capabilities.setCapability("appActivity", "ru.averia.collars.ui.activities.SplashActivity");
