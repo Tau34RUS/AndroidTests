@@ -42,10 +42,8 @@ public class AllInOne {
     public void AndroidTestRegister() {
 
         logger.info("-----");
-        logger.info("Starting SeleniumBased");
+        logger.info("Starting AppiumBased Tests");
         logger.info("-   -");
-        logger.info("Splash Screen");
-
 
         App.SplashScreen();
 

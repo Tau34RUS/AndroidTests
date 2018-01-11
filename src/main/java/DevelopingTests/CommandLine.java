@@ -1,4 +1,4 @@
-package AppiumBased;
+package DevelopingTests;
 
 import org.apache.commons.exec.DefaultExecuteResultHandler;
 import org.apache.commons.exec.DefaultExecutor;

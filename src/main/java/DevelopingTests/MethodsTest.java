@@ -1,4 +1,4 @@
-package AppiumBased;
+package DevelopingTests;
 
 import org.apache.log4j.Logger;
 import org.testng.annotations.AfterTest;
@@ -9,7 +9,7 @@ public class MethodsTest {
 
     private static Logger logger;
 
-    private final Methods App = new Methods();
+    private final DevelopingTests.Methods App = new Methods();
 
     @BeforeTest
     public void Before() throws Exception {
@@ -21,7 +21,7 @@ public class MethodsTest {
         logger.info("Initial Settings and App Startup");
         // Starts appium server
         App.SetUp();
-        logger.info("Screen size: " + Variables.screensize);
+        logger.info("Screen size: " + DevelopingTests.Variables.screensize);
         logger.info("Settings Applied");
 
     }
@@ -29,8 +29,8 @@ public class MethodsTest {
     @AfterTest
     public void After() {
         logger.info("-----");
-        logger.info("Userlogin: " + Variables.userlogin);
-        logger.info("Userpass:  " + Variables.userpass);
+        logger.info("Userlogin: " + DevelopingTests.Variables.userlogin);
+        logger.info("Userpass:  " + DevelopingTests.Variables.userpass);
 
         logger.info("-----");
         logger.info("Closing Application");
@@ -54,7 +54,6 @@ public class MethodsTest {
             logger.info("Login");
             App.Login();
             logger.info("Adding new pet");
-            //App.HorizontalScrollL2R();
             App.AddPet();
             logger.info("Restarting");
             App.Restart();
