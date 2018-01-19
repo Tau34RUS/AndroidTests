@@ -41,8 +41,8 @@ public class Methods {
 
         logger.info("Is Mac? " + OsUtils.OS.MAC.equals(OsUtils.getOs()));
 
-        capabilities.setCapability("appPackage", "ru.averia.collars.stg");
-        capabilities.setCapability("appActivity", "ru.averia.collars.ui.activities.SplashActivity");
+        capabilities.setCapability("appPackage", Constants.AppPKG);
+        capabilities.setCapability("appActivity", Constants.AppAct);
 
         /* selenium and appium driver setup */
 
