@@ -31,9 +31,9 @@ public class Methods {
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
         capabilities.setCapability("deviceName", "Android");
-        //capabilities.setCapability("browserName", "Android");
-        //capabilities.setCapability("platformVersion", "5.0.2");
-        //capabilities.setCapability("udid", "G1NPFP1202437HN");
+        /*capabilities.setCapability("browserName", "Android");
+        capabilities.setCapability("platformVersion", "5.0.2");
+        capabilities.setCapability("udid", "G1NPFP1202437HN");*/
         capabilities.setCapability("platformName", "Android");
 
         if (OsUtils.OS.MAC.equals(OsUtils.getOs())){capabilities.setCapability("app", Constants.appath_mac);}
@@ -163,6 +163,8 @@ public class Methods {
         //HTC
 
         //LG
+
+        //Samsung
 
 
         driver.findElement(By.id("ru.averia.collars.stg:id/crop_image_menu_crop")).click();
