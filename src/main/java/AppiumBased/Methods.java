@@ -58,12 +58,12 @@ public class Methods {
 
     void SplashScreen() {
 
-        Assert.assertEquals("Больше никаких потерянных животных", driver.findElement(By.id("ru.averia.collars.stg:id/about_title_dog_1")).getText());
-        driver.findElement(By.id("ru.averia.collars.stg:id/bt_next")).click();
-        Assert.assertEquals("Мониторинг активности вашего питомца", driver.findElement(By.id("ru.averia.collars.stg:id/about_title_dog_2")).getText());
-        driver.findElement(By.id("ru.averia.collars.stg:id/bt_next")).click();
-        Assert.assertEquals("Социальная сеть для владельцев собак", driver.findElement(By.id("ru.averia.collars.stg:id/about_title_dog_3")).getText());
-        //driver.findElement(By.id("ru.averia.collars.stg:id/bt_register")).click();
+        Assert.assertEquals("Больше никаких потерянных животных", driver.findElement(By.id("ru.averia.tracker:id/about_title_dog_1")).getText());
+        driver.findElement(By.id("ru.averia.tracker:id/bt_next")).click();
+        Assert.assertEquals("Мониторинг активности вашего питомца", driver.findElement(By.id("ru.averia.tracker:id/about_title_dog_2")).getText());
+        driver.findElement(By.id("ru.averia.tracker:id/bt_next")).click();
+        Assert.assertEquals("Социальная сеть для владельцев собак", driver.findElement(By.id("ru.averia.tracker:id/about_title_dog_3")).getText());
+        //driver.findElement(By.id("ru.averia.tracker:id/bt_register")).click();
     }
 
     void Register() {
@@ -75,46 +75,46 @@ public class Methods {
         for (int i = 0; i < 16; i++) Variables.userlogin += login.nextInt(alphabet.length());
         Variables.userlogin = Variables.userlogin + "@test.user";
 
-        Assert.assertEquals("Регистрация", driver.findElement(By.id("ru.averia.collars.stg:id/bt_register")).getText());
+        Assert.assertEquals("Регистрация", driver.findElement(By.id("ru.averia.tracker:id/bt_register")).getText());
 
-        driver.findElement(By.id("ru.averia.collars.stg:id/bt_register")).click();
+        driver.findElement(By.id("ru.averia.tracker:id/bt_register")).click();
 
-        Assert.assertEquals("Регистрация", driver.findElement(By.id("ru.averia.collars.stg:id/tv_title")).getText());
+        Assert.assertEquals("Регистрация", driver.findElement(By.id("ru.averia.tracker:id/tv_title")).getText());
 
-        WebElement username = driver.findElement(By.id("ru.averia.collars.stg:id/et_email"));
+        WebElement username = driver.findElement(By.id("ru.averia.tracker:id/et_email"));
         username.click();
         username.sendKeys(Variables.userlogin);
 
-        WebElement password = driver.findElement(By.id("ru.averia.collars.stg:id/et_password"));
+        WebElement password = driver.findElement(By.id("ru.averia.tracker:id/et_password"));
         password.click();
         password.sendKeys(Variables.userpass);
 
-        driver.findElement(By.id("ru.averia.collars.stg:id/bt_register")).click();
+        driver.findElement(By.id("ru.averia.tracker:id/bt_register")).click();
 
-        Assert.assertEquals("Добавить", driver.findElement(By.id("ru.averia.collars.stg:id/bt_add_pet")).getText());
+        Assert.assertEquals("Добавить", driver.findElement(By.id("ru.averia.tracker:id/bt_add_pet")).getText());
 
     }
 
     void Login() {
 
 
-        Assert.assertEquals("Войти", driver.findElement(By.id("ru.averia.collars.stg:id/bt_login")).getText());
-        driver.findElement(By.id("ru.averia.collars.stg:id/bt_login")).click();
+        Assert.assertEquals("Войти", driver.findElement(By.id("ru.averia.tracker:id/bt_login")).getText());
+        driver.findElement(By.id("ru.averia.tracker:id/bt_login")).click();
 
-        Assert.assertEquals("Войти", driver.findElement(By.id("ru.averia.collars.stg:id/tv_title")).getText());
-        Assert.assertEquals("Войти", driver.findElement(By.id("ru.averia.collars.stg:id/bt_login")).getText());
+        Assert.assertEquals("Войти", driver.findElement(By.id("ru.averia.tracker:id/tv_title")).getText());
+        Assert.assertEquals("Войти", driver.findElement(By.id("ru.averia.tracker:id/bt_login")).getText());
 
-        WebElement username = driver.findElement(By.id("ru.averia.collars.stg:id/et_email"));
+        WebElement username = driver.findElement(By.id("ru.averia.tracker:id/et_email"));
         username.click();
         username.sendKeys(Variables.userlogin);
 
-        WebElement password = driver.findElement(By.id("ru.averia.collars.stg:id/et_password"));
+        WebElement password = driver.findElement(By.id("ru.averia.tracker:id/et_password"));
         password.click();
         password.sendKeys(Variables.userpass);
 
-        driver.findElement(By.id("ru.averia.collars.stg:id/bt_login")).click();
+        driver.findElement(By.id("ru.averia.tracker:id/bt_login")).click();
 
-        Assert.assertEquals("Добавить", driver.findElement(By.id("ru.averia.collars.stg:id/bt_add_pet")).getText());
+        Assert.assertEquals("Добавить", driver.findElement(By.id("ru.averia.tracker:id/bt_add_pet")).getText());
 
     }
 
@@ -129,18 +129,18 @@ public class Methods {
 
 
     void AddPet() {
-        driver.findElement(By.id("ru.averia.collars.stg:id/maim_menu_action_pet")).click();
-        Assert.assertEquals("Добавить питомца", driver.findElement(By.id("ru.averia.collars.stg:id/tv_description_large")).getText());
-        driver.findElement(By.id("ru.averia.collars.stg:id/bt_add_pet")).click();
-        Assert.assertEquals("Добавить питомца", driver.findElement(By.id("ru.averia.collars.stg:id/tv_title")).getText());
-        WebElement petname = driver.findElement(By.id("ru.averia.collars.stg:id/et_name"));
+        driver.findElement(By.id("ru.averia.tracker:id/maim_menu_action_pet")).click();
+        Assert.assertEquals("Добавить питомца", driver.findElement(By.id("ru.averia.tracker:id/tv_description_large")).getText());
+        driver.findElement(By.id("ru.averia.tracker:id/bt_add_pet")).click();
+        Assert.assertEquals("Добавить питомца", driver.findElement(By.id("ru.averia.tracker:id/tv_title")).getText());
+        WebElement petname = driver.findElement(By.id("ru.averia.tracker:id/et_name"));
         petname.click();
         petname.sendKeys(Variables.petname);
         //TODO add gender random selection
         driver.navigate().back();
-        driver.findElement(By.id("ru.averia.collars.stg:id/bt_next")).click();
+        driver.findElement(By.id("ru.averia.tracker:id/bt_next")).click();
 
-        driver.findElement(By.id("ru.averia.collars.stg:id/iv_pet_ava")).click();
+        driver.findElement(By.id("ru.averia.tracker:id/iv_pet_ava")).click();
 
         Assert.assertEquals("Выбрать источник", driver.findElement(By.id("android:id/title")).getText());
 
@@ -163,25 +163,25 @@ public class Methods {
         //HTC
 
         //LG
+        
+        
 
-        //Samsung
 
+        driver.findElement(By.id("ru.averia.tracker:id/crop_image_menu_crop")).click();
 
-        driver.findElement(By.id("ru.averia.collars.stg:id/crop_image_menu_crop")).click();
+        driver.findElement(By.id("ru.averia.tracker:id/bt_next")).click();
 
-        driver.findElement(By.id("ru.averia.collars.stg:id/bt_next")).click();
-
-        Assert.assertEquals("Добавить питомца", driver.findElement(By.id("ru.averia.collars.stg:id/tv_title")).getText());
-        driver.findElement(By.id("ru.averia.collars.stg:id/bt_next")).click();
+        Assert.assertEquals("Добавить питомца", driver.findElement(By.id("ru.averia.tracker:id/tv_title")).getText());
+        driver.findElement(By.id("ru.averia.tracker:id/bt_next")).click();
 
  /*     TODO dig out text input issue, Antons shitty code?
-        WebElement breed = driver.findElement(By.id("ru.averia.collars.stg:id/et_breed_title"));
+        WebElement breed = driver.findElement(By.id("ru.averia.tracker:id/et_breed_title"));
         breed.click();
         breed.sendKeys(Variables.breed);
 
         driver.findElements(By.className("android.widget.EditText")).get(0).sendKeys(Variables.breed);
 
-        ru.averia.collars.stg:id/et_breed_title
+        ru.averia.tracker:id/et_breed_title
  */
         //Appium Magic
 
@@ -190,33 +190,33 @@ public class Methods {
 //        el1.click();
 //        adriver.navigate().back();
 
-        driver.findElement(By.id("ru.averia.collars.stg:id/bt_next")).click();
+        driver.findElement(By.id("ru.averia.tracker:id/bt_next")).click();
 
-        Assert.assertEquals("Возраст и дата рождения", driver.findElement(By.id("ru.averia.collars.stg:id/tv_cap")).getText());
-        WebElement birthyear = driver.findElement(By.id("ru.averia.collars.stg:id/et_year"));
+        Assert.assertEquals("Возраст и дата рождения", driver.findElement(By.id("ru.averia.tracker:id/tv_cap")).getText());
+        WebElement birthyear = driver.findElement(By.id("ru.averia.tracker:id/et_year"));
         birthyear.click();
         birthyear.sendKeys(Variables.birthyear);
 
-        WebElement birthmonth = driver.findElement(By.id("ru.averia.collars.stg:id/et_month"));
+        WebElement birthmonth = driver.findElement(By.id("ru.averia.tracker:id/et_month"));
         birthmonth.click();
         birthmonth.sendKeys(Variables.birthmonth);
 
         driver.navigate().back();
-        driver.findElement(By.id("ru.averia.collars.stg:id/bt_next")).click();
+        driver.findElement(By.id("ru.averia.tracker:id/bt_next")).click();
 
-        WebElement petweight = driver.findElement(By.id("ru.averia.collars.stg:id/til_weight"));
+        WebElement petweight = driver.findElement(By.id("ru.averia.tracker:id/til_weight"));
         petweight.click();
         petweight.sendKeys(Variables.petweight);
 
-        WebElement petwheight = driver.findElement(By.id("ru.averia.collars.stg:id/et_height"));
+        WebElement petwheight = driver.findElement(By.id("ru.averia.tracker:id/et_height"));
         petwheight.click();
         petwheight.sendKeys(Variables.petheight);
 
         driver.navigate().back();
-        driver.findElement(By.id("ru.averia.collars.stg:id/bt_next")).click();
+        driver.findElement(By.id("ru.averia.tracker:id/bt_next")).click();
 
-        Assert.assertEquals("Добавьте ошейник", driver.findElement(By.id("ru.averia.collars.stg:id/tv_add_collar_title1")).getText());
-        Assert.assertEquals(Variables.petname, driver.findElement(By.id("ru.averia.collars.stg:id/tv_pet_name")).getText());
+        Assert.assertEquals("Добавьте ошейник", driver.findElement(By.id("ru.averia.tracker:id/tv_add_collar_title1")).getText());
+        Assert.assertEquals(Variables.petname, driver.findElement(By.id("ru.averia.tracker:id/tv_pet_name")).getText());
     }
 
     //TODO Port to appium, selenium does not support good swipe
