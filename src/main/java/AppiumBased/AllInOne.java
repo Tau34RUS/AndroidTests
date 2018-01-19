@@ -17,11 +17,9 @@ public class AllInOne {
         /* log4j setup */
         logger = Logger.getLogger("AndroidTestLogger");
 
-
         logger.info("-----");
         logger.info("Initial Settings and App Startup");
         App.SetUp();
-        logger.info("Screen size: " + Variables.screensize);
         logger.info("Settings Applied");
 
     }
@@ -69,6 +67,15 @@ public class AllInOne {
         logger.info("Logging with a user");
 
         App.Login();
+
+    }
+
+    @Test(dependsOnMethods = "AndroidTestLogin")
+    public void AndroidTestAddPet() {
+
+        logger.info("- - -");
+        logger.info("Adding a pet");
+       // App.AddPet();
 
     }
 

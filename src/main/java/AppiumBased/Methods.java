@@ -35,13 +35,19 @@ public class Methods {
         //capabilities.setCapability("platformVersion", "5.0.2");
         //capabilities.setCapability("udid", "G1NPFP1202437HN");
         capabilities.setCapability("platformName", "Android");
-        //capabilities.setCapability("app", Constants.appath);
+
+        if (OsUtils.OS.MAC.equals(OsUtils.getOs())){capabilities.setCapability("app", Constants.appath_mac);}
+        else {capabilities.setCapability("app", Constants.appath_win);}
+
+        logger.info("Is Mac? " + OsUtils.OS.MAC.equals(OsUtils.getOs()));
+        logger.info("Is Win? " + OsUtils.OS.WINDOWS.equals(OsUtils.getOs()));
 
         capabilities.setCapability("appPackage", "ru.averia.collars.stg");
         capabilities.setCapability("appActivity", "ru.averia.collars.ui.activities.SplashActivity");
 
         /* selenium and appium driver setup */
-        //driver = new AndroidDriver<WebElement>(new URL("http://192.168.99.100:4723/wd/hub"), capabilities);
+
+        //noinspection Convert2Diamond
         driver = new AndroidDriver<WebElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
         driver.manage().timeouts().implicitlyWait(Constants.Timeout, TimeUnit.SECONDS);
         Variables.screensize = driver.manage().window().getSize();
