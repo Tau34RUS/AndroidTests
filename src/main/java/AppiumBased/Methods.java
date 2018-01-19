@@ -40,7 +40,6 @@ public class Methods {
         else {capabilities.setCapability("app", Constants.appath_win);}
 
         logger.info("Is Mac? " + OsUtils.OS.MAC.equals(OsUtils.getOs()));
-        logger.info("Is Win? " + OsUtils.OS.WINDOWS.equals(OsUtils.getOs()));
 
         capabilities.setCapability("appPackage", "ru.averia.collars.stg");
         capabilities.setCapability("appActivity", "ru.averia.collars.ui.activities.SplashActivity");
