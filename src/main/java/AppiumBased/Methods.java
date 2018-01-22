@@ -2,13 +2,14 @@ package AppiumBased;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
 
+import java.io.File;
+import java.io.IOException;
 import java.net.URL;
 import java.util.List;
 import java.util.Random;
@@ -21,7 +22,7 @@ public class Methods {
 
     AppiumDriver<WebElement> driver;
     protected static Logger logger;
-
+    String folder_name;
 
     void SetUp() throws Exception {
 
@@ -47,7 +48,7 @@ public class Methods {
         /* selenium and appium driver setup */
 
         //noinspection Convert2Diamond
-        driver = new AndroidDriver<WebElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+        driver = new AndroidDriver<WebElement>(new URL("http://127.0.0.1:4731/wd/hub"), capabilities);
         driver.manage().timeouts().implicitlyWait(Constants.Timeout, TimeUnit.SECONDS);
         Variables.screensize = driver.manage().window().getSize();
         Variables.devicename = driver.getCapabilities().getCapability("deviceName").toString();
@@ -88,6 +89,9 @@ public class Methods {
         WebElement password = driver.findElement(By.id("ru.averia.tracker:id/et_password"));
         password.click();
         password.sendKeys(Variables.userpass);
+
+        logger.info("Userlogin: " + Variables.userlogin);
+        logger.info("Userpass:  " + Variables.userpass);
 
         driver.findElement(By.id("ru.averia.tracker:id/bt_register")).click();
 
@@ -229,6 +233,13 @@ public class Methods {
         //new TouchActions(driver).down(startx, starty).move(endx, starty).perform();
     }
 
-
+    public void captureScreenShots() throws IOException {
+        folder_name="screenshot";
+        File f= driver.getScreenshotAs(OutputType.FILE);
+        //create dir with given folder name
+        new File(folder_name).mkdir();
+        //coppy screenshot file into screenshot folder.
+        FileUtils.copyFile(f, new File(folder_name + "/" + "LastFailScreenshot.png"));
+    }
 
 }

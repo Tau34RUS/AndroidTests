@@ -1,9 +1,13 @@
 package AppiumBased;
 
 import org.apache.log4j.Logger;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import java.io.IOException;
 
 public class AllInOne {
 
@@ -34,6 +38,16 @@ public class AllInOne {
         logger.info("Closing Application");
         App.Quit();
 
+    }
+
+    @AfterMethod
+    public void AfterMethod(ITestResult result) throws IOException {
+        if (result.getStatus()==2) {
+            logger.info("Test Failed!");
+            logger.info("Taking Screenshot...");
+            App.captureScreenShots();
+        }
+        logger.warn("Result is: " + result.getStatus());
     }
 
     @Test

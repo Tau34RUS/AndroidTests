@@ -15,6 +15,7 @@ public final class OsUtils
         private String version;
 
         public String getVersion() {
+
             return version;
         }
 
@@ -63,6 +64,7 @@ public final class OsUtils
     }
 
     public static OS getOs() {
+
         return os;
     }
 }
