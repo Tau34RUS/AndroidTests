@@ -92,7 +92,7 @@ public class Methods {
 
         logger.info("Userlogin: " + Variables.userlogin);
         logger.info("Userpass:  " + Variables.userpass);
-
+        driver.hideKeyboard();
         driver.findElement(By.id("ru.averia.tracker:id/bt_register")).click();
 
         Assert.assertEquals("Добавить", driver.findElement(By.id("ru.averia.tracker:id/bt_add_pet")).getText());
@@ -115,7 +115,7 @@ public class Methods {
         WebElement password = driver.findElement(By.id("ru.averia.tracker:id/et_password"));
         password.click();
         password.sendKeys(Variables.userpass);
-
+        driver.hideKeyboard();
         driver.findElement(By.id("ru.averia.tracker:id/bt_login")).click();
 
         Assert.assertEquals("Добавить", driver.findElement(By.id("ru.averia.tracker:id/bt_add_pet")).getText());
