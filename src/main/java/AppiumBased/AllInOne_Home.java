@@ -9,11 +9,11 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-public class AllInOne {
+public class AllInOne_Home {
 
     private static Logger logger;
 
-    private final Methods App = new Methods();
+    private final Methods_Home App = new Methods_Home();
 
     @BeforeTest
     public void Before() throws Exception {
@@ -36,7 +36,7 @@ public class AllInOne {
 
         logger.info("-----");
         logger.info("Closing Application");
-        App.Quit();
+        //App.Quit();
 
     }
 
@@ -64,7 +64,7 @@ public class AllInOne {
         App.Register();
 
     }
-
+    /*
     @Test(dependsOnMethods = "AndroidTestRegister")
     public void AndroidTestLogin() throws Exception{
 
@@ -82,9 +82,9 @@ public class AllInOne {
 
         App.Login();
 
-    }
+    } */
 
-    @Test(dependsOnMethods = "AndroidTestLogin")
+    @Test(dependsOnMethods = "AndroidTestRegister")
     public void AndroidTestAddPet() {
 
         logger.info("- - -");
