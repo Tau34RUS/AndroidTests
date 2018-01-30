@@ -101,7 +101,6 @@ public class Methods {
 
     void Login() {
 
-
         Assert.assertEquals("Войти", driver.findElement(By.id("ru.averia.tracker:id/bt_login")).getText());
         driver.findElement(By.id("ru.averia.tracker:id/bt_login")).click();
 
@@ -130,7 +129,6 @@ public class Methods {
         Quit();
         SetUp();
     }
-
 
     void AddPet() {
         driver.findElement(By.id("ru.averia.tracker:id/maim_menu_action_pet")).click();
@@ -162,15 +160,6 @@ public class Methods {
 
         driver.findElement(By.id("com.asus.camera:id/button_used")).click();
 
-        //Xiomi
-
-        //HTC
-
-        //LG
-        
-        
-
-
         driver.findElement(By.id("ru.averia.tracker:id/crop_image_menu_crop")).click();
 
         driver.findElement(By.id("ru.averia.tracker:id/bt_next")).click();
@@ -178,15 +167,6 @@ public class Methods {
         Assert.assertEquals("Добавить питомца", driver.findElement(By.id("ru.averia.tracker:id/tv_title")).getText());
         driver.findElement(By.id("ru.averia.tracker:id/bt_next")).click();
 
- /*     TODO dig out text input issue, Antons shitty code?
-        WebElement breed = driver.findElement(By.id("ru.averia.tracker:id/et_breed_title"));
-        breed.click();
-        breed.sendKeys(Variables.breed);
-
-        driver.findElements(By.className("android.widget.EditText")).get(0).sendKeys(Variables.breed);
-
-        ru.averia.tracker:id/et_breed_title
- */
         //Appium Magic
 
         driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.View/android.widget.FrameLayout/android.view.View/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.view.View[1]")).click();
