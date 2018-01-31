@@ -14,6 +14,7 @@ import org.testng.Assert;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
+import java.util.EmptyStackException;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
@@ -96,11 +97,10 @@ public class Methods_Home {
         driver.findElement(By.id("ru.averia.tracker:id/bt_register")).click();
 
         //Allow android actions
-        driver.findElementById("com.android.packageinstaller:id/permission_allow_button").click();
-
+        AndroidAllowAccess();
         Assert.assertEquals("Добавить", driver.findElement(By.id("ru.averia.tracker:id/bt_add_pet")).getText());
 
-
+        logger.info("Registration done");
 
     }
 
@@ -138,9 +138,6 @@ public class Methods_Home {
 
 
     void AddPet (){
-        /*
-
-        */
 
         driver.findElement(By.id("ru.averia.tracker:id/maim_menu_action_pet")).click();
         Assert.assertEquals("Добавить питомца", driver.findElement(By.id("ru.averia.tracker:id/tv_description_large")).getText());
@@ -149,7 +146,6 @@ public class Methods_Home {
         MobileElement petname = driver.findElement(By.id("ru.averia.tracker:id/et_name"));
         petname.click();
         petname.sendKeys(Variables.petname);
-        //TODO add gender random selection
         driver.navigate().back();
         driver.findElement(By.id("ru.averia.tracker:id/bt_next")).click();
 
@@ -157,12 +153,10 @@ public class Methods_Home {
 
         AndroidAllowAccess();
 
-        Assert.assertEquals("Выбрать источник", driver.findElement(By.id("android:id/title")).getText());
-
         switch (Variables.devicename) {
 
             case (Constants.phone_wileyfox):
-                AndroidAllowAccess();
+                logger.info("Wileyfox photo sequence applied");
                 List<MobileElement> choiseslist_wf = driver.findElements(By.className("android.widget.LinearLayout"));
                 logger.info("List: " + choiseslist_wf);
                 choiseslist_wf.get(1).click();
@@ -170,15 +164,12 @@ public class Methods_Home {
                 driver.findElement(By.id("com.asus.camera:id/button_used")).click();
                 break;
             case (Constants.phone_asuszenpad):
-                AndroidAllowAccess();
-                List<MobileElement> choiseslist_zenpad = driver.findElements(By.className("android.widget.LinearLayout"));
-                logger.info("List: " + choiseslist_zenpad);
-                choiseslist_zenpad.get(1).click();
+                logger.info("Asus Zenpad photo sequence applied");
+                driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.View/android.widget.ListView/android.widget.LinearLayout[1]").click();
                 driver.findElement(By.id("com.asus.camera:id/button_capture")).click();
                 driver.findElement(By.id("com.asus.camera:id/button_used")).click();
                 break;
             case (Constants.phone_htc):
-                AndroidAllowAccess();
                 List<MobileElement> choiseslist_htc = driver.findElements(By.className("android.widget.LinearLayout"));
                 logger.info("List: " + choiseslist_htc);
                 choiseslist_htc.get(1).click();
@@ -186,7 +177,7 @@ public class Methods_Home {
                 driver.findElement(By.id("com.asus.camera:id/button_used")).click();
                 break;
             case (Constants.phone_samsung_j1):
-                AndroidAllowAccess();
+                logger.info("Samsung J1 photo sequence applied");
                 List<MobileElement> choiseslist_sj1 = driver.findElements(By.className("android.widget.LinearLayout"));
                 logger.info("List: " + choiseslist_sj1);
                 choiseslist_sj1.get(1).click();
@@ -194,7 +185,7 @@ public class Methods_Home {
                 driver.findElement(By.id("com.asus.camera:id/button_used")).click();
                 break;
             case (Constants.phone_samsung_edge):
-                AndroidAllowAccess();
+                logger.info("Samsung Edge photo sequence applied");
                 List<MobileElement> choiseslist_edge = driver.findElements(By.className("android.widget.LinearLayout"));
                 logger.info("List: " + choiseslist_edge);
                 choiseslist_edge.get(1).click();
@@ -202,6 +193,7 @@ public class Methods_Home {
                 driver.findElement(By.id("com.asus.camera:id/button_used")).click();
                 break;
             case (Constants.phone_lg):
+                logger.info("LG photo sequence applied");
                 driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ListView/android.widget.LinearLayout/android.widget.LinearLayout[2]").click();
                 Sleep(2);
                 (new TouchAction(driver)).tap(109, 203).perform();
@@ -210,7 +202,6 @@ public class Methods_Home {
                 Sleep(1);
                 break;
             case (Constants.phone_meizu_n5):
-                AndroidAllowAccess();
                 List<MobileElement> choiseslist_meizu_n5 = driver.findElements(By.className("android.widget.LinearLayout"));
                 logger.info("List: " + choiseslist_meizu_n5);
                 choiseslist_meizu_n5.get(1).click();
@@ -218,7 +209,7 @@ public class Methods_Home {
                 driver.findElement(By.id("com.asus.camera:id/button_used")).click();
                 break;
             case (Constants.phone_xiomi_x4_note):
-                AndroidAllowAccess();
+                logger.info("Xiomi X4 Note photo sequence applied");
                 List<MobileElement> choiseslist_xiomi_x4_note = driver.findElements(By.className("android.widget.LinearLayout"));
                 logger.info("List: " + choiseslist_xiomi_x4_note);
                 choiseslist_xiomi_x4_note.get(1).click();
@@ -226,14 +217,14 @@ public class Methods_Home {
                 driver.findElement(By.id("com.asus.camera:id/button_used")).click();
                 break;
             case (Constants.phone_honor_c3):
-                AndroidAllowAccess();
-                List<MobileElement> choiseslisthonor_c3 = driver.findElements(By.className("android.widget.LinearLayout"));
-                logger.info("List: " + choiseslisthonor_c3);
-                choiseslisthonor_c3.get(1).click();
-                driver.findElement(By.id("com.asus.camera:id/button_capture")).click();
-                driver.findElement(By.id("com.asus.camera:id/button_used")).click();
+                logger.info("Honor 3C photo sequence applied");
+                driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.view.ViewPager/android.widget.GridView/android.widget.LinearLayout[1]").click();
+                driver.findElementByAccessibilityId("Сфотографировать").click();
+                driver.findElementByAccessibilityId("Готово").click();
                 break;
             default:
+                logger.info("Default photo action applied");
+                Sleep(2);
                 AndroidAllowAccess();
                 List<MobileElement> choiseslist = driver.findElements(By.className("android.widget.LinearLayout"));
                 logger.info("List: " + choiseslist);
@@ -250,12 +241,14 @@ public class Methods_Home {
         Assert.assertEquals("Добавить питомца", driver.findElement(By.id("ru.averia.tracker:id/tv_title")).getText());
         driver.findElement(By.id("ru.averia.tracker:id/bt_next")).click();
 
-        //Appium Magic
-
-        driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.view.ViewGroup[4]").click();
-//        MobileElement el1 = (MobileElement) adriver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.View/android.widget.FrameLayout/android.view.View/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.view.View[1]");
-//        el1.click();
-//        adriver.navigate().back();
+        //Shitty Magic
+        (new TouchAction(driver)).tap(400, 400).perform();
+        try {
+            driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.view.ViewGroup[4]").click();
+        }
+        catch (org.openqa.selenium.NoSuchElementException e) {
+            logger.warn("No List Element 'Breed' Found!");
+        }
 
         driver.findElement(By.id("ru.averia.tracker:id/bt_next")).click();
 
@@ -288,8 +281,9 @@ public class Methods_Home {
         folder_name="screenshot";
         File f= driver.getScreenshotAs(OutputType.FILE);
         //create dir with given folder name
+        //noinspection ResultOfMethodCallIgnored
         new File(folder_name).mkdir();
-        //coppy screenshot file into screenshot folder.
+        //copy screenshot file into screenshot folder.
         FileUtils.copyFile(f, new File(folder_name + "/" + "LastFailScreenshot.png"));
     }
 
@@ -307,13 +301,24 @@ public class Methods_Home {
         try {
             driver.findElementById("com.android.packageinstaller:id/permission_allow_button").click();
         }
-        catch (org.openqa.selenium.NoSuchElementException e) {}
+        catch (org.openqa.selenium.NoSuchElementException e) {
+            logger.info("No Permissions requested");
+        }
 
     }
 
     void AddCollar() {
 
+        Assert.assertEquals("Добавьте ошейник" ,driver.findElementById("ru.averia.tracker:id/tv_add_collar_title1").getText());
+        driver.findElementById("ru.averia.tracker:id/tv_add_collar").click();
 
+        driver.findElementById("ru.averia.tracker:id/bt_search").click();
+
+        if(driver.findElements(By.id("ru.averia.tracker:id/pb_loading")).isEmpty()) {
+            throw new EmptyStackException();
+        }
+
+        driver.findElementById("ru.averia.tracker:id/iv_back").click();
 
     }
 

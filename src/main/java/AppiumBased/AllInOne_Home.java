@@ -36,7 +36,7 @@ public class AllInOne_Home {
 
         logger.info("-----");
         logger.info("Closing Application");
-        //App.Quit();
+        App.Quit();
 
     }
 
@@ -90,6 +90,15 @@ public class AllInOne_Home {
         logger.info("- - -");
         logger.info("Adding a pet");
         App.AddPet();
+
+    }
+
+    @Test(dependsOnMethods = "AndroidTestAddPet")
+    public void AndroidTestAddCollar() {
+
+        logger.info("- - -");
+        logger.info("Checking add collar function");
+        App.AddCollar();
 
     }
 
