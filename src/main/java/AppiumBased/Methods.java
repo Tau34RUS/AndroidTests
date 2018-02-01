@@ -44,41 +44,6 @@ public class Methods {
 
         capabilities.setCapability("appPackage", Constants.AppPKG);
         capabilities.setCapability("appActivity", Constants.AppAct);
-        capabilities.setCapability("--session-override",true);
-
-        /* device type */
-        /*
-        Samsung Galaxy J1
-        32011059ac215467
-
-        Asus ZenPad
-        G1NPFP1202437HN
-
-        LG K10
-        LGK430V479D6E6
-
-        Honor 3C
-        5PH6NRWGTOGQWCPR
-
-        MobileElement el1 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.view.ViewPager/android.widget.GridView/android.widget.LinearLayout[1]/android.widget.ImageView");
-el1.click();
-MobileElement el2 = (MobileElement) driver.findElementById("com.huawei.camera:id/control_component_layout");
-el2.click();
-MobileElement el3 = (MobileElement) driver.findElementByAccessibilityId("Открытие меню");
-el3.click();
-MobileElement el4 = (MobileElement) driver.findElementById("ru.averia.tracker:id/crop_image_menu_crop");
-el4.click();
-
-
-        HTC Sense
-        HQ66RBB07717
-
-        Wyleyfox Swift
-        abcce1d
-
-        Xiomi Redme Note 4X
-        420268870104
-        */
 
         /* selenium and appium driver setup */
         Variables.port = 4731;
@@ -134,7 +99,6 @@ el4.click();
 
     public void Login() {
 
-
         Assert.assertEquals("Войти", driver.findElement(By.id("ru.averia.tracker:id/bt_login")).getText());
         driver.findElement(By.id("ru.averia.tracker:id/bt_login")).click();
 
@@ -165,7 +129,7 @@ el4.click();
     }
 
 
-    public void AddPet() {
+   void AddPet() {
         driver.findElement(By.id("ru.averia.tracker:id/maim_menu_action_pet")).click();
         Assert.assertEquals("Добавить питомца", driver.findElement(By.id("ru.averia.tracker:id/tv_description_large")).getText());
         driver.findElement(By.id("ru.averia.tracker:id/bt_add_pet")).click();
@@ -190,16 +154,10 @@ el4.click();
 
         //TODO check cameras on different brands - try -> catch
 
-        switch(Variables.devicename) {
-            case "G1NPFP1202437HN": //Asus Pad
-                driver.findElement(By.id("com.asus.camera:id/button_capture")).click();
-                driver.findElement(By.id("com.asus.camera:id/button_used")).click();
-                break;
-            case "5PH6NRWGTOGQWCPR": //Honor 3C
-                driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.view.ViewPager/android.widget.GridView/android.widget.LinearLayout[1]/android.widget.ImageView").click();
-                driver.findElementById("com.huawei.camera:id/control_component_layout").click();
-                break;
-        }
+        //Asus
+        driver.findElement(By.id("com.asus.camera:id/button_capture")).click();
+
+        driver.findElement(By.id("com.asus.camera:id/button_used")).click();
 
         driver.findElement(By.id("ru.averia.tracker:id/crop_image_menu_crop")).click();
 
