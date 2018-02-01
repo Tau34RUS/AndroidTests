@@ -13,6 +13,7 @@ import org.testng.Assert;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.EmptyStackException;
 import java.util.List;
@@ -28,7 +29,7 @@ public class Methods_Home {
     protected static Logger logger;
     String folder_name;
 
-    void SetUp() throws Exception {
+    void SetUp() throws MalformedURLException {
 
         logger = Logger.getLogger("MethodsTestLogger");
 
@@ -121,17 +122,22 @@ public class Methods_Home {
         password.click();
         password.sendKeys(Variables.userpass);
         driver.hideKeyboard();
+        driver.findElementById("ru.averia.tracker:id/bt_login").click();
+
         AndroidAllowAccess();
 
-        Assert.assertEquals("Добавить", driver.findElement(By.id("ru.averia.tracker:id/bt_add_pet")).getText());
-
+        try {
+            Assert.assertEquals("Добавить", driver.findElement(By.id("ru.averia.tracker:id/bt_add_pet")).getText());
+        }catch (org.openqa.selenium.NoSuchElementException e) {
+            logger.info("No Add Pet button,is a pet already added?");
+        }
     }
 
     void Quit() {
         driver.quit();
     }
 
-    void Restart() throws Exception{
+    void Restart() throws MalformedURLException {
         Quit();
         SetUp();
     }
@@ -153,86 +159,7 @@ public class Methods_Home {
 
         AndroidAllowAccess();
 
-        switch (Variables.devicename) {
-
-            case (Constants.phone_wileyfox):
-                logger.info("Wileyfox photo sequence applied");
-                List<MobileElement> choiseslist_wf = driver.findElements(By.className("android.widget.LinearLayout"));
-                logger.info("List: " + choiseslist_wf);
-                choiseslist_wf.get(1).click();
-                driver.findElement(By.id("com.asus.camera:id/button_capture")).click();
-                driver.findElement(By.id("com.asus.camera:id/button_used")).click();
-                break;
-            case (Constants.phone_asuszenpad):
-                logger.info("Asus Zenpad photo sequence applied");
-                driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.View/android.widget.ListView/android.widget.LinearLayout[1]").click();
-                driver.findElement(By.id("com.asus.camera:id/button_capture")).click();
-                driver.findElement(By.id("com.asus.camera:id/button_used")).click();
-                break;
-            case (Constants.phone_htc):
-                List<MobileElement> choiseslist_htc = driver.findElements(By.className("android.widget.LinearLayout"));
-                logger.info("List: " + choiseslist_htc);
-                choiseslist_htc.get(1).click();
-                driver.findElement(By.id("com.asus.camera:id/button_capture")).click();
-                driver.findElement(By.id("com.asus.camera:id/button_used")).click();
-                break;
-            case (Constants.phone_samsung_j1):
-                logger.info("Samsung J1 photo sequence applied");
-                List<MobileElement> choiseslist_sj1 = driver.findElements(By.className("android.widget.LinearLayout"));
-                logger.info("List: " + choiseslist_sj1);
-                choiseslist_sj1.get(1).click();
-                driver.findElement(By.id("com.asus.camera:id/button_capture")).click();
-                driver.findElement(By.id("com.asus.camera:id/button_used")).click();
-                break;
-            case (Constants.phone_samsung_edge):
-                logger.info("Samsung Edge photo sequence applied");
-                List<MobileElement> choiseslist_edge = driver.findElements(By.className("android.widget.LinearLayout"));
-                logger.info("List: " + choiseslist_edge);
-                choiseslist_edge.get(1).click();
-                driver.findElement(By.id("com.asus.camera:id/button_capture")).click();
-                driver.findElement(By.id("com.asus.camera:id/button_used")).click();
-                break;
-            case (Constants.phone_lg):
-                logger.info("LG photo sequence applied");
-                driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ListView/android.widget.LinearLayout/android.widget.LinearLayout[2]").click();
-                Sleep(2);
-                (new TouchAction(driver)).tap(109, 203).perform();
-                Sleep(2);
-                (new TouchAction(driver)).tap(109, 203).perform();
-                Sleep(1);
-                break;
-            case (Constants.phone_meizu_n5):
-                List<MobileElement> choiseslist_meizu_n5 = driver.findElements(By.className("android.widget.LinearLayout"));
-                logger.info("List: " + choiseslist_meizu_n5);
-                choiseslist_meizu_n5.get(1).click();
-                driver.findElement(By.id("com.asus.camera:id/button_capture")).click();
-                driver.findElement(By.id("com.asus.camera:id/button_used")).click();
-                break;
-            case (Constants.phone_xiomi_x4_note):
-                logger.info("Xiomi X4 Note photo sequence applied");
-                List<MobileElement> choiseslist_xiomi_x4_note = driver.findElements(By.className("android.widget.LinearLayout"));
-                logger.info("List: " + choiseslist_xiomi_x4_note);
-                choiseslist_xiomi_x4_note.get(1).click();
-                driver.findElement(By.id("com.asus.camera:id/button_capture")).click();
-                driver.findElement(By.id("com.asus.camera:id/button_used")).click();
-                break;
-            case (Constants.phone_honor_c3):
-                logger.info("Honor 3C photo sequence applied");
-                driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.view.ViewPager/android.widget.GridView/android.widget.LinearLayout[1]").click();
-                driver.findElementByAccessibilityId("Сфотографировать").click();
-                driver.findElementByAccessibilityId("Готово").click();
-                break;
-            default:
-                logger.info("Default photo action applied");
-                Sleep(2);
-                AndroidAllowAccess();
-                List<MobileElement> choiseslist = driver.findElements(By.className("android.widget.LinearLayout"));
-                logger.info("List: " + choiseslist);
-                choiseslist.get(1).click();
-                driver.findElement(By.id("com.asus.camera:id/button_capture")).click();
-                driver.findElement(By.id("com.asus.camera:id/button_used")).click();
-                break;
-        }
+        PhonePhoto();
 
         driver.findElement(By.id("ru.averia.tracker:id/crop_image_menu_crop")).click();
 
@@ -319,6 +246,163 @@ public class Methods_Home {
         }
 
         driver.findElementById("ru.averia.tracker:id/iv_back").click();
+
+    }
+
+    void ScreensShuffle() {
+
+        driver.findElementById("ru.averia.tracker:id/maim_menu_action_map").click();
+        Sleep(2);
+        driver.findElementById("ru.averia.tracker:id/main_menu_action_profile").click();
+        Sleep(2);
+        driver.findElementById("ru.averia.tracker:id/maim_menu_action_pet").click();
+        Sleep(2);
+    }
+
+    void Map() {
+        driver.findElementById("ru.averia.tracker:id/maim_menu_action_map").click();
+        driver.findElementById("ru.averia.tracker:id/ib_pet_position").click();
+        driver.findElementById("ru.averia.tracker:id/ib_self_position").click();
+        driver.findElementById("ru.averia.tracker:id/ib_other_pets").click();
+        Sleep(30);
+        driver.findElementByXPath("//android.view.View[@content-desc=\"Карта Google\"]/android.view.View").clear();
+    }
+
+    void UserProfile() {
+
+        driver.findElementById("ru.averia.tracker:id/main_menu_action_profile").click();
+        driver.findElementById("ru.averia.tracker:id/iv_ava").clear();
+        driver.findElementById("ru.averia.tracker:id/tv_name").clear();
+        driver.findElementById("ru.averia.tracker:id/tv_info").clear();
+        driver.findElementById("ru.averia.tracker:id/bt_edit_profile").click();
+        driver.findElementById("ru.averia.tracker:id/et_last_name").sendKeys("Tester");
+        logger.info("Swipe up");
+        SwipeUp();
+
+        logger.info("Fill phone number");
+        driver.findElementById("ru.averia.tracker:id/et_phone").sendKeys("79999999999");
+
+        logger.info("Swipe down");
+        SwipeDown();
+
+        //driver.findElementById("ru.averia.tracker:id/container_avatar").click();
+
+        //PhonePhoto();
+
+        driver.findElementById("ru.averia.tracker:id/iv_save").click();
+
+    }
+
+    void SwipeUp() {
+
+        (new TouchAction(driver)).press(236,466).moveTo(4,-252).release().perform();
+
+    }
+
+    void SwipeDown() {
+
+        (new TouchAction(driver)).press(215,148).moveTo(-1,335).release().perform();
+
+    }
+
+    void Logout() {
+
+        driver.findElementById("ru.averia.tracker:id/main_menu_action_profile").click();
+        (new TouchAction(driver)).press(204, 672).waitAction(100).moveTo(22,-437).release().perform();
+        driver.findElementById("ru.averia.tracker:id/tv_logout").click();
+        driver.findElementById("ru.averia.tracker:id/about_title_dog_1").clear();
+
+    }
+
+    void DeletePet() {
+
+        driver.findElementById("ru.averia.tracker:id/tv_pet_name").click();
+        driver.findElementById("ru.averia.tracker:id/iv_check").click();
+        driver.findElementById("ru.averia.tracker:id/md_buttonDefaultPositive").click();
+
+    }
+
+    void PhonePhoto() {
+
+        switch (Variables.devicename) {
+
+            case (Constants.phone_wileyfox):
+                logger.info("Wileyfox photo sequence applied");
+                List<MobileElement> choiseslist_wf = driver.findElements(By.className("android.widget.LinearLayout"));
+                logger.info("List: " + choiseslist_wf);
+                choiseslist_wf.get(1).click();
+                driver.findElement(By.id("com.asus.camera:id/button_capture")).click();
+                driver.findElement(By.id("com.asus.camera:id/button_used")).click();
+                break;
+            case (Constants.phone_asuszenpad):
+                logger.info("Asus Zenpad photo sequence applied");
+                driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.View/android.widget.ListView/android.widget.LinearLayout[1]").click();
+                driver.findElement(By.id("com.asus.camera:id/button_capture")).click();
+                driver.findElement(By.id("com.asus.camera:id/button_used")).click();
+                break;
+            case (Constants.phone_htc):
+                List<MobileElement> choiseslist_htc = driver.findElements(By.className("android.widget.LinearLayout"));
+                logger.info("List: " + choiseslist_htc);
+                choiseslist_htc.get(1).click();
+                driver.findElement(By.id("com.asus.camera:id/button_capture")).click();
+                driver.findElement(By.id("com.asus.camera:id/button_used")).click();
+                break;
+            case (Constants.phone_samsung_j1):
+                logger.info("Samsung J1 photo sequence applied");
+                driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/com.android.internal.widget.ResolverDrawerLayout/android.widget.GridView/android.widget.LinearLayout[1]/android.widget.ImageView").click();
+                driver.findElementByAccessibilityId("MENUID_SHUTTER").click();
+                driver.findElementById("com.sec.android.app.camera:id/okay").click();
+
+                break;
+            case (Constants.phone_samsung_edge):
+                logger.info("Samsung Edge photo sequence applied");
+                driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ScrollView/android.widget.ScrollView/android.widget.LinearLayout/com.android.internal.widget.ViewPager/android.widget.LinearLayout/android.widget.GridView/android.widget.LinearLayout[1]").click();
+                Sleep(5);
+                driver.findElementByXPath("(//GLButton[@content-desc=\"NONE\"])[3]").click();
+                driver.findElementById("com.sec.android.app.camera:id/okay").click();
+
+                break;
+            case (Constants.phone_lg):
+                logger.info("LG photo sequence applied");
+                driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ListView/android.widget.LinearLayout/android.widget.LinearLayout[2]").click();
+                Sleep(2);
+                (new TouchAction(driver)).tap(109, 203).perform();
+                Sleep(2);
+                (new TouchAction(driver)).tap(109, 203).perform();
+                Sleep(1);
+                break;
+            case (Constants.phone_meizu_n5):
+                List<MobileElement> choiseslist_meizu_n5 = driver.findElements(By.className("android.widget.LinearLayout"));
+                logger.info("List: " + choiseslist_meizu_n5);
+                choiseslist_meizu_n5.get(1).click();
+                driver.findElement(By.id("com.asus.camera:id/button_capture")).click();
+                driver.findElement(By.id("com.asus.camera:id/button_used")).click();
+                break;
+            case (Constants.phone_xiomi_x4_note):
+                logger.info("Xiomi X4 Note photo sequence applied");
+                List<MobileElement> choiseslist_xiomi_x4_note = driver.findElements(By.className("android.widget.LinearLayout"));
+                logger.info("List: " + choiseslist_xiomi_x4_note);
+                choiseslist_xiomi_x4_note.get(1).click();
+                driver.findElement(By.id("com.asus.camera:id/button_capture")).click();
+                driver.findElement(By.id("com.asus.camera:id/button_used")).click();
+                break;
+            case (Constants.phone_honor_c3):
+                logger.info("Honor 3C photo sequence applied");
+                driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.view.ViewPager/android.widget.GridView/android.widget.LinearLayout[1]").click();
+                driver.findElementByAccessibilityId("Сфотографировать").click();
+                driver.findElementByAccessibilityId("Готово").click();
+                break;
+            default:
+                logger.info("Default photo action applied");
+                Sleep(2);
+                AndroidAllowAccess();
+                List<MobileElement> choiseslist = driver.findElements(By.className("android.widget.LinearLayout"));
+                logger.info("List: " + choiseslist);
+                choiseslist.get(1).click();
+                driver.findElement(By.id("com.asus.camera:id/button_capture")).click();
+                driver.findElement(By.id("com.asus.camera:id/button_used")).click();
+                break;
+        }
 
     }
 

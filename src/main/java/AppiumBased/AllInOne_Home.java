@@ -64,25 +64,7 @@ public class AllInOne_Home {
         App.Register();
 
     }
-    /*
-    @Test(dependsOnMethods = "AndroidTestRegister")
-    public void AndroidTestLogin() throws Exception{
 
-        logger.info("- - -");
-        logger.info("Restarting App");
-        App.Restart();
-        logger.info("-   -");
-        logger.info("Splash Screen");
-
-
-        App.SplashScreen();
-
-        logger.info("-   -");
-        logger.info("Logging with a user");
-
-        App.Login();
-
-    } */
 
     @Test(dependsOnMethods = "AndroidTestRegister")
     public void AndroidTestAddPet() {
@@ -97,8 +79,48 @@ public class AllInOne_Home {
     public void AndroidTestAddCollar() {
 
         logger.info("- - -");
-        logger.info("Checking add collar function");
+        logger.info("Adding the Collar");
         App.AddCollar();
+
+    }
+
+    @Test(dependsOnMethods = "AndroidTestRegister")
+    public void AndroidTestCheckScreens() {
+
+        logger.info("- - -");
+        logger.info("Checking screens");
+        App.ScreensShuffle();
+
+    }
+
+    @Test(dependsOnMethods = "AndroidTestCheckScreens")
+    public void AndroidTestMap() {
+
+        logger.info("- - -");
+        logger.info("Checking Map");
+        App.Map();
+
+    }
+
+    @Test(dependsOnMethods = "AndroidTestCheckScreens")
+    public void AndroidUserProfile() {
+
+        logger.info("- - -");
+        logger.info("Checking User Profile");
+        App.UserProfile();
+
+    }
+
+    @Test(dependsOnMethods = "AndroidTestRegister")
+    public void AndroidUserLogin() throws Exception {
+
+        logger.info("- - -");
+        logger.info("Checking User Login:");
+        logger.info("Restarting...");
+        App.Restart();
+        logger.info("Login");
+        App.SplashScreen();
+        App.Login();
 
     }
 

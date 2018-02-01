@@ -64,32 +64,63 @@ public class AllInOne {
         App.Register();
 
     }
-/*
+
+
     @Test(dependsOnMethods = "AndroidTestRegister")
-    public void AndroidTestLogin() throws Exception{
-
-        logger.info("- - -");
-        logger.info("Restarting App");
-        App.Restart();
-        logger.info("-   -");
-        logger.info("Splash Screen");
-
-
-        App.SplashScreen();
-
-        logger.info("-   -");
-        logger.info("Logging with a user");
-
-        App.Login();
-
-    }
-*/
-    @Test(dependsOnMethods = "AndroidTestLogin")
     public void AndroidTestAddPet() {
 
         logger.info("- - -");
         logger.info("Adding a pet");
         App.AddPet();
+
+    }
+
+   /* @Test(dependsOnMethods = "AndroidTestAddPet")
+    public void AndroidTestAddCollar() {
+
+        logger.info("- - -");
+        logger.info("Adding the Collar");
+        App.AddCollar();
+
+    } */
+
+    @Test(dependsOnMethods = "AndroidTestRegister")
+    public void AndroidTestCheckScreens() {
+
+        logger.info("- - -");
+        logger.info("Checking screens");
+        App.ScreensShuffle();
+
+    }
+
+    @Test(dependsOnMethods = "AndroidTestCheckScreens")
+    public void AndroidTestMap() {
+
+        logger.info("- - -");
+        logger.info("Checking Map");
+        App.Map();
+
+    }
+
+    @Test(dependsOnMethods = "AndroidTestCheckScreens")
+    public void AndroidUserProfile() {
+
+        logger.info("- - -");
+        logger.info("Checking User Profile");
+        App.UserProfile();
+
+    }
+
+    @Test(dependsOnMethods = "AndroidTestRegister")
+    public void AndroidUserLogin() throws Exception {
+
+        logger.info("- - -");
+        logger.info("Checking User Login:");
+        logger.info("Restarting...");
+        App.Restart();
+        logger.info("Login");
+        App.SplashScreen();
+        App.Login();
 
     }
 
