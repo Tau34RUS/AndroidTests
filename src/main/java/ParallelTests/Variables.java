@@ -1,14 +1,14 @@
-package AppiumBased;
+package ParallelTests;
 
 import org.openqa.selenium.Dimension;
 
 @SuppressWarnings({"WeakerAccess", "CanBeFinal"})
-public class Variables {
+class Variables {
     //TODO add random values
     @SuppressWarnings("RedundantStringConstructorCall")
     static String userlogin = new String();
-    static String userpass;
-    static String petname;
+    static String userpass = "12345678";
+    static String petname="Alessia";
     static String breed;
     static String petweight;
     static String petheight;
@@ -20,8 +20,6 @@ public class Variables {
     static Integer port;
 
     static {
-        userpass = "12345678";
-        petname="Alessia";
         petweight="50";
         petheight="43";
         birthmonth="5";

@@ -1,9 +1,8 @@
-package AppiumBased;
+package ParallelTests;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
@@ -11,88 +10,52 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
 
+import org.apache.log4j.Logger;
+
+import java.awt.*;
 import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
-
-@SuppressWarnings("WeakerAccess")
-public class Methods {
 
 
+public class ParallelTestExecution implements Runnable {
 
-    AppiumDriver<WebElement> driver;
-    protected static Logger logger;
+
+    String port;
+    String udid;
     String folder_name;
 
-    void SetUp() throws Exception {
+    Logger logger;
 
-        logger = Logger.getLogger("MethodsTestLogger");
-
-        /* appium setup */
-        DesiredCapabilities capabilities = new DesiredCapabilities();
-
-        capabilities.setCapability("deviceName", "Android");
+    public ParallelTestExecution(String portNumber, String udid, String userlogin, String userpass) {
+        this.port = portNumber;
+        this.udid = udid;
+    }
+    AppiumDriver<WebElement> driver;
+    DesiredCapabilities capabilities = new DesiredCapabilities();
+    private void ParallelSetup() {
+        capabilities.setCapability("deviceName", "My Mobile Device");
+        capabilities.setCapability("udid", udid);
+        capabilities.setCapability("app", "D:\\APK\\ru.averia.tracker.apk");
         capabilities.setCapability("platformName", "Android");
+        capabilities.setCapability("appPackage", "ru.averia.tracker");
+        capabilities.setCapability("appActivity", "ru.averia.tracker.ui.activities.SplashActivity");
 
-        if (OsUtils.OS.MAC.equals(OsUtils.getOs())){capabilities.setCapability("app", Constants.appath_mac);}
-        else {capabilities.setCapability("app", Constants.appath_win);}
-
-        logger.info("Is Mac? " + OsUtils.OS.MAC.equals(OsUtils.getOs()));
-
-        capabilities.setCapability("appPackage", Constants.AppPKG);
-        capabilities.setCapability("appActivity", Constants.AppAct);
-        capabilities.setCapability("--session-override",true);
-
-        /* device type */
-        /*
-        Samsung Galaxy J1
-        32011059ac215467
-
-        Asus ZenPad
-        G1NPFP1202437HN
-
-        LG K10
-        LGK430V479D6E6
-
-        Honor 3C
-        5PH6NRWGTOGQWCPR
-
-        MobileElement el1 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.view.ViewPager/android.widget.GridView/android.widget.LinearLayout[1]/android.widget.ImageView");
-el1.click();
-MobileElement el2 = (MobileElement) driver.findElementById("com.huawei.camera:id/control_component_layout");
-el2.click();
-MobileElement el3 = (MobileElement) driver.findElementByAccessibilityId("Открытие меню");
-el3.click();
-MobileElement el4 = (MobileElement) driver.findElementById("ru.averia.tracker:id/crop_image_menu_crop");
-el4.click();
-
-
-        HTC Sense
-        HQ66RBB07717
-
-        Wyleyfox Swift
-        abcce1d
-
-        Xiomi Redme Note 4X
-        420268870104
-        */
-
-        /* selenium and appium driver setup */
-        Variables.port = 4731;
-        //noinspection Convert2Diamond
-        driver = new AndroidDriver<WebElement>(new URL("http://127.0.0.1:"+Variables.port+"/wd/hub"), capabilities);
-        driver.manage().timeouts().implicitlyWait(Constants.Timeout, TimeUnit.SECONDS);
-        Variables.screensize = driver.manage().window().getSize();
-        Variables.devicename = driver.getCapabilities().getCapability("deviceName").toString();
-        logger.info("Screen size: " + Variables.screensize);
-        logger.info("Device name: " + Variables.devicename);
+        try {
+            driver = new AndroidDriver<WebElement>(new URL("http://0.0.0.0:" + port + "/wd/hub"), capabilities);
+            Thread.sleep(10000);
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
     }
 
-    public void SplashScreen() {
+    void SplashScreen() {
         Assert.assertEquals("Больше никаких потерянных животных", driver.findElement(By.id("ru.averia.tracker:id/about_title_dog_1")).getText());
         driver.findElement(By.id("ru.averia.tracker:id/bt_next")).click();
         Assert.assertEquals("Мониторинг активности вашего питомца", driver.findElement(By.id("ru.averia.tracker:id/about_title_dog_2")).getText());
@@ -100,14 +63,14 @@ el4.click();
         Assert.assertEquals("Социальная сеть для владельцев собак", driver.findElement(By.id("ru.averia.tracker:id/about_title_dog_3")).getText());
     }
 
-    public void Register() {
+    void Register() {
 
         Random login = new Random();
 
         String alphabet = "1234567890";
-        Variables.userlogin = "";
-        for (int i = 0; i < 16; i++) Variables.userlogin += login.nextInt(alphabet.length());
-        Variables.userlogin = Variables.userlogin + "@test.user";
+        String userlogin = "";
+        for (int i = 0; i < 16; i++) userlogin += login.nextInt(alphabet.length());
+        userlogin = userlogin + "@test.user";
 
         Assert.assertEquals("Регистрация", driver.findElement(By.id("ru.averia.tracker:id/bt_register")).getText());
 
@@ -117,18 +80,21 @@ el4.click();
 
         WebElement username = driver.findElement(By.id("ru.averia.tracker:id/et_email"));
         username.click();
-        username.sendKeys(Variables.userlogin);
+        username.sendKeys(userlogin);
 
         WebElement password = driver.findElement(By.id("ru.averia.tracker:id/et_password"));
         password.click();
         password.sendKeys(Variables.userpass);
 
-        logger.info("Userlogin: " + Variables.userlogin);
-        logger.info("Userpass:  " + Variables.userpass);
+        //logger.info("Userlogin: " + userlogin);
+        //logger.info("Userpass:  " + Variables.userpass);
         driver.hideKeyboard();
         driver.findElement(By.id("ru.averia.tracker:id/bt_register")).click();
-
-        Assert.assertEquals("Добавить", driver.findElement(By.id("ru.averia.tracker:id/bt_add_pet")).getText());
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
     }
 
@@ -156,14 +122,9 @@ el4.click();
     }
 
     public void Quit() {
+
         driver.quit();
     }
-
-    public void Restart() throws Exception{
-        Quit();
-        SetUp();
-    }
-
 
     public void AddPet() {
         driver.findElement(By.id("ru.averia.tracker:id/maim_menu_action_pet")).click();
@@ -173,7 +134,7 @@ el4.click();
         WebElement petname = driver.findElement(By.id("ru.averia.tracker:id/et_name"));
         petname.click();
         petname.sendKeys(Variables.petname);
-        //TODO add gender random selection
+
         driver.navigate().back();
         driver.findElement(By.id("ru.averia.tracker:id/bt_next")).click();
 
@@ -244,7 +205,6 @@ el4.click();
         Assert.assertEquals(Variables.petname, driver.findElement(By.id("ru.averia.tracker:id/tv_pet_name")).getText());
     }
 
-    //TODO Port to appium, selenium does not support good swipe
     public void HorizontalScrollL2R () {
         Dimension ScreenSize = driver.manage().window().getSize();
         //Find swipe start and end point from screen's with and height
@@ -263,4 +223,24 @@ el4.click();
         FileUtils.copyFile(f, new File(folder_name + "/" + "LastFailScreenshot.png"));
     }
 
+    public static void main(String args[]) {
+        Runnable r1 = new ParallelTestExecution("4731", "5PH6NRWGTOGQWCPR","1","123456");
+        Runnable r2 = new ParallelTestExecution("4732", "LGK430V479D6E6","1","123456");
+        Runnable r3 = new ParallelTestExecution("4733", "abcce1d","1","123456");
+        Runnable r4 = new ParallelTestExecution("4734", "32011059ac215467","1","123456");
+        new Thread(r1).start();
+        new Thread(r2).start();
+        new Thread(r3).start();
+        new Thread(r4).start();
+    }
+
+    @Override
+    public void run() {
+        while (1==1) {
+            ParallelSetup();
+            SplashScreen();
+            Register();
+            Quit();
+        }
+    }
 }

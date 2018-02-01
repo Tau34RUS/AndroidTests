@@ -64,7 +64,7 @@ public class AllInOne {
         App.Register();
 
     }
-
+/*
     @Test(dependsOnMethods = "AndroidTestRegister")
     public void AndroidTestLogin() throws Exception{
 
@@ -83,13 +83,13 @@ public class AllInOne {
         App.Login();
 
     }
-
+*/
     @Test(dependsOnMethods = "AndroidTestLogin")
     public void AndroidTestAddPet() {
 
         logger.info("- - -");
         logger.info("Adding a pet");
-       // App.AddPet();
+        App.AddPet();
 
     }
 
