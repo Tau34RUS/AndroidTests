@@ -1,4 +1,4 @@
-package AppiumBased;
+package AlphaTests;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
@@ -29,47 +29,38 @@ public class Methods {
     protected static Logger logger;
     String folder_name;
 
-
-    void SetUp(String port, String device) throws MalformedURLException {
+    void SetUp() throws MalformedURLException {
 
         logger = Logger.getLogger("MethodsTestLogger");
         /* appium setup */
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("deviceName", device);
         capabilities.setCapability("platformName", "Android");
+        capabilities.setCapability("deviceName", "Android");
+        logger.info("Is Mac? " + OsUtils.OS.MAC.equals(OsUtils.getOs()));
 
         if (OsUtils.OS.MAC.equals(OsUtils.getOs())){capabilities.setCapability("app", Constants.appath_mac);}
         else {capabilities.setCapability("app", Constants.appath_win);}
-
-
 
         capabilities.setCapability("appPackage", Constants.AppPKG);
         capabilities.setCapability("appActivity", Constants.AppAct);
 
         /* selenium and appium driver setup */
-
         //noinspection Convert2Diamond
-        //driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:"+Constants.server_port+"/wd/hub"), capabilities);
-        driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:"+port+"/wd/hub"), capabilities);
+        driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:"+Constants.port+"/wd/hub"), capabilities);
         driver.manage().timeouts().implicitlyWait(Constants.Timeout, TimeUnit.SECONDS);
-
-        logger.info("Session: "+driver.getSessionId()+"> "+"Is Mac? " + OsUtils.OS.MAC.equals(OsUtils.getOs()));
-        logger.info("Session: "+driver.getSessionId()+"> "+"- = - = - = - = -");
-        logger.info("Session: "+driver.getSessionId()+"> "+"GotDevice: "+device);
-        logger.info("Session: "+driver.getSessionId()+"> "+"GotPort: "+port);
 
         Variables.screensize = driver.manage().window().getSize();
         Variables.devicename = driver.getCapabilities().getCapability("deviceName").toString();
-        logger.info("Session: "+driver.getSessionId()+"> "+"Screen size: " + Variables.screensize);
-        logger.info("Session: "+driver.getSessionId()+"> "+"Device name: " + Variables.devicename);
+        logger.info("Screen size: " + Variables.screensize);
+        logger.info("Device name: " + Variables.devicename);
 
     }
 
- /*   public void Restart() throws MalformedURLException {
+    public void Restart() throws MalformedURLException {
         Quit();
         SetUp();
     }
-*/
+
     public void SplashScreen() {
 
         Assert.assertEquals("Больше никаких потерянных животных", driver.findElement(By.id("ru.averia.tracker:id/about_title_dog_1")).getText());
@@ -101,8 +92,8 @@ public class Methods {
         MobileElement password = driver.findElement(By.id("ru.averia.tracker:id/et_password"));
         password.sendKeys(Variables.userpass);
 
-        logger.info("Session: "+driver.getSessionId()+"> "+"Userlogin: " + Variables.userlogin);
-        logger.info("Session: "+driver.getSessionId()+"> "+"Userpass:  " + Variables.userpass);
+        logger.info("Userlogin: " + Variables.userlogin);
+        logger.info("Userpass:  " + Variables.userpass);
 
         HideKeyboard();
         //driver.navigate().back();
@@ -112,7 +103,7 @@ public class Methods {
         AndroidAllowAccess();
         Assert.assertEquals("Добавить", driver.findElement(By.id("ru.averia.tracker:id/bt_add_pet")).getText());
 
-        logger.info("Session: "+driver.getSessionId()+"> "+"Registration done");
+        logger.info("Registration done");
 
     }
 
@@ -168,7 +159,7 @@ public class Methods {
         try {
             Assert.assertEquals("Добавить", driver.findElement(By.id("ru.averia.tracker:id/bt_add_pet")).getText());
         }catch (org.openqa.selenium.NoSuchElementException e) {
-            logger.info("Session: "+driver.getSessionId()+"> "+"No Add Pet button,is a pet already added?");
+            logger.info("No Add Pet button,is a pet already added?");
         }
     }
 
@@ -262,7 +253,7 @@ public class Methods {
             driver.findElementById("com.android.packageinstaller:id/permission_allow_button").click();
         }
         catch (org.openqa.selenium.NoSuchElementException e) {
-            logger.info("Session: "+driver.getSessionId()+"> "+"No Permissions requested");
+            logger.info("No Permissions requested");
         }
 
     }
@@ -311,10 +302,10 @@ public class Methods {
 
             driver.findElementById("ru.averia.tracker:id/bt_edit_profile").click();
             driver.findElementById("ru.averia.tracker:id/et_last_name").sendKeys("Tester");
-            logger.info("Session: "+driver.getSessionId()+"> "+"Swipe up");
+            logger.info("Swipe up");
             SwipeUp();
 
-            logger.info("Session: "+driver.getSessionId()+"> "+"Fill phone number");
+            logger.info("Fill phone number");
             Random login = new Random();
 
             String alphabet = "1234567890";
@@ -322,7 +313,7 @@ public class Methods {
             for (int i = 0; i < 10; i++) Variables.phonenumber += login.nextInt(alphabet.length());
             driver.findElementById("ru.averia.tracker:id/et_phone").sendKeys(Variables.phonenumber);
 
-            logger.info("Session: "+driver.getSessionId()+"> "+"Swipe down");
+            logger.info("Swipe down");
             SwipeDown();
 
             driver.findElementById("ru.averia.tracker:id/container_avatar").click();
@@ -333,7 +324,7 @@ public class Methods {
             Sleep(5);
             driver.findElementById("ru.averia.tracker:id/iv_save").click();
             Sleep(5);
-            logger.info("Session: "+driver.getSessionId()+"> "+"Sasving user prifile changes");
+            logger.info("Sasving user prifile changes");
             driver.findElementById("ru.averia.tracker:id/iv_save").click();
             break;
         }
@@ -380,27 +371,27 @@ public class Methods {
         AndroidAllowAccess();
         switch (Variables.devicename) {
             case (Constants.phone_asuszenpad):
-                logger.info("Session: "+driver.getSessionId()+"> "+"Asus Zenpad photo sequence applied");
+                logger.info("Asus Zenpad photo sequence applied");
                 driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.View/android.widget.ListView/android.widget.LinearLayout[1]").click();
                 driver.findElement(By.id("com.asus.camera:id/button_capture")).click();
                 driver.findElement(By.id("com.asus.camera:id/button_used")).click();
                 break;
             case (Constants.phone_htc):
                 List<MobileElement> choiseslist_htc = driver.findElements(By.className("android.widget.LinearLayout"));
-                logger.info("Session: "+driver.getSessionId()+"> "+"List: " + choiseslist_htc);
+                logger.info("List: " + choiseslist_htc);
                 choiseslist_htc.get(1).click();
                 driver.findElement(By.id("com.asus.camera:id/button_capture")).click();
                 driver.findElement(By.id("com.asus.camera:id/button_used")).click();
                 break;
             case (Constants.phone_samsung_j1):
-                logger.info("Session: "+driver.getSessionId()+"> "+"Samsung J1 photo sequence applied");
+                logger.info("Samsung J1 photo sequence applied");
                 driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/com.android.internal.widget.ResolverDrawerLayout/android.widget.GridView/android.widget.LinearLayout[1]/android.widget.ImageView").click();
                 driver.findElementByAccessibilityId("MENUID_SHUTTER").click();
                 driver.findElementById("com.sec.android.app.camera:id/okay").click();
 
                 break;
             case (Constants.phone_samsung_edge):
-                logger.info("Session: "+driver.getSessionId()+"> "+"Samsung Edge photo sequence applied");
+                logger.info("Samsung Edge photo sequence applied");
                 driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ScrollView/android.widget.ScrollView/android.widget.LinearLayout/com.android.internal.widget.ViewPager/android.widget.LinearLayout/android.widget.GridView/android.widget.LinearLayout[1]").click();
                 Sleep(5);
                 driver.findElementByXPath("(//GLButton[@content-desc=\"NONE\"])[3]").click();
@@ -408,7 +399,7 @@ public class Methods {
 
                 break;
             case (Constants.phone_lg):
-                logger.info("Session: "+driver.getSessionId()+"> "+"LG photo sequence applied");
+                logger.info("LG photo sequence applied");
                 driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ListView/android.widget.LinearLayout/android.widget.LinearLayout[2]").click();
                 Sleep(2);
                 (new TouchAction(driver)).tap(109, 203).perform();
@@ -418,38 +409,38 @@ public class Methods {
                 break;
             case (Constants.phone_meizu_n5):
                 List<MobileElement> choiseslist_meizu_n5 = driver.findElements(By.className("android.widget.LinearLayout"));
-                logger.info("Session: "+driver.getSessionId()+"> "+"List: " + choiseslist_meizu_n5);
+                logger.info("List: " + choiseslist_meizu_n5);
                 choiseslist_meizu_n5.get(1).click();
                 driver.findElement(By.id("com.asus.camera:id/button_capture")).click();
                 driver.findElement(By.id("com.asus.camera:id/button_used")).click();
                 break;
             case (Constants.phone_xiomi_x4_note):
-                logger.info("Session: "+driver.getSessionId()+"> "+"Xiomi X4 Note photo sequence applied");
+                logger.info("Xiomi X4 Note photo sequence applied");
                 List<MobileElement> choiseslist_xiomi_x4_note = driver.findElements(By.className("android.widget.LinearLayout"));
-                logger.info("Session: "+driver.getSessionId()+"> "+"List: " + choiseslist_xiomi_x4_note);
+                logger.info("List: " + choiseslist_xiomi_x4_note);
                 choiseslist_xiomi_x4_note.get(1).click();
                 driver.findElement(By.id("com.asus.camera:id/button_capture")).click();
                 driver.findElement(By.id("com.asus.camera:id/button_used")).click();
                 break;
             case (Constants.phone_honor_c3):
-                logger.info("Session: "+driver.getSessionId()+"> "+"Honor 3C photo sequence applied");
+                logger.info("Honor 3C photo sequence applied");
                 driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.view.ViewPager/android.widget.GridView/android.widget.LinearLayout[1]").click();
                 driver.findElementByAccessibilityId("Сфотографировать").click();
                 driver.findElementByAccessibilityId("Готово").click();
                 break;
             case (Constants.phone_nexus_5):
-                logger.info("Session: "+driver.getSessionId()+"> "+"Nexus 5 photo sequence applied");
+                logger.info("Nexus 5 photo sequence applied");
                 AndroidAllowAccess();
                 driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ScrollView/android.widget.ListView/android.widget.LinearLayout[1]/android.widget.LinearLayout").click();
                 driver.findElementByAccessibilityId("Затвор").click();
                 driver.findElementByAccessibilityId("Готово").click();
                 break;
             default:
-                logger.info("Session: "+driver.getSessionId()+"> "+"Default photo action applied");
+                logger.info("Default photo action applied");
                 Sleep(2);
                 AndroidAllowAccess();
                 List<MobileElement> choiseslist = driver.findElements(By.className("android.widget.LinearLayout"));
-                logger.info("Session: "+driver.getSessionId()+"> "+"List: " + choiseslist);
+                logger.info("List: " + choiseslist);
                 choiseslist.get(1).click();
                 driver.findElement(By.id("com.asus.camera:id/button_capture")).click();
                 driver.findElement(By.id("com.asus.camera:id/button_used")).click();

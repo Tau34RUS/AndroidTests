@@ -1,4 +1,4 @@
-package ParallelTests;
+package JavaParallelTests;
 
 import java.io.File;
 

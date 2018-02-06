@@ -1,9 +1,9 @@
-package ParallelTests;
+package JavaParallelTests;
 
 import org.openqa.selenium.Dimension;
 
 @SuppressWarnings({"WeakerAccess", "CanBeFinal"})
-class Variables {
+public class Variables {
     //TODO add random values
     @SuppressWarnings("RedundantStringConstructorCall")
     static String userlogin = new String();

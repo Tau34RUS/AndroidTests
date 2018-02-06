@@ -1,4 +1,4 @@
-package AppiumBased;
+package AlphaTests;
 
 import java.io.File;
 
