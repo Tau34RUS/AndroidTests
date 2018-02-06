@@ -33,6 +33,7 @@ public class Methods {
 
         logger = Logger.getLogger("MethodsTestLogger");
         /* appium setup */
+        logger.info("Starting Alpha Test Program");
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability("deviceName", "Android");
