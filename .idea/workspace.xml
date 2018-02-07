@@ -1,35 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1281d1c0-0985-4127-85c8-4c8ed24b88a6" name="Default" comment="More devices">
-      <change beforePath="" afterPath="$PROJECT_DIR$/TestNGParallel.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/AlphaTests/AllInOne.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/AlphaTests/Constants.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/AlphaTests/Methods.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/AlphaTests/OsUtils.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/JavaParallelTests/ParallelTestExecution.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/NGParallelTests/Constants.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/NGParallelTests/ParallelTestExecution.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/NGParallelTests/Variables.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Vlad.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/Vlad.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+    <list default="true" id="1281d1c0-0985-4127-85c8-4c8ed24b88a6" name="Default" comment="UI fund button issues FIX">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/TestNG.xml" afterPath="$PROJECT_DIR$/TestNG.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AppiumBased/AllInOne.java" afterPath="$PROJECT_DIR$/src/main/java/AppiumBased/AllInOne.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AppiumBased/Constants.java" afterPath="$PROJECT_DIR$/src/main/java/AppiumBased/Constants.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AppiumBased/Methods.java" afterPath="$PROJECT_DIR$/src/main/java/AppiumBased/Methods.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AppiumBased/Variables.java" afterPath="$PROJECT_DIR$/src/main/java/AppiumBased/Variables.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DevelopingTests/CommandLine.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DevelopingTests/Constants.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DevelopingTests/Methods.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DevelopingTests/MethodsTest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DevelopingTests/ScreenshotOnPassFail.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DevelopingTests/ScreenshotUtility.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DevelopingTests/Test.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DevelopingTests/Variables.java" afterPath="$PROJECT_DIR$/src/main/java/AlphaTests/Variables.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ParallelTests/Constants.java" afterPath="$PROJECT_DIR$/src/main/java/JavaParallelTests/Constants.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ParallelTests/ParallelTestExecution.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ParallelTests/Variables.java" afterPath="$PROJECT_DIR$/src/main/java/JavaParallelTests/Variables.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,71 +18,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AllInOne.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/AppiumBased/AllInOne.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestNGParallel.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestNGParallel.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="67" lean-forward="false" selection-start-line="4" selection-start-column="67" selection-end-line="4" selection-end-column="67" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestNG.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/TestNG.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/AlphaTests/Constants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LastFailScreenshot.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/screenshot/LastFailScreenshot.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OsUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/AlphaTests/OsUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-102">
-              <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+            <state relative-caret-position="780">
+              <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestNG.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestNG.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Methods.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/AppiumBased/Methods.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1005">
+              <caret line="67" column="25" lean-forward="false" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#726#759#0" expanded="true" />
+                <element signature="e#7144#7145#0" expanded="true" />
+                <element signature="e#7173#7174#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -117,49 +56,73 @@
       <file leaf-file-name="Methods.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/AlphaTests/Methods.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="37" column="60" lean-forward="true" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#Restart#0;class#Methods#0" expanded="false" />
-                <element signature="method#SplashScreen#0;class#Methods#0" expanded="false" />
-                <element signature="method#Register#0;class#Methods#0" expanded="false" />
-                <element signature="method#HideKeyboard#0;class#Methods#0" expanded="false" />
-                <element signature="e#6478#6479#0" expanded="true" />
-                <element signature="e#6507#6508#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="300">
+              <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AllInOne.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AllInOne.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/AlphaTests/AllInOne.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#Before#0;class#AllInOne#0" expanded="false" />
-                <element signature="method#After#0;class#AllInOne#0" expanded="false" />
-                <element signature="method#AfterMethod#0;class#AllInOne#0" expanded="false" />
-                <element signature="method#AndroidTestRegister#0;class#AllInOne#0" expanded="false" />
-                <element signature="method#AndroidTestAddPet#0;class#AllInOne#0" expanded="false" />
-                <element signature="method#AndroidTestAddCollar#0;class#AllInOne#0" expanded="false" />
-                <element signature="method#AndroidTestCheckScreens#0;class#AllInOne#0" expanded="false" />
-                <element signature="method#AndroidTestMap#0;class#AllInOne#0" expanded="false" />
-                <element signature="method#AndroidUserProfile#0;class#AllInOne#0" expanded="false" />
-                <element signature="method#AndroidUserLogin#0;class#AllInOne#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="150">
+              <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/AppiumBased/Constants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="92" lean-forward="false" selection-start-line="12" selection-start-column="92" selection-end-line="12" selection-end-column="92" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OsUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/AppiumBased/OsUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="945">
+              <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Variables.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/AlphaTests/Variables.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/AppiumBased/Variables.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="360">
+              <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log4j.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/log4j.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AllInOne.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/AppiumBased/AllInOne.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="15" column="42" lean-forward="false" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1517939171832" expanded="true" signature="3008:3085" ph="{...}" />
+                <marker date="1517939171832" expanded="true" signature="3075:3085" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -177,16 +140,9 @@
     <findStrings>
       <find>driver</find>
       <find>logo</find>
-      <find>permission_allow_button</find>
-      <find>moveTo</find>
-      <find>logger.warn</find>
-      <find>logger.info(&quot;Session: &quot;+driver.getSessionId()+</find>
-      <find>5PH6NRWGTOGQWCPR</find>
     </findStrings>
     <replaceStrings>
       <replace>Methods.driver</replace>
-      <replace>//logger.warn</replace>
-      <replace>logger.info(&quot;Session: &quot;+driver.getSessionId()+&quot;&gt; &quot;+</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -226,24 +182,12 @@
         <option value="$PROJECT_DIR$/jenkins.css" />
         <option value="$PROJECT_DIR$/src/test/java/Exploring/Share.java" />
         <option value="$PROJECT_DIR$/src/main/java/AppiumBased/OsUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/AppiumBased/Methods_Home.java" />
-        <option value="$PROJECT_DIR$/src/main/java/AppiumBased/AllInOne_Home.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ParallelTests/Methods.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ParallelTests/Variables.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ParallelTestExecution.java" />
         <option value="$PROJECT_DIR$/src/main/java/AppiumBased/Variables.java" />
-        <option value="$PROJECT_DIR$/src/main/TestNGParallel" />
-        <option value="$PROJECT_DIR$/src/main/java/ParallelTests/ParallelTestExecution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/NGParallelTests/Constants.java" />
-        <option value="$PROJECT_DIR$/src/main/java/NGParallelTests/Variables.java" />
-        <option value="$PROJECT_DIR$/src/main/java/AppiumBased/Constants.java" />
-        <option value="$PROJECT_DIR$/src/main/java/NGParallelTests/ParallelTestExecution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/AppiumBased/AllInOne.java" />
         <option value="$PROJECT_DIR$/src/main/java/AppiumBased/Methods.java" />
-        <option value="$PROJECT_DIR$/TestNG.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/AlphaTests/Variables.java" />
-        <option value="$PROJECT_DIR$/src/main/java/AlphaTests/AllInOne.java" />
-        <option value="$PROJECT_DIR$/TestNGParallel.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/AppiumBased/AllInOne_Home.java" />
+        <option value="$PROJECT_DIR$/src/main/java/AppiumBased/AllInOne.java" />
+        <option value="$PROJECT_DIR$/src/main/java/AppiumBased/Methods_Home.java" />
+        <option value="$PROJECT_DIR$/src/main/java/AppiumBased/Constants.java" />
         <option value="$PROJECT_DIR$/src/main/java/AlphaTests/Methods.java" />
       </list>
     </option>
@@ -255,11 +199,10 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2918" />
-    <option name="y" value="18" />
-    <option name="width" value="1294" />
-    <option name="height" value="1047" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="797" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -267,12 +210,6 @@
         <expanded-state>
           <State>
             <id />
-          </State>
-          <State>
-            <id>Control flow issuesJava</id>
-          </State>
-          <State>
-            <id>Declaration redundancyJava</id>
           </State>
           <State>
             <id>Java</id>
@@ -283,7 +220,7 @@
         </expanded-state>
         <selected-state>
           <State>
-            <id>InfiniteLoopStatement</id>
+            <id>StringEqualsEmptyString</id>
           </State>
         </selected-state>
       </profile-state>
@@ -291,7 +228,7 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="false" id="Update" />
-    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -309,7 +246,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -317,6 +253,11 @@
             <path>
               <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
               <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
@@ -348,6 +289,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -355,24 +297,159 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.34367815" />
     <property name="settings.editor.selected.configurable" value="preferences.externalResources" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Vlad\IdeaProjects\AndroidTests" />
-      <recent name="D:\AndroidTests" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="NGParallelTests" />
-      <recent name="" />
-      <recent name="ParallelTests" />
-      <recent name="Autotests" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Vlad\IdeaProjects\AndroidTests\src\main\java\AlphaTests" />
-      <recent name="C:\Users\Vlad\IdeaProjects\AndroidTests\src\main\java" />
       <recent name="D:\AndroidTests\src\main\resources" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="AppiumBased" />
+      <recent name="Autotests" />
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\AndroidTests" />
+    </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/dictionaries/Vlad.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/TestNG.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/AppiumBased/AllInOne.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/AppiumBased/Constants.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/AppiumBased/Methods.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/AppiumBased/Variables.java</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/TestNGParallel.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/AlphaTests/AllInOne.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/AlphaTests/Constants.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/AlphaTests/Methods.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/AlphaTests/OsUtils.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/AlphaTests/Variables.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/JavaParallelTests/Constants.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/JavaParallelTests/ParallelTestExecution.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/JavaParallelTests/Variables.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/NGParallelTests/Constants.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/NGParallelTests/ParallelTestExecution.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/NGParallelTests/Variables.java</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/DevelopingTests/CommandLine.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/DevelopingTests/Constants.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/DevelopingTests/Methods.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/DevelopingTests/MethodsTest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/DevelopingTests/ScreenshotOnPassFail.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/DevelopingTests/ScreenshotUtility.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/DevelopingTests/Test.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/DevelopingTests/Variables.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/ParallelTests/Constants.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/ParallelTests/ParallelTestExecution.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/ParallelTests/Variables.java</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -386,32 +463,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.AllInOne">
+  <component name="RunManager" selected="TestNG.AllInOneAlpha">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
-    </configuration>
-    <configuration name="ParallelTestExecution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="JavaParallelTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="JavaParallelTests.ParallelTestExecution" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="AndroidTests" />
-      <envs />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -457,6 +515,38 @@
     <configuration name="AllInOne" type="TestNG" factoryName="TestNG" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
+          <option name="PATTERN" value="AppiumBased.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="AndroidTests" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="AppiumBased" />
+      <option name="MAIN_CLASS_NAME" value="AppiumBased.AllInOne" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="AllInOneAlpha" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
           <option name="PATTERN" value="AlphaTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
@@ -486,21 +576,26 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="TestNGParallel" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    <configuration name="AllInOne_Home" type="TestNG" factoryName="TestNG" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="AppiumBased.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <module name="AndroidTests" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/TestNGParallel.xml" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="AppiumBased" />
+      <option name="MAIN_CLASS_NAME" value="AppiumBased.AllInOne_Home" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
       <option name="ANNOTATION_TYPE" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
@@ -508,7 +603,7 @@
         <value defaultName="singleModule" />
       </option>
       <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" value="" />
+      <option name="PROPERTIES_FILE" />
       <envs />
       <properties />
       <listeners />
@@ -540,22 +635,14 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
+    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="TestNG.TestNGParallel" />
-      <item index="1" class="java.lang.String" itemvalue="Application.ParallelTestExecution" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.AllInOne" />
+      <item index="0" class="java.lang.String" itemvalue="TestNG.AllInOne" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.AllInOne_Home" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.AllInOneAlpha" />
     </list>
-    <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.ParallelTestExecution" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -641,89 +728,93 @@
       <option name="project" value="LOCAL" />
       <updated>1516622840788</updated>
     </task>
-    <task id="LOCAL-00011" summary="App Path change">
-      <created>1517300714302</created>
+    <task id="LOCAL-00011" summary="UI fund button issues FIX">
+      <created>1516623859164</created>
       <option name="number" value="00011" />
       <option name="presentableId" value="LOCAL-00011" />
       <option name="project" value="LOCAL" />
-      <updated>1517300714302</updated>
+      <updated>1516623859164</updated>
     </task>
-    <task id="LOCAL-00012" summary="Better code view">
-      <created>1517300798773</created>
+    <task id="LOCAL-00012" summary="Various android devices addon">
+      <created>1517301036035</created>
       <option name="number" value="00012" />
       <option name="presentableId" value="LOCAL-00012" />
       <option name="project" value="LOCAL" />
-      <updated>1517300798773</updated>
+      <updated>1517301036035</updated>
     </task>
-    <task id="LOCAL-00013" summary="More devices + more tests">
-      <created>1517497165237</created>
+    <task id="LOCAL-00013" summary="UI fund button issues FIX">
+      <created>1517556344297</created>
       <option name="number" value="00013" />
       <option name="presentableId" value="LOCAL-00013" />
       <option name="project" value="LOCAL" />
-      <updated>1517497165237</updated>
+      <updated>1517556344297</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="UI fund button issues FIX">
+      <created>1517940325143</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1517940325143</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AllInOne - 2018.02.06 at 18h 09m 21s.xml">
-      <configuration name="AllInOne" configurationId="TestNG" />
+    <history-entry file="AllInOneAlpha - 2018.02.06 at 20h 49m 14s.xml">
+      <configuration name="AllInOneAlpha" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AllInOne - 2018.02.06 at 18h 16m 01s.xml">
-      <configuration name="AllInOne" configurationId="TestNG" />
+    <history-entry file="AllInOneAlpha - 2018.02.07 at 10h 08m 43s.xml">
+      <configuration name="AllInOneAlpha" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AllInOne - 2018.02.06 at 18h 24m 34s.xml">
-      <configuration name="AllInOne" configurationId="TestNG" />
+    <history-entry file="AllInOne_Home - 2018.01.29 at 17h 06m 31s.xml">
+      <configuration name="AllInOne_Home" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNGParallel - 2018.02.06 at 17h 00m 14s.xml">
-      <configuration name="TestNGParallel" configurationId="TestNG" />
+    <history-entry file="AllInOne_Home - 2018.01.29 at 17h 10m 22s.xml">
+      <configuration name="AllInOne_Home" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNGParallel - 2018.02.06 at 17h 00m 47s.xml">
-      <configuration name="TestNGParallel" configurationId="TestNG" />
+    <history-entry file="AllInOne_Home - 2018.01.29 at 17h 15m 48s.xml">
+      <configuration name="AllInOne_Home" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNGParallel - 2018.02.06 at 17h 02m 44s.xml">
-      <configuration name="TestNGParallel" configurationId="TestNG" />
+    <history-entry file="AllInOne_Home - 2018.01.29 at 17h 20m 58s.xml">
+      <configuration name="AllInOne_Home" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNGParallel - 2018.02.06 at 17h 13m 09s.xml">
-      <configuration name="TestNGParallel" configurationId="TestNG" />
+    <history-entry file="AllInOne_Home - 2018.01.29 at 17h 23m 45s.xml">
+      <configuration name="AllInOne_Home" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNGParallel - 2018.02.06 at 17h 34m 48s.xml">
-      <configuration name="TestNGParallel" configurationId="TestNG" />
+    <history-entry file="AllInOne_Home - 2018.01.30 at 10h 38m 24s.xml">
+      <configuration name="AllInOne_Home" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNGParallel - 2018.02.06 at 18h 05m 35s.xml">
-      <configuration name="TestNGParallel" configurationId="TestNG" />
+    <history-entry file="AllInOne_Home - 2018.01.30 at 10h 45m 11s.xml">
+      <configuration name="AllInOne_Home" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNGParallel - 2018.02.06 at 18h 09m 06s.xml">
-      <configuration name="TestNGParallel" configurationId="TestNG" />
+    <history-entry file="AllInOne_Home - 2018.01.30 at 10h 49m 00s.xml">
+      <configuration name="AllInOne_Home" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2552" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="797" extended-state="0" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32965517" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36" sideWeight="0.5625" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46553552" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3324138" sideWeight="0.4375" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18489583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27152777" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16614583" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -738,19 +829,78 @@
     <MESSAGE value="Jenkins CSS2" />
     <MESSAGE value="iPhone serial" />
     <MESSAGE value="Android port and screenshot creation" />
-    <MESSAGE value="App Path change" />
-    <MESSAGE value="Better code view" />
-    <MESSAGE value="More devices" />
-    <MESSAGE value="More devices + more tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="More devices + more tests" />
+    <MESSAGE value="Various android devices addon" />
+    <MESSAGE value="UI fund button issues FIX" />
+    <option name="LAST_COMMIT_MESSAGE" value="UI fund button issues FIX" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Autotests/Variables.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="31" lean-forward="false" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Autotests/Constants.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Autotests/Methods.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Autotests/Variables.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/Exploring/CalculatorTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="66" column="48" lean-forward="true" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log4j.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Autotests/AllInOne.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="19" lean-forward="false" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Autotests/Constants.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Autotests/AllInOne.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Autotests/Methods.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/Exploring/CalculatorTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="89" lean-forward="true" selection-start-line="34" selection-start-column="89" selection-end-line="34" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="19" lean-forward="false" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Autotests/Constants.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Autotests/Methods.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Autotests/AllInOne.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/Exploring/CalculatorTests.java">
@@ -811,259 +961,99 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/Autotests/MethodsTest.java" />
     <entry file="file://$PROJECT_DIR$/jenkins.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1904">
+        <state relative-caret-position="1680">
           <caret line="0" column="112799" lean-forward="false" selection-start-line="0" selection-start-column="112799" selection-end-line="0" selection-end-column="112799" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Exploring/Share.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/AppiumBased/OsUtils.java">
+    <entry file="file://$PROJECT_DIR$/TestNG.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="29" column="22" lean-forward="false" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/log4j.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="225">
           <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AppiumBased/AllInOne_Home.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/AppiumBased/Methods_Home.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/DevelopingTests/MethodsTest.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="780">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DevelopingTests/ScreenshotOnPassFail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ParallelTests/Methods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ParallelTestExecution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="48" column="4" lean-forward="false" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_152/src.zip!/java/lang/Runnable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="67" column="25" lean-forward="false" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JavaParallelTests/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JavaParallelTests/Variables.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="7" lean-forward="false" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JavaParallelTests/ParallelTestExecution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding>
-            <element signature="method#SplashScreen#0;class#ParallelTestExecution#0" expanded="false" />
-            <element signature="method#ScreensShuffle#0;class#ParallelTestExecution#0" expanded="false" />
-            <element signature="method#Sleep#0;class#ParallelTestExecution#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/NGParallelTests/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/NGParallelTests/Variables.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/NGParallelTests/ParallelTestExecution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#SplashScreen#0;class#ParallelTestExecution#0" expanded="false" />
-            <element signature="method#Register#0;class#ParallelTestExecution#0" expanded="false" />
-            <element signature="method#HideKeyboard#0;class#ParallelTestExecution#0" expanded="false" />
-            <element signature="method#AndroidAllowAccess#0;class#ParallelTestExecution#0" expanded="false" />
-            <element signature="method#ScreensShuffle#0;class#ParallelTestExecution#0" expanded="false" />
-            <element signature="method#Sleep#0;class#ParallelTestExecution#0" expanded="false" />
-            <element signature="e#5499#5500#0" expanded="true" />
-            <element signature="e#5530#5531#0" expanded="true" />
-            <element signature="e#5571#5572#0" expanded="true" />
-            <element signature="e#5593#5594#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/AppiumBased/Variables.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        <state relative-caret-position="360">
+          <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AppiumBased/Methods.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/AppiumBased/OsUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="58" column="77" lean-forward="false" selection-start-line="58" selection-start-column="77" selection-end-line="58" selection-end-column="77" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#7144#7145#0" expanded="true" />
-            <element signature="e#7173#7174#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AppiumBased/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="18" column="62" lean-forward="false" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AlphaTests/OsUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AlphaTests/AllInOne.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Before#0;class#AllInOne#0" expanded="false" />
-            <element signature="method#After#0;class#AllInOne#0" expanded="false" />
-            <element signature="method#AfterMethod#0;class#AllInOne#0" expanded="false" />
-            <element signature="method#AndroidTestRegister#0;class#AllInOne#0" expanded="false" />
-            <element signature="method#AndroidTestAddPet#0;class#AllInOne#0" expanded="false" />
-            <element signature="method#AndroidTestAddCollar#0;class#AllInOne#0" expanded="false" />
-            <element signature="method#AndroidTestCheckScreens#0;class#AllInOne#0" expanded="false" />
-            <element signature="method#AndroidTestMap#0;class#AllInOne#0" expanded="false" />
-            <element signature="method#AndroidUserProfile#0;class#AllInOne#0" expanded="false" />
-            <element signature="method#AndroidUserLogin#0;class#AllInOne#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AlphaTests/Variables.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="945">
+          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/AppiumBased/AllInOne.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state relative-caret-position="120">
+          <caret line="15" column="42" lean-forward="false" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1517939171832" expanded="true" signature="3008:3085" ph="{...}" />
+            <marker date="1517939171832" expanded="true" signature="3075:3085" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/screenshot/LastFailScreenshot.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AlphaTests/Constants.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/AppiumBased/AllInOne_Home.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/AppiumBased/Methods_Home.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/AppiumBased/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="180">
+          <caret line="12" column="92" lean-forward="false" selection-start-line="12" selection-start-column="92" selection-end-line="12" selection-end-column="92" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestNGParallel.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/AppiumBased/Methods.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="67" lean-forward="false" selection-start-line="4" selection-start-column="67" selection-end-line="4" selection-end-column="67" />
-          <folding />
+        <state relative-caret-position="1005">
+          <caret line="67" column="25" lean-forward="false" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#726#759#0" expanded="true" />
+            <element signature="e#7144#7145#0" expanded="true" />
+            <element signature="e#7173#7174#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/AlphaTests/Methods.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="37" column="60" lean-forward="true" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Restart#0;class#Methods#0" expanded="false" />
-            <element signature="method#SplashScreen#0;class#Methods#0" expanded="false" />
-            <element signature="method#Register#0;class#Methods#0" expanded="false" />
-            <element signature="method#HideKeyboard#0;class#Methods#0" expanded="false" />
-            <element signature="e#6478#6479#0" expanded="true" />
-            <element signature="e#6507#6508#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+        <state relative-caret-position="300">
+          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestNG.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/AlphaTests/AllInOne.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        <state relative-caret-position="150">
+          <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -1133,7 +1123,7 @@
       </state>
       <state key="ProjectJDKs.UI">
         <settings>
-          <last-edited>JDK 1.8</last-edited>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
