@@ -74,6 +74,7 @@ public class Methods {
 
     public void Register() throws IOException {
 
+
         Random login = new Random();
 
         String alphabet = "1234567890";
@@ -109,31 +110,32 @@ public class Methods {
     }
 
     public void HideKeyboard() throws IOException {
+        if (OsUtils.OS.MAC.equals(OsUtils.getOs())){driver.navigate().back();}
+        else {
+            Process p = null;
+            try {
+                p = Runtime.getRuntime().exec("adb shell dumpsys input_method | grep mInputShown");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            BufferedReader in = new BufferedReader(new InputStreamReader(p.getInputStream()));
+            String outputText = "";
 
-        Process p = null;
-        try {
-            p = Runtime.getRuntime().exec("adb shell dumpsys input_method | grep mInputShown");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        BufferedReader in = new BufferedReader(new InputStreamReader(p.getInputStream()));
-        String outputText = "";
+            while ((outputText = in.readLine()) != null) {
 
-        while ((outputText = in.readLine()) != null) {
+                if (!outputText.trim().equals("")) {
+                    String keyboardProperties[] = outputText.split(" ");
+                    String keyValue[] = keyboardProperties[keyboardProperties.length - 1].split("=");
 
-            if(!outputText.trim().equals("")){
-                String keyboardProperties[]=outputText.split(" ");
-                String keyValue[]=keyboardProperties[keyboardProperties.length-1].split("=");
-
-                String softkeyboardpresenseValue=keyValue[keyValue.length-1];
-                if(softkeyboardpresenseValue.equalsIgnoreCase("false")){
-                }else{
-                    driver.hideKeyboard();
+                    String softkeyboardpresenseValue = keyValue[keyValue.length - 1];
+                    if (softkeyboardpresenseValue.equalsIgnoreCase("false")) {
+                    } else {
+                        driver.hideKeyboard();
+                    }
                 }
             }
+            in.close();
         }
-        in.close();
-
     }
 
     public void Login() {
