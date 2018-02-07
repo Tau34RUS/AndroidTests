@@ -266,10 +266,15 @@ public class Methods {
         driver.findElementById("ru.averia.tracker:id/tv_add_collar").click();
 
         driver.findElementById("ru.averia.tracker:id/bt_search").click();
+        try{driver.findElementById("ru.averia.tracker:id/container_list").clear();}
+        catch (org.openqa.selenium.NoSuchElementException e) {
+            logger.info("No BLE Devices List");
+        }
 
-        driver.findElementById("ru.averia.tracker:id/container_list").clear();
-
-        driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.view.ViewGroup/android.view.ViewGroup[2]/android.support.v7.widget.RecyclerView/android.view.ViewGroup[1]").clear();
+        try{driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.view.ViewGroup/android.view.ViewGroup[2]/android.support.v7.widget.RecyclerView/android.view.ViewGroup[1]").clear();}
+        catch (org.openqa.selenium.NoSuchElementException e) {
+        logger.info("No BLE Devices List");
+    }
 
         driver.findElementById("ru.averia.tracker:id/iv_back").click();
 
