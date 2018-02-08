@@ -317,7 +317,7 @@ public class Methods {
 
             String alphabet = "1234567890";
             Variables.phonenumber = "";
-            for (int i = 0; i < 10; i++) Variables.phonenumber += login.nextInt(alphabet.length());
+            for (int i = 0; i < 11; i++) Variables.phonenumber += login.nextInt(alphabet.length());
             driver.findElementById("ru.averia.tracker:id/et_phone").sendKeys(Variables.phonenumber);
 
             logger.info("Swipe down");
