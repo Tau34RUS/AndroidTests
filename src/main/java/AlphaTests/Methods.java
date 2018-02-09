@@ -147,7 +147,7 @@ public class Methods {
 
         Assert.assertEquals("Войти", driver.findElement(By.id("ru.averia.tracker:id/tv_title")).getText());
         Assert.assertEquals("Войти", driver.findElement(By.id("ru.averia.tracker:id/bt_login")).getText());
-
+        Sleep(5);
         MobileElement username = driver.findElement(By.id("ru.averia.tracker:id/et_email"));
         username.click();
         username.sendKeys(Variables.userlogin);
