@@ -2,40 +2,26 @@
 
 <!-- TestNG Documentation: http://testng.org/doc/documentation-main.html -->
 <!-- Change "false" to "tests", "methods", "classes" or "instances" for running in parallel. See more details in the TestNG documentation. -->
-<suite name="Parallel Device Test" parallel="tests" thread-count="1" verbose="2">
+<suite name="Parallel Device Test" parallel="tests" thread-count="2" verbose="2">
     <test name="Huawei Honor 3C">
         <parameter name="server_port" value="4752" />
         <parameter name="device" value="honor_3c" />
         <classes>
-            <class name="AppiumBased.AllInOne" />
+            <class name="NGParallelTests.ParallelTestExecution" />
         </classes>
     </test>
-    <test name="Asus ZenPad">
+  <test name="Asus ZenPad">
         <parameter name="server_port" value="4751" />
         <parameter name="device" value="asus_zenpad" />
         <classes>
-            <class name="AppiumBased.AllInOne" />
-        </classes>
-    </test>
-    <test name="Samsung J1">
-        <parameter name="server_port" value="4750" />
-        <parameter name="device" value="samsung_j1" />
-        <classes>
-            <class name="AppiumBased.AllInOne" />
-        </classes>
-    </test>
-    <test name="Meizu M5">
-        <parameter name="server_port" value="4753" />
-        <parameter name="device" value="meizu_m5" />
-        <classes>
-            <class name="AppiumBased.AllInOne" />
+            <class name="NGParallelTests.ParallelTestExecution" />
         </classes>
     </test>
     <test name="Samsung G6 Edge">
         <parameter name="server_port" value="4754" />
         <parameter name="device" value="meizu_m5" />
         <classes>
-            <class name="AppiumBased.AllInOne" />
+            <class name="AlphaTests.AllInOne" />
         </classes>
     </test>
 

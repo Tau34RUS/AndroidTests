@@ -87,6 +87,8 @@ public class Methods {
 
         Assert.assertEquals("Регистрация", driver.findElement(By.id("ru.averia.tracker:id/tv_title")).getText());
 
+        Sleep(5);
+
         MobileElement username = driver.findElement(By.id("ru.averia.tracker:id/et_email"));
         username.sendKeys(Variables.userlogin);
 
