@@ -163,7 +163,7 @@ public class Methods {
         try {
             Assert.assertEquals("Добавить", driver.findElement(By.id("ru.averia.tracker:id/bt_add_pet")).getText());
         }catch (org.openqa.selenium.NoSuchElementException e) {
-            logger.info("No Add Pet button,is a pet already added?");
+            logger.info("No Add Pet button, already added?");
         }
     }
 
@@ -275,7 +275,7 @@ public class Methods {
 
         try{driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.view.ViewGroup/android.view.ViewGroup[2]/android.support.v7.widget.RecyclerView/android.view.ViewGroup[1]").clear();}
         catch (org.openqa.selenium.NoSuchElementException e) {
-        logger.info("No BLE Devices List");
+        logger.info("No BLE Devices Page");
     }
 
         driver.findElementById("ru.averia.tracker:id/iv_back").click();
@@ -333,9 +333,10 @@ public class Methods {
             Sleep(5);
             driver.findElementById("ru.averia.tracker:id/iv_save").click();
             Sleep(5);
-            logger.info("Sasving user prifile changes");
-            driver.findElementById("ru.averia.tracker:id/iv_save").click();
-            break;
+            logger.info("Saving user profile changes");
+            try {driver.findElementById("ru.averia.tracker:id/iv_save").click();}
+            catch (org.openqa.selenium.NoSuchElementException e) {logger.info("Already saved?");}
+                break;
         }
     }
 
