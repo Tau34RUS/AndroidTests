@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-public class AllInOne {
+public class AlphaTests {
 
     private static Logger logger;
     private final Methods App = new Methods();
