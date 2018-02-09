@@ -21,7 +21,7 @@
         <parameter name="server_port" value="4754" />
         <parameter name="device" value="meizu_m5" />
         <classes>
-            <class name="AlphaTests.AllInOne" />
+            <class name="NGParallelTests.ParallelTestExecution" />
         </classes>
     </test>
 
