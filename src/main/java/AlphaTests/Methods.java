@@ -73,7 +73,6 @@ public class Methods {
 
     public void Register() throws IOException {
 
-
         Random login = new Random();
 
         String alphabet = "1234567890";
@@ -85,14 +84,16 @@ public class Methods {
 
         driver.findElement(By.id("ru.averia.tracker:id/bt_register")).click();
 
-        Assert.assertEquals("Регистрация", driver.findElement(By.id("ru.averia.tracker:id/tv_title")).getText());
+        //Assert.assertEquals("Регистрация", driver.findElement(By.id("ru.averia.tracker:id/tv_title")).getText());
 
         Sleep(5);
 
-        MobileElement username = driver.findElement(By.id("ru.averia.tracker:id/et_email"));
+        MobileElement username = driver.findElementById("ru.averia.tracker:id/et_email");
+
         username.sendKeys(Variables.userlogin);
 
-        MobileElement password = driver.findElement(By.id("ru.averia.tracker:id/et_password"));
+        MobileElement password = driver.findElementById("ru.averia.tracker:id/et_password");
+
         password.sendKeys(Variables.userpass);
 
         logger.info("Userlogin: " + Variables.userlogin);
@@ -145,7 +146,7 @@ public class Methods {
         Assert.assertEquals("Войти", driver.findElement(By.id("ru.averia.tracker:id/bt_login")).getText());
         driver.findElement(By.id("ru.averia.tracker:id/bt_login")).click();
 
-        Assert.assertEquals("Войти", driver.findElement(By.id("ru.averia.tracker:id/tv_title")).getText());
+        //Assert.assertEquals("Войти", driver.findElement(By.id("ru.averia.tracker:id/tv_title")).getText());
         Assert.assertEquals("Войти", driver.findElement(By.id("ru.averia.tracker:id/bt_login")).getText());
         Sleep(5);
         MobileElement username = driver.findElement(By.id("ru.averia.tracker:id/et_email"));
