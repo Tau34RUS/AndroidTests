@@ -2,7 +2,7 @@
 
 <!-- TestNG Documentation: http://testng.org/doc/documentation-main.html -->
 <!-- Change "false" to "tests", "methods", "classes" or "instances" for running in parallel. See more details in the TestNG documentation. -->
-<suite name="Parallel Device Test" parallel="tests" thread-count="3" verbose="2">
+<suite name="Parallel Device Test" parallel="tests" thread-count="4" verbose="2">
     <test name="Samsung J1">
         <parameter name="server_port" value="4750" />
         <parameter name="device" value="samsung_j1" />
@@ -24,16 +24,9 @@
             <class name="NGParallelTests.ParallelTestExecution" />
         </classes>
     </test>
-    <test name="Huawei Honor 3C">
-        <parameter name="server_port" value="4752" />
-        <parameter name="device" value="honor_3c" />
-        <classes>
-            <class name="NGParallelTests.ParallelTestExecution" />
-        </classes>
-    </test>
-    <test name="Huawei Honor 3C">
-        <parameter name="server_port" value="4752" />
-        <parameter name="device" value="honor_3c" />
+    <test name="Asus Zenpad">
+        <parameter name="server_port" value="4753" />
+        <parameter name="device" value="asus" />
         <classes>
             <class name="NGParallelTests.ParallelTestExecution" />
         </classes>

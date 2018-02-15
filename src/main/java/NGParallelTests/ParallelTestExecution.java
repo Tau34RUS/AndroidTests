@@ -46,7 +46,7 @@ public class ParallelTestExecution {
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Constants.Timeout, TimeUnit.SECONDS);
 
     }
 
@@ -160,7 +160,7 @@ public class ParallelTestExecution {
     }
 
     @Test
-    void TestRegister() throws IOException {
+    void TestRegister() {
         SplashScreen();
         Register();
     }
