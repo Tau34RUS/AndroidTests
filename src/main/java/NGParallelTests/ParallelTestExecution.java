@@ -6,8 +6,8 @@ import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -17,6 +17,7 @@ import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 public class ParallelTestExecution {
     
@@ -28,8 +29,10 @@ public class ParallelTestExecution {
         this.port = port;
         this.device = device;
     }
+
     AppiumDriver<MobileElement> driver;
     DesiredCapabilities capabilities = new DesiredCapabilities();
+
     void ParallelSetup() {
         capabilities.setCapability("deviceName", device);
         //capabilities.setCapability("app", "D:\\APK\\ru.averia.tracker.apk");
@@ -38,24 +41,22 @@ public class ParallelTestExecution {
         capabilities.setCapability("appActivity", "ru.averia.tracker.ui.activities.SplashActivity");
 
         try {
-            //driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-            driver = new AndroidDriver<MobileElement>(new URL("http://0.0.0.0:" + port + "/wd/hub"), capabilities);
-            Thread.sleep(10000);
+            driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:" + port + "/wd/hub"), capabilities);
+            //Thread.sleep(5000);
         } catch (MalformedURLException e) {
             e.printStackTrace();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
         }
+        driver.manage().timeouts().implicitlyWait(Constants.Timeout, TimeUnit.SECONDS);
 
     }
 
     void SplashScreen() {
 
-        Assert.assertEquals("Больше никаких потерянных животных", driver.findElement(By.id("ru.averia.tracker:id/about_title_dog_1")).getText());
+        //Assert.assertEquals("Больше никаких потерянных животных", driver.findElement(By.id("ru.averia.tracker:id/about_title_dog_1")).getText());
         driver.findElement(By.id("ru.averia.tracker:id/bt_next")).click();
-        Assert.assertEquals("Мониторинг активности вашего питомца", driver.findElement(By.id("ru.averia.tracker:id/about_title_dog_2")).getText());
+        //Assert.assertEquals("Мониторинг активности вашего питомца", driver.findElement(By.id("ru.averia.tracker:id/about_title_dog_2")).getText());
         driver.findElement(By.id("ru.averia.tracker:id/bt_next")).click();
-        Assert.assertEquals("Социальная сеть для владельцев собак", driver.findElement(By.id("ru.averia.tracker:id/about_title_dog_3")).getText());
+        //Assert.assertEquals("Социальная сеть для владельцев собак", driver.findElement(By.id("ru.averia.tracker:id/about_title_dog_3")).getText());
 
     }
 
@@ -63,7 +64,7 @@ public class ParallelTestExecution {
         driver.quit();
     }
 
-    void Register() throws IOException {
+    void Register() {
 
         Random login = new Random();
 
@@ -76,24 +77,22 @@ public class ParallelTestExecution {
 
         driver.findElement(By.id("ru.averia.tracker:id/bt_register")).click();
 
-        Assert.assertEquals("Регистрация", driver.findElement(By.id("ru.averia.tracker:id/tv_title")).getText());
+        //Assert.assertEquals("Регистрация", driver.findElement(By.id("ru.averia.tracker:id/tv_title")).getText());
 
-        MobileElement username = driver.findElement(By.id("ru.averia.tracker:id/et_email"));
+        Sleep(5);
+
+        MobileElement username = driver.findElementById("ru.averia.tracker:id/et_email");
+
         username.sendKeys(Variables.userlogin);
 
-        MobileElement password = driver.findElement(By.id("ru.averia.tracker:id/et_password"));
-        password.sendKeys(Variables.userpass);
+        MobileElement password = driver.findElementById("ru.averia.tracker:id/et_password");
 
-        HideKeyboard();
+        password.sendKeys(Variables.userpass);
 
         driver.findElement(By.id("ru.averia.tracker:id/bt_register")).click();
 
         //Allow android actions
-        Sleep(15);
-
         AndroidAllowAccess();
-        Sleep(5);
-        Assert.assertEquals("Добавить", driver.findElement(By.id("ru.averia.tracker:id/bt_add_pet")).getText());
 
     }
 
@@ -134,13 +133,12 @@ public class ParallelTestExecution {
     }
 
     void ScreensShuffle() {
-
+        Sleep(5);
         driver.findElementById("ru.averia.tracker:id/maim_menu_action_map").click();
-        Sleep(2);
+        Sleep(5);
         driver.findElementById("ru.averia.tracker:id/main_menu_action_profile").click();
-        Sleep(2);
+        Sleep(5);
         driver.findElementById("ru.averia.tracker:id/maim_menu_action_pet").click();
-        Sleep(2);
     }
 
     void Sleep (Integer seconds) {
@@ -153,18 +151,16 @@ public class ParallelTestExecution {
 
     }
 
-    @BeforeSuite(alwaysRun = true)
+    @BeforeTest(alwaysRun = true)
     void BeforeSuite() {
-        ParallelSetup();
-    }
-
-    @AfterSuite
+        ParallelSetup();}
+    @AfterTest
     void AfterSuite() {
         Quit();
     }
 
     @Test
-    void TestRegister() throws IOException {
+    void TestRegister() {
         SplashScreen();
         Register();
     }
