@@ -1,4 +1,4 @@
-package AlphaTests;
+package SoakTest;
 
 import org.apache.log4j.Logger;
 import org.testng.ITestResult;
@@ -9,11 +9,11 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-public class AlphaTests {
+public class SoakTest {
 
     private static Logger logger;
     private final Methods App = new Methods();
-    
+
     @BeforeTest(alwaysRun = true)
     public void Before() throws Exception {
 
@@ -64,7 +64,7 @@ public class AlphaTests {
 
     }
 
-   @Test(dependsOnMethods = "AndroidTestRegister")
+    @Test(dependsOnMethods = "AndroidTestRegister")
     public void AndroidTestAddPet() {
 
         logger.info("- - -");
@@ -88,6 +88,15 @@ public class AlphaTests {
         logger.info("- - -");
         logger.info("Checking screens");
         App.ScreensShuffle();
+        App.ScreensShuffle();
+        App.ScreensShuffle();
+        App.ScreensShuffle();
+        App.ScreensShuffle();
+        App.ScreensShuffle();
+        App.ScreensShuffle();
+        App.ScreensShuffle();
+        App.ScreensShuffle();
+        App.ScreensShuffle();
 
     }
 
@@ -96,6 +105,13 @@ public class AlphaTests {
 
         logger.info("- - -");
         logger.info("Checking Map");
+        App.Map();
+        App.Map();
+        App.Map();
+        App.Map();
+        App.Map();
+        App.Map();
+        App.Map();
         App.Map();
 
     }
@@ -106,36 +122,12 @@ public class AlphaTests {
         logger.info("- - -");
         logger.info("Checking User Profile");
         App.UserProfile();
+        App.UserProfile();
+        App.UserProfile();
+        App.UserProfile();
+        App.UserProfile();
+        App.UserProfile();
 
     }
-
-    @Test(dependsOnMethods = "AndroidTestRegister")
-    public void AndroidUserLogin() throws Exception {
-
-        logger.info("- - -");
-        logger.info("Checking User Login:");
-        logger.info("Restarting...");
-        App.Quit();
-        App.SetUp();
-        logger.info("Login");
-        App.SplashScreen();
-        App.Login();
-
-    }
-
-    @Test(dependsOnMethods = "AndroidTestAddPet")
-    public void EditPet(){
-
-        logger.info("- - -");
-        logger.info("Settings screen");
-        logger.info("Pet Edit and Save");
-
-        App.PetEdit();
-
-        logger.info("Finished PetEdit");
-
-    }
-
-
 
 }

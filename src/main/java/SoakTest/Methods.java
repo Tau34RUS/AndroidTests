@@ -1,4 +1,4 @@
-package AlphaTests;
+package SoakTest;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
@@ -46,7 +46,7 @@ public class Methods {
 
         /* selenium and appium driver setup */
         //noinspection Convert2Diamond
-        driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:"+Constants.port+"/wd/hub"), capabilities);
+        driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:"+ Constants.port+"/wd/hub"), capabilities);
         driver.manage().timeouts().implicitlyWait(Constants.Timeout, TimeUnit.SECONDS);
 
         Variables.screensize = driver.manage().window().getSize();
@@ -105,8 +105,7 @@ public class Methods {
 
         //Allow android actions
         AndroidAllowAccess();
-
-        Assert.assertEquals("Добавить", driver.findElementById("ru.averia.tracker:id/bt_add_pet").getText());
+        Assert.assertEquals("Добавить", driver.findElement(By.id("ru.averia.tracker:id/bt_add_pet")).getText());
 
         logger.info("Registration done");
 
@@ -468,29 +467,6 @@ public class Methods {
             }
         }
 
-    public void PetEdit() {
-
-        driver.findElementById("ru.averia.tracker:id/main_menu_action_profile").click();
-
-        driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.support.v4.view.ViewPager/android.view.ViewGroup/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.view.ViewGroup[1]").click();
-
-        driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.view.ViewGroup/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.Button").click();
-
-        driver.findElementById("ru.averia.tracker:id/et_name").sendKeys("1");
-
-        driver.navigate().back();
-
-        SwipeUp();
-
-        driver.findElementById("ru.averia.tracker:id/et_weight").sendKeys("33");
-
-        driver.findElementById("ru.averia.tracker:id/et_height").sendKeys("33");
-
-        driver.findElementById("ru.averia.tracker:id/iv_save").click();
-
-        driver.navigate().back();
-
-    }
     }
 
 
