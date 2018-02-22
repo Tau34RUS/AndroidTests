@@ -83,20 +83,18 @@ public class SoakTest {
     }
 
     @Test(dependsOnMethods = "AndroidTestRegister")
-    public void AndroidTestCheckScreens() {
+    public void AndroidTestCheckScreens() throws IOException {
 
-        logger.info("- - -");
-        logger.info("Checking screens");
-        App.ScreensShuffle();
-        App.ScreensShuffle();
-        App.ScreensShuffle();
-        App.ScreensShuffle();
-        App.ScreensShuffle();
-        App.ScreensShuffle();
-        App.ScreensShuffle();
-        App.ScreensShuffle();
-        App.ScreensShuffle();
-        App.ScreensShuffle();
+        logger.info("Soak Started");
+        int iteration = 0;
+        while (1==1) {
+            App.ScreensShuffle();
+            App.Map();
+            App.UserProfile();
+            iteration++;
+            logger.info("Iteration: "+iteration);
+            App.ShowAppStats();
+        }
 
     }
 

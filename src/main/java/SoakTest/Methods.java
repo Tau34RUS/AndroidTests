@@ -46,7 +46,7 @@ public class Methods {
 
         /* selenium and appium driver setup */
         //noinspection Convert2Diamond
-        driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:"+ Constants.port+"/wd/hub"), capabilities);
+        driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:"+Constants.port+"/wd/hub"), capabilities);
         driver.manage().timeouts().implicitlyWait(Constants.Timeout, TimeUnit.SECONDS);
 
         Variables.screensize = driver.manage().window().getSize();
@@ -105,7 +105,8 @@ public class Methods {
 
         //Allow android actions
         AndroidAllowAccess();
-        Assert.assertEquals("Добавить", driver.findElement(By.id("ru.averia.tracker:id/bt_add_pet")).getText());
+
+        Assert.assertEquals("Добавить", driver.findElementById("ru.averia.tracker:id/bt_add_pet").getText());
 
         logger.info("Registration done");
 
@@ -276,8 +277,8 @@ public class Methods {
 
         try{driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.view.ViewGroup/android.view.ViewGroup[2]/android.support.v7.widget.RecyclerView/android.view.ViewGroup[1]").clear();}
         catch (org.openqa.selenium.NoSuchElementException e) {
-        logger.info("No BLE Devices Page");
-    }
+            logger.info("No BLE Devices Page");
+        }
 
         driver.findElementById("ru.averia.tracker:id/iv_back").click();
 
@@ -294,8 +295,12 @@ public class Methods {
         driver.findElementById("ru.averia.tracker:id/ib_pet_position").click();
         driver.findElementById("ru.averia.tracker:id/ib_self_position").click();
         driver.findElementById("ru.averia.tracker:id/ib_other_pets").click();
-        Sleep(20);
-        driver.findElementByXPath("//android.view.View[@content-desc=\"Карта Google\"]/android.view.View").clear();
+        Sleep(10);
+        SwipeUp();
+        Sleep(2);
+        SwipeDown();
+        Sleep(1);
+        //driver.findElementByXPath("//android.view.View[@content-desc=\"Карта Google\"]/android.view.View").clear();
     }
 
     public void UserProfile() {
@@ -310,33 +315,33 @@ public class Methods {
                 break;
             default:
 
-            driver.findElementById("ru.averia.tracker:id/bt_edit_profile").click();
-            driver.findElementById("ru.averia.tracker:id/et_last_name").sendKeys("Tester");
-            logger.info("Swipe up");
-            SwipeUp();
+                driver.findElementById("ru.averia.tracker:id/bt_edit_profile").click();
+                driver.findElementById("ru.averia.tracker:id/et_last_name").sendKeys("Tester");
+                logger.info("Swipe up");
+                SwipeUp();
 
-            logger.info("Fill phone number");
-            Random login = new Random();
+                logger.info("Fill phone number");
+                Random login = new Random();
 
-            String alphabet = "1234567890";
-            Variables.phonenumber = "";
-            for (int i = 0; i < 11; i++) Variables.phonenumber += login.nextInt(alphabet.length());
-            driver.findElementById("ru.averia.tracker:id/et_phone").sendKeys(Variables.phonenumber);
+                String alphabet = "1234567890";
+                Variables.phonenumber = "";
+                for (int i = 0; i < 11; i++) Variables.phonenumber += login.nextInt(alphabet.length());
+                driver.findElementById("ru.averia.tracker:id/et_phone").sendKeys(Variables.phonenumber);
 
-            logger.info("Swipe down");
-            SwipeDown();
+                logger.info("Swipe down");
+                SwipeDown();
 
-            driver.findElementById("ru.averia.tracker:id/container_avatar").click();
+                driver.findElementById("ru.averia.tracker:id/container_avatar").click();
 
-            PhonePhoto();
+                PhonePhoto();
 
-            driver.findElement(By.id("ru.averia.tracker:id/crop_image_menu_crop")).click();
-            Sleep(5);
-            driver.findElementById("ru.averia.tracker:id/iv_save").click();
-            Sleep(5);
-            logger.info("Saving user profile changes");
-            try {driver.findElementById("ru.averia.tracker:id/iv_save").click();}
-            catch (org.openqa.selenium.NoSuchElementException e) {logger.info("Already saved?");}
+                driver.findElement(By.id("ru.averia.tracker:id/crop_image_menu_crop")).click();
+                Sleep(5);
+                driver.findElementById("ru.averia.tracker:id/iv_save").click();
+                Sleep(5);
+                logger.info("Saving user profile changes");
+                try {driver.findElementById("ru.averia.tracker:id/iv_save").click();}
+                catch (org.openqa.selenium.NoSuchElementException e) {logger.info("Already saved?");}
                 break;
         }
     }
@@ -464,9 +469,35 @@ public class Methods {
                 driver.findElement(By.id("com.asus.camera:id/button_used")).click();
 
                 break;
-            }
         }
+    }
+
+    public void PetEdit() {
+
+        driver.findElementById("ru.averia.tracker:id/main_menu_action_profile").click();
+
+        driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.support.v4.view.ViewPager/android.view.ViewGroup/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.view.ViewGroup[1]").click();
+
+        driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.view.ViewGroup/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.Button").click();
+
+        driver.findElementById("ru.averia.tracker:id/et_name").sendKeys("1");
+
+        driver.navigate().back();
+
+        SwipeUp();
+
+        driver.findElementById("ru.averia.tracker:id/et_weight").sendKeys("33");
+
+        driver.findElementById("ru.averia.tracker:id/et_height").sendKeys("33");
+
+        driver.findElementById("ru.averia.tracker:id/iv_save").click();
+
+        driver.navigate().back();
 
     }
 
+    public void ShowAppStats() throws IOException {
+        logger.info(Runtime.getRuntime().exec("adb shell \"dumpsys meminfo 'ru.averia.tracker'| grep TOTAL \"").getOutputStream());
+    }
 
+}
