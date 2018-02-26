@@ -210,11 +210,11 @@ public class Methods {
         driver.findElement(By.id("ru.averia.tracker:id/bt_next")).click();
 
         Assert.assertEquals("Возраст и дата рождения", driver.findElement(By.id("ru.averia.tracker:id/tv_cap")).getText());
-        MobileElement birthyear = driver.findElement(By.id("ru.averia.tracker:id/et_year"));
-        birthyear.sendKeys(Variables.birthyear);
 
-        MobileElement birthmonth = driver.findElement(By.id("ru.averia.tracker:id/et_month"));
-        birthmonth.sendKeys(Variables.birthmonth);
+        driver.findElementById("ru.averia.tracker:id/et_age").sendKeys(Variables.birthyear);
+
+        driver.findElementById("ru.averia.tracker:id/et_month").click();
+        driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.CheckedTextView[5]").click();
 
         driver.navigate().back();
         driver.findElement(By.id("ru.averia.tracker:id/bt_next")).click();
