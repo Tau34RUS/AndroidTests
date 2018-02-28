@@ -28,7 +28,7 @@ public class Methods {
     protected static Logger logger;
     String folder_name;
 
-    void SetUp() throws MalformedURLException {
+    public void SetUp() throws MalformedURLException {
 
         logger = Logger.getLogger("MethodsTestLogger");
         /* appium setup */
@@ -214,7 +214,19 @@ public class Methods {
         driver.findElementById("ru.averia.tracker:id/et_age").sendKeys(Variables.birthyear);
 
         driver.findElementById("ru.averia.tracker:id/et_month").click();
+
+        try {
         driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.CheckedTextView[5]").click();
+        }
+        catch (org.openqa.selenium.NoSuchElementException e) {
+            logger.warn("Selecting Month Error!");
+        }
+        try {
+        driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.ListView/android.widget.CheckedTextView[5]").click();
+        }
+        catch (org.openqa.selenium.NoSuchElementException e) {
+            logger.warn("Selecting Month Error!");
+        }
 
         driver.navigate().back();
         driver.findElement(By.id("ru.averia.tracker:id/bt_next")).click();
@@ -295,8 +307,8 @@ public class Methods {
         driver.findElementById("ru.averia.tracker:id/ib_pet_position").click();
         driver.findElementById("ru.averia.tracker:id/ib_self_position").click();
         driver.findElementById("ru.averia.tracker:id/ib_other_pets").click();
-        Sleep(20);
-        driver.findElementByXPath("//android.view.View[@content-desc=\"Карта Google\"]/android.view.View").clear();
+        //Sleep(20);
+        //driver.findElementByXPath("//android.view.View[@content-desc=\"Карта Google\"]/android.view.View").clear();
     }
 
     public void UserProfile() {
@@ -491,6 +503,12 @@ public class Methods {
         driver.navigate().back();
 
     }
+
+    public void ShowAppStats() throws IOException {
+
+        logger.info(Runtime.getRuntime().exec("adb shell \"dumpsys meminfo 'ru.averia.tracker'| grep TOTAL \"").getOutputStream());
+
     }
+}
 
 

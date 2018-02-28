@@ -12,7 +12,7 @@ import java.io.IOException;
 public class SoakTest {
 
     private static Logger logger;
-    private final Methods App = new Methods();
+    private final AlphaTests.Methods App = new AlphaTests.Methods();
 
     @BeforeTest(alwaysRun = true)
     public void Before() throws Exception {
