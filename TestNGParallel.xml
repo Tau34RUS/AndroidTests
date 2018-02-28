@@ -31,4 +31,11 @@
             <class name="NGParallelTests.ParallelTestExecution" />
         </classes>
     </test>
+    <test name="Asus Zenpad1">
+        <parameter name="server_port" value="4754" />
+        <parameter name="device" value="asus" />
+        <classes>
+            <class name="NGParallelTests.ParallelTestExecution" />
+        </classes>
+    </test>
 </suite>
