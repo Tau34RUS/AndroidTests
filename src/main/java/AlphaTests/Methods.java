@@ -11,10 +11,8 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
 
-import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
@@ -38,8 +36,10 @@ public class Methods {
         capabilities.setCapability("deviceName", "Android");
         logger.info("Is Mac? " + OsUtils.OS.MAC.equals(OsUtils.getOs()));
 
+        /* use already installed app
         if (OsUtils.OS.MAC.equals(OsUtils.getOs())){capabilities.setCapability("app", Constants.appath_mac);}
         else {capabilities.setCapability("app", Constants.appath_win);}
+        /end of use installed app */
 
         capabilities.setCapability("appPackage", Constants.AppPKG);
         capabilities.setCapability("appActivity", Constants.AppAct);
@@ -71,7 +71,7 @@ public class Methods {
 
     }
 
-    public void Register() throws IOException {
+    public void Register() {
 
         Random login = new Random();
 
@@ -99,7 +99,7 @@ public class Methods {
         logger.info("Userlogin: " + Variables.userlogin);
         logger.info("Userpass:  " + Variables.userpass);
 
-        HideKeyboard();
+        //HideKeyboard();
         //driver.navigate().back();
         driver.findElement(By.id("ru.averia.tracker:id/bt_register")).click();
 
@@ -110,35 +110,6 @@ public class Methods {
 
         logger.info("Registration done");
 
-    }
-
-    public void HideKeyboard() throws IOException {
-        if (OsUtils.OS.MAC.equals(OsUtils.getOs())){driver.navigate().back();}
-        else {
-            Process p = null;
-            try {
-                p = Runtime.getRuntime().exec("adb shell dumpsys input_method | grep mInputShown");
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            BufferedReader in = new BufferedReader(new InputStreamReader(p.getInputStream()));
-            String outputText = "";
-
-            while ((outputText = in.readLine()) != null) {
-
-                if (!outputText.trim().equals("")) {
-                    String keyboardProperties[] = outputText.split(" ");
-                    String keyValue[] = keyboardProperties[keyboardProperties.length - 1].split("=");
-
-                    String softkeyboardpresenseValue = keyValue[keyValue.length - 1];
-                    if (softkeyboardpresenseValue.equalsIgnoreCase("false")) {
-                    } else {
-                        driver.hideKeyboard();
-                    }
-                }
-            }
-            in.close();
-        }
     }
 
     public void Login() {
@@ -157,7 +128,6 @@ public class Methods {
         MobileElement password = driver.findElement(By.id("ru.averia.tracker:id/et_password"));
         password.click();
         password.sendKeys(Variables.userpass);
-        driver.hideKeyboard();
         driver.findElementById("ru.averia.tracker:id/bt_login").click();
 
         AndroidAllowAccess();
@@ -490,7 +460,7 @@ public class Methods {
 
         driver.findElementById("ru.averia.tracker:id/et_name").sendKeys("1");
 
-        driver.navigate().back();
+        //HideKeyboard();
 
         SwipeUp();
 
@@ -500,7 +470,7 @@ public class Methods {
 
         driver.findElementById("ru.averia.tracker:id/iv_save").click();
 
-        driver.navigate().back();
+        //HideKeyboard();
 
     }
 

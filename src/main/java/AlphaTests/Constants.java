@@ -10,7 +10,7 @@ public class Constants {
     static final Integer Timeout = 30;
     static final Integer port = 4731;
     static final File appath_win = new File("D:\\APK\\ru.averia.tracker.alpha.apk");
-    static final File appath_mac = new File("/Users/vevseev/Public/Android/ru.averia.tracker.alpha.apk");
+    static final File appath_mac = new File("/Users/vlad/Public/Android/ru.averia.tracker.alpha.apk");
 
     //Android phones IDs
     static final String phone_asuszenpad = "G1NPFP1202437HN";

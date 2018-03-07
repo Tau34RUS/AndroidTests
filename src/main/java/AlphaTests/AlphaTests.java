@@ -124,7 +124,7 @@ public class AlphaTests {
     }
 
     @Test(dependsOnMethods = "AndroidTestAddPet")
-    public void EditPet(){
+    public void EditPet() throws IOException {
 
         logger.info("- - -");
         logger.info("Settings screen");
