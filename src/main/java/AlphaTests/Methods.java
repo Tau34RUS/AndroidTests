@@ -26,27 +26,28 @@ public class Methods {
     protected static Logger logger;
     String folder_name;
 
+
     public void SetUp() throws MalformedURLException {
 
         logger = Logger.getLogger("MethodsTestLogger");
-        /* appium setup */
         logger.info("Starting Alpha Test Program");
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability("deviceName", "Android");
         logger.info("Is Mac? " + OsUtils.OS.MAC.equals(OsUtils.getOs()));
 
-        /* use already installed app
-        if (OsUtils.OS.MAC.equals(OsUtils.getOs())){capabilities.setCapability("app", Constants.appath_mac);}
-        else {capabilities.setCapability("app", Constants.appath_win);}
-        /end of use installed app */
+        // use already installed app
+        //if (OsUtils.OS.MAC.equals(OsUtils.getOs())){capabilities.setCapability("app", Constants.appath_mac);}
+        //else {capabilities.setCapability("app", Constants.appath_win);}
+        //end of use installed app
 
         capabilities.setCapability("appPackage", Constants.AppPKG);
         capabilities.setCapability("appActivity", Constants.AppAct);
+        capabilities.setCapability("UDID", Constants.phone_lg);
 
-        /* selenium and appium driver setup */
+        //selenium and appium driver setup
         //noinspection Convert2Diamond
-        driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:"+Constants.port+"/wd/hub"), capabilities);
+        driver = new AndroidDriver<MobileElement>(new URL("http://0.0.0.0:"+Constants.port+"/wd/hub"), capabilities);
         driver.manage().timeouts().implicitlyWait(Constants.Timeout, TimeUnit.SECONDS);
 
         Variables.screensize = driver.manage().window().getSize();
@@ -55,6 +56,7 @@ public class Methods {
         logger.info("Device name: " + Variables.devicename);
 
     }
+
 
     public void Restart() throws MalformedURLException {
         Quit();

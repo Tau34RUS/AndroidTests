@@ -7,7 +7,7 @@ public class Constants {
 
     static final String AppPKG = "ru.averia.tracker";
     static final String AppAct = "ru.averia.tracker.ui.activities.SplashActivity";
-    static final Integer Timeout = 30;
+    static final Integer Timeout = 10;
     static final Integer port = 4731;
     static final File appath_win = new File("D:\\APK\\ru.averia.tracker.alpha.apk");
     static final File appath_mac = new File("/Users/vlad/Public/Android/ru.averia.tracker.alpha.apk");

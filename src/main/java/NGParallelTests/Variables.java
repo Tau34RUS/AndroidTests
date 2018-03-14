@@ -18,6 +18,7 @@ public class Variables {
     static Dimension screensize;
     static String devicename;
     static Integer port;
+    static String phonenumber;
 
     static {
         petweight="50";

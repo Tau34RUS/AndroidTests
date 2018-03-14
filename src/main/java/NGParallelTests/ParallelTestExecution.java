@@ -11,9 +11,6 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Random;
@@ -35,7 +32,6 @@ public class ParallelTestExecution {
 
     void ParallelSetup() {
         capabilities.setCapability("deviceName", device);
-        //capabilities.setCapability("app", "D:\\APK\\ru.averia.tracker.apk");
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability("appPackage", "ru.averia.tracker");
         capabilities.setCapability("appActivity", "ru.averia.tracker.ui.activities.SplashActivity");
@@ -96,49 +92,12 @@ public class ParallelTestExecution {
 
     }
 
-    void HideKeyboard() throws IOException {
-
-        Process p = null;
-        try {
-            p = Runtime.getRuntime().exec("adb shell dumpsys input_method | grep mInputShown");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        BufferedReader in = new BufferedReader(new InputStreamReader(p.getInputStream()));
-        String outputText = "";
-
-        while ((outputText = in.readLine()) != null) {
-
-            if(!outputText.trim().equals("")){
-                String keyboardProperties[]=outputText.split(" ");
-                String keyValue[]=keyboardProperties[keyboardProperties.length-1].split("=");
-
-                String softkeyboardpresenseValue=keyValue[keyValue.length-1];
-                if(softkeyboardpresenseValue.equalsIgnoreCase("false")){
-                }else{
-                    driver.hideKeyboard();
-                }
-            }
-        }
-        in.close();
-
-    }
-
     void AndroidAllowAccess() {
         try {
             driver.findElementById("com.android.packageinstaller:id/permission_allow_button").click();
         }
         catch (org.openqa.selenium.NoSuchElementException e) {}
 
-    }
-
-    void ScreensShuffle() {
-        Sleep(5);
-        driver.findElementById("ru.averia.tracker:id/maim_menu_action_map").click();
-        Sleep(5);
-        driver.findElementById("ru.averia.tracker:id/main_menu_action_profile").click();
-        Sleep(5);
-        driver.findElementById("ru.averia.tracker:id/maim_menu_action_pet").click();
     }
 
     void Sleep (Integer seconds) {
@@ -153,7 +112,8 @@ public class ParallelTestExecution {
 
     @BeforeTest(alwaysRun = true)
     void BeforeSuite() {
-        ParallelSetup();}
+        ParallelSetup();
+    }
     @AfterTest
     void AfterSuite() {
         Quit();
@@ -165,10 +125,4 @@ public class ParallelTestExecution {
         Register();
     }
 
-    @Test (dependsOnMethods = "TestRegister")
-    void TestScreenShuffle() {
-        while (1==1) {
-            ScreensShuffle();
-        }
-    }
 }
