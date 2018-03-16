@@ -188,13 +188,13 @@ public class Methods {
         driver.findElementById("ru.averia.tracker:id/et_month").click();
 
         try {
-        driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.CheckedTextView[5]").click();
+            driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.CheckedTextView[5]").click();
         }
         catch (org.openqa.selenium.NoSuchElementException e) {
             logger.warn("Selecting Month Error!");
         }
         try {
-        driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.ListView/android.widget.CheckedTextView[5]").click();
+            driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.ListView/android.widget.CheckedTextView[5]").click();
         }
         catch (org.openqa.selenium.NoSuchElementException e) {
             logger.warn("Selecting Month Error!");
@@ -261,8 +261,8 @@ public class Methods {
 
         try{driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.view.ViewGroup/android.view.ViewGroup[2]/android.support.v7.widget.RecyclerView/android.view.ViewGroup[1]").clear();}
         catch (org.openqa.selenium.NoSuchElementException e) {
-        logger.info("No BLE Devices Page");
-    }
+            logger.info("No BLE Devices Page");
+        }
 
         driver.findElementById("ru.averia.tracker:id/iv_back").click();
 
@@ -295,33 +295,33 @@ public class Methods {
                 break;
             default:
 
-            driver.findElementById("ru.averia.tracker:id/bt_edit_profile").click();
-            driver.findElementById("ru.averia.tracker:id/et_last_name").sendKeys("Tester");
-            logger.info("Swipe up");
-            SwipeUp();
+                driver.findElementById("ru.averia.tracker:id/bt_edit_profile").click();
+                driver.findElementById("ru.averia.tracker:id/et_last_name").sendKeys("Tester");
+                logger.info("Swipe up");
+                SwipeUp();
 
-            logger.info("Fill phone number");
-            Random login = new Random();
+                logger.info("Fill phone number");
+                Random login = new Random();
 
-            String alphabet = "1234567890";
-            Variables.phonenumber = "";
-            for (int i = 0; i < 11; i++) Variables.phonenumber += login.nextInt(alphabet.length());
-            driver.findElementById("ru.averia.tracker:id/et_phone").sendKeys(Variables.phonenumber);
+                String alphabet = "1234567890";
+                Variables.phonenumber = "";
+                for (int i = 0; i < 11; i++) Variables.phonenumber += login.nextInt(alphabet.length());
+                driver.findElementById("ru.averia.tracker:id/et_phone").sendKeys(Variables.phonenumber);
 
-            logger.info("Swipe down");
-            SwipeDown();
+                logger.info("Swipe down");
+                SwipeDown();
 
-            driver.findElementById("ru.averia.tracker:id/container_avatar").click();
+                driver.findElementById("ru.averia.tracker:id/container_avatar").click();
 
-            PhonePhoto();
+                PhonePhoto();
 
-            driver.findElement(By.id("ru.averia.tracker:id/crop_image_menu_crop")).click();
-            Sleep(5);
-            driver.findElementById("ru.averia.tracker:id/iv_save").click();
-            Sleep(5);
-            logger.info("Saving user profile changes");
-            try {driver.findElementById("ru.averia.tracker:id/iv_save").click();}
-            catch (org.openqa.selenium.NoSuchElementException e) {logger.info("Already saved?");}
+                driver.findElement(By.id("ru.averia.tracker:id/crop_image_menu_crop")).click();
+                Sleep(5);
+                driver.findElementById("ru.averia.tracker:id/iv_save").click();
+                Sleep(5);
+                logger.info("Saving user profile changes");
+                try {driver.findElementById("ru.averia.tracker:id/iv_save").click();}
+                catch (org.openqa.selenium.NoSuchElementException e) {logger.info("Already saved?");}
                 break;
         }
     }
@@ -458,8 +458,8 @@ public class Methods {
                 driver.findElement(By.id("com.asus.camera:id/button_used")).click();
 
                 break;
-            }
         }
+    }
 
     public void PetEdit() {
 
@@ -491,5 +491,3 @@ public class Methods {
 
     }
 }
-
-

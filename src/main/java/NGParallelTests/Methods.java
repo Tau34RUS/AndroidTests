@@ -3,16 +3,19 @@ package NGParallelTests;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
+import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 @SuppressWarnings("WeakerAccess")
     public class Methods {
@@ -21,6 +24,11 @@ import java.util.Random;
 
         protected static Logger logger;
         String folder_name;
+
+        public Methods(AppiumDriver<MobileElement> driver) {
+        this.driver = driver;
+        PageFactory.initElements(new AppiumFieldDecorator(driver, 20, TimeUnit.SECONDS), this);
+        }
 
         public void SplashScreen() {
 

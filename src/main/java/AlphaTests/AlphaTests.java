@@ -13,7 +13,7 @@ public class AlphaTests {
 
     private static Logger logger;
     private final Methods App = new Methods();
-    
+
     @BeforeTest(alwaysRun = true)
     public void Before() throws Exception {
 
@@ -50,7 +50,7 @@ public class AlphaTests {
     }
 
     @Test
-    public void AndroidTestRegister() throws IOException {
+    public void AndroidTestRegister() {
 
         logger.info("-----");
         logger.info("Starting AppiumBased Tests");
@@ -64,7 +64,7 @@ public class AlphaTests {
 
     }
 
-   @Test(dependsOnMethods = "AndroidTestRegister")
+    @Test(dependsOnMethods = "AndroidTestRegister")
     public void AndroidTestAddPet() {
 
         logger.info("- - -");
@@ -73,7 +73,7 @@ public class AlphaTests {
 
     }
 
-   @Test(dependsOnMethods = "AndroidTestAddPet")
+    @Test(dependsOnMethods = "AndroidTestAddPet")
     public void AndroidTestAddCollar() {
 
         logger.info("- - -");
@@ -124,7 +124,7 @@ public class AlphaTests {
     }
 
     @Test(dependsOnMethods = "AndroidTestAddPet")
-    public void EditPet() throws IOException {
+    public void EditPet() {
 
         logger.info("- - -");
         logger.info("Settings screen");

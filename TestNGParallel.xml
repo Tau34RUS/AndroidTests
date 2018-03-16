@@ -7,28 +7,28 @@
         <parameter name="server_port" value="4750" />
         <parameter name="device" value="samsung_j1" />
         <classes>
-            <class name="NGParallelTests.ParallelTestExecution" />
+            <class name="com.tests.sample" />
         </classes>
     </test>
     <test name="SonyXperia">
         <parameter name="server_port" value="4751" />
         <parameter name="device" value="samsung_edge" />
         <classes>
-            <class name="NGParallelTests.ParallelTestExecution" />
+            <class name="com.tests.sample" />
         </classes>
     </test>
     <test name="HTC U10">
         <parameter name="server_port" value="4752" />
         <parameter name="device" value="honor_3c" />
         <classes>
-            <class name="NGParallelTests.ParallelTestExecution" />
+            <class name="com.tests.sample" />
         </classes>
     </test>
     <test name="Asus Zenpad">
         <parameter name="server_port" value="4753" />
         <parameter name="device" value="asus" />
         <classes>
-            <class name="NGParallelTests.ParallelTestExecution" />
+            <class name="com.tests.sample" />
         </classes>
     </test>
 </suite>
