@@ -61,6 +61,7 @@ public class start_screens extends common{
 
         //HideKeyboard();
         //driver.navigate().back();
+
         driver.findElement(By.id("ru.averia.tracker:id/bt_register")).click();
 
         //Allow android actions
@@ -93,7 +94,5 @@ public class start_screens extends common{
             logger.info(device + ": No Add Pet button, already added?");
         }
     }
-
-
 
 }

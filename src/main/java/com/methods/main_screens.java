@@ -12,6 +12,7 @@ public class main_screens extends common {
     protected Logger logger;
 
     public main_screens(AppiumDriver<MobileElement> driver)  {
+
         super(driver);
         logger = Logger.getLogger("AndroidTestLogger");
         PageFactory.initElements(new AppiumFieldDecorator(driver, com.vars.consts.Timeout, TimeUnit.SECONDS), this);

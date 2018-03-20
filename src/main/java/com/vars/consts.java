@@ -7,8 +7,8 @@ public class consts {
     public static final String AppPKG = "ru.averia.tracker";
     public static final String AppAct = "ru.averia.tracker.ui.activities.SplashActivity";
     public static final Integer Timeout = 20;
-    public static final File appath_win = new File("D:\\APK\\ru.averia.tracker.alpha.apk");
-    public static final File appath_mac = new File("/Users/vlad/Public/Android/ru.averia.tracker.alpha.apk");
+    public static final File app_path_win = new File("D:\\APK\\ru.averia.tracker.alpha.apk");
+    public static final File app_path_mac = new File("/Users/vlad/Public/Android/ru.averia.tracker.alpha.apk");
     public static final String folder_name = "src/main/output/screenshots/";
 
     //Android phones IDs

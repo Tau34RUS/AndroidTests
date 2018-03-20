@@ -16,13 +16,15 @@ public class screenshot extends com.methods.common {
 
     protected Logger logger;
 
-    public screenshot(AppiumDriver<MobileElement> driver)  {
+    public screenshot(AppiumDriver<MobileElement> driver)
+    {
         super(driver);
         logger = Logger.getLogger("Screenshot");
         PageFactory.initElements(new AppiumFieldDecorator(driver, com.vars.consts.Timeout, TimeUnit.SECONDS), this);
     }
 
-    public void captureScreenShots(String device, String testName) throws IOException {
+    public void captureScreenShots(String device, String testName) throws IOException
+    {
 
             File f= driver.getScreenshotAs(OutputType.FILE);
             String file_path = folder_name + device +"_"+ testName +"_"+ "fail.png";
@@ -31,6 +33,7 @@ public class screenshot extends com.methods.common {
             FileUtils.copyFile(f, new File(file_path));
 
             logger.info(device + ": Screenshot saved as " + file_path);
+
     }
 
 }

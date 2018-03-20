@@ -1,7 +1,9 @@
 package com.tests;
 
-/* Sample for tests */
+/* Smoke Tests */
 
+import com.methods.*;
+import com.vars.*;
 import io.appium.java_client.*;
 import io.appium.java_client.android.*;
 import org.apache.log4j.*;
@@ -20,13 +22,12 @@ public class smoke {
     public String device;
     public String testName;
 
-    private com.methods.start_screens start;
-    private com.utils.screenshot screenshot;
-    private static AppiumDriver<MobileElement> driver;
+    public com.methods.start_screens start;
+    public com.utils.screenshot screenshot;
+    public com.methods.common common;
+    static AppiumDriver<MobileElement> driver;
 
-    DesiredCapabilities capabilities = new DesiredCapabilities();
-
-
+    DesiredCapabilities caps = new DesiredCapabilities();
 
     @Parameters({"server_port","device"})
     public smoke(@Optional("4731") String port, @Optional("default") String device)
@@ -35,53 +36,58 @@ public class smoke {
         this.device = device;
     }
 
-    @BeforeTest(alwaysRun = true)
-    void BeforeSuite()
+    public void StartUp()
     {
 
-        logger.info("-----");
-
-        StartUp();
-
-        logger.info(device+": "+"Initial Settings and App Startup");
-        logger.info(device+": "+"Settings Applied");
-
-    }
-
-    private void StartUp()
-    {
-
-        capabilities.setCapability("deviceName", device);
-        capabilities.setCapability("platformName", "Android");
-        capabilities.setCapability("appPackage", "ru.averia.tracker");
-        capabilities.setCapability("appActivity", "ru.averia.tracker.ui.activities.SplashActivity");
+        caps.setCapability("deviceName", device);
+        caps.setCapability("platformName", "Android");
+        caps.setCapability("appPackage", "ru.averia.tracker");
+        caps.setCapability("appActivity", "ru.averia.tracker.ui.activities.SplashActivity");
+        caps.setCapability("APP", consts.Timeout);
 
         try {
-            driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:" + port + "/wd/hub"), capabilities);
+            driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:" + port + "/wd/hub"), caps);
             //Thread.sleep(1000);
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
 
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-
-        start = new com.methods.start_screens(driver);
+        //Adding all needed methods and utils
+        start = new start_screens(driver);
         screenshot = new com.utils.screenshot(driver);
+
+        driver.manage().timeouts().implicitlyWait(consts.Timeout, TimeUnit.SECONDS);
 
     }
 
-    private void Exit() {
+    public void Exit() {
+
         driver.quit();
+
+    }
+
+    @BeforeTest(alwaysRun = true)
+    void BeforeSuite()
+    {
+
+        logger.info("-----");
+        logger.info(device+": "+"Initial Settings and App Startup");
+
+        StartUp();
+
+        logger.info(device+": "+"Settings Applied");
+
     }
 
     @AfterTest
     void AfterSuite() {
-        driver.quit();
+        Exit();
     }
 
     @AfterMethod
     void afterMethod(ITestResult result)
     {
+
         testName = result.getName();
 
         try
@@ -112,12 +118,15 @@ public class smoke {
     @Test
     void SplashScreen()
     {
+
         start.SplashScreen();
+
     }
 
     @Test(dependsOnMethods = "SplashScreen")
     void Register()
     {
+
         start.Register(device);
 
     }
@@ -127,6 +136,7 @@ public class smoke {
 
         Exit();
         StartUp();
+        start.SplashScreen();
         start.Login(device);
 
     }
