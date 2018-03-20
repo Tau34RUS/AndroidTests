@@ -2,23 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1281d1c0-0985-4127-85c8-4c8ed24b88a6" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/methods/common.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/methods/main_screens.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/methods/start_screens.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/packageinfo.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/tests/sample.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/utils/osutils.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/utils/screenshot.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/vars/consts.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/vars/vars.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/methods/ped_add.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/tests/smoke.java" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/vlad.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/vlad.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/TestNGParallel.xml" afterPath="$PROJECT_DIR$/TestNGParallel.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AlphaTests/AlphaTests.java" afterPath="$PROJECT_DIR$/src/main/java/AlphaTests/AlphaTests.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AlphaTests/Methods.java" afterPath="$PROJECT_DIR$/src/main/java/AlphaTests/Methods.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NGParallelTests/Methods.java" afterPath="$PROJECT_DIR$/src/main/java/NGParallelTests/Methods.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NGParallelTests/ParallelTestExecution.java" afterPath="$PROJECT_DIR$/src/main/java/NGParallelTests/ParallelTestExecution.java" />
+      <change beforePath="$PROJECT_DIR$/screenshot/LastFailScreenshot.png" afterPath="$PROJECT_DIR$/screenshot/LastFailScreenshot.png" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/methods/common.java" afterPath="$PROJECT_DIR$/src/main/java/com/methods/common.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/methods/main_screens.java" afterPath="$PROJECT_DIR$/src/main/java/com/methods/main_screens.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/methods/start_screens.java" afterPath="$PROJECT_DIR$/src/main/java/com/methods/start_screens.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/packageinfo.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tests/sample.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utils/screenshot.java" afterPath="$PROJECT_DIR$/src/main/java/com/utils/screenshot.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vars/consts.java" afterPath="$PROJECT_DIR$/src/main/java/com/vars/consts.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,17 +30,66 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="sample.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tests/sample.java">
+      <file leaf-file-name="smoke.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tests/smoke.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
-              <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+            <state relative-caret-position="280">
+              <caret line="121" column="0" lean-forward="true" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#sample#0;class#sample#0" expanded="false" />
-                <element signature="method#ParallelSetup#0;class#sample#0" expanded="false" />
-                <element signature="e#2090#2091#0" expanded="true" />
-                <element signature="e#2126#2127#0" expanded="true" />
+                <element signature="method#smoke#0;class#smoke#0" expanded="false" />
+                <element signature="method#BeforeSuite#0;class#smoke#0" expanded="false" />
+                <element signature="method#StartUp#0;class#smoke#0" expanded="false" />
+                <element signature="method#afterMethod#0;class#smoke#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestNGParallel.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestNGParallel.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="54" lean-forward="true" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestNG.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestNG.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="osutils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/utils/osutils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding>
+                <element signature="class#OS#0;class#osutils#0" expanded="false" />
+                <element signature="initializer##0;class#osutils#0" expanded="false" />
+                <element signature="method#getOs#0;class#osutils#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/common.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="34" column="5" lean-forward="false" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#AndroidAllowAccess#0;class#common#0" expanded="false" />
+                <element signature="method#SwipeUp#0;class#common#0" expanded="false" />
+                <element signature="method#SwipeDown#0;class#common#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -53,102 +98,20 @@
       <file leaf-file-name="start_screens.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/start_screens.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="836">
-              <caret line="69" column="21" lean-forward="false" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main_screens.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/main_screens.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+            <state relative-caret-position="151">
+              <caret line="74" column="35" lean-forward="false" selection-start-line="74" selection-start-column="35" selection-end-line="74" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/common.java">
+      <file leaf-file-name="screenshot.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/utils/screenshot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+            <state relative-caret-position="219">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#244#245#0" expanded="true" />
-                <element signature="e#280#281#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="vars.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/vars/vars.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="37" lean-forward="false" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="consts.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/vars/consts.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="45" lean-forward="false" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OsUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/AlphaTests/OsUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="990">
-              <caret line="69" column="1" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="69" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AlphaTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/AlphaTests/AlphaTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="55" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParallelTestExecution.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/NGParallelTests/ParallelTestExecution.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="27" column="4" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="24" />
-              <folding>
-                <element signature="method#ParallelTestExecution#0;class#ParallelTestExecution#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Methods.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/AlphaTests/Methods.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7380">
-              <caret line="492" column="1" lean-forward="false" selection-start-line="492" selection-start-column="1" selection-end-line="492" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#5579#5580#0" expanded="true" />
-                <element signature="e#5608#5609#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -195,19 +158,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/ParallelAlpha/AlphaTests/Runner.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ParallelAlpha/AlphaTests/config.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/NGParallelTests/Constants.java" />
-        <option value="$PROJECT_DIR$/src/main/java/JavaParallelTests/ParallelTestExecution.java" />
-        <option value="$PROJECT_DIR$/src/test/java/NGParallelTests/Methods.java" />
-        <option value="$PROJECT_DIR$/src/test/java/NGParallelTests/ParallelTestExecution.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/vars/variables.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/vars/constants.java" />
         <option value="$PROJECT_DIR$/src/test/java/ParallelTests/Test01.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/methods/android.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/methods/setup.java" />
         <option value="$PROJECT_DIR$/src/test/TestNGParallelTests.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/methods/setup.java" />
         <option value="$PROJECT_DIR$/src/main/java/ParallelTests/Test01.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/vars/Variables.java" />
         <option value="$PROJECT_DIR$/TestNGParallelTests.xml" />
@@ -231,21 +187,28 @@
         <option value="$PROJECT_DIR$/src/main/java/com/SmokeTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/NGParallelTests/ParallelTestExecution.java" />
         <option value="$PROJECT_DIR$/TestNGParallelSmoke.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/NGParallelTests/Methods.java" />
         <option value="$PROJECT_DIR$/src/main/java/Methods/Variables.java" />
         <option value="$PROJECT_DIR$/src/main/java/NGParallelTests/Variables.java" />
         <option value="$PROJECT_DIR$/src/main/java/Methods/Methods.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/packageinfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/methods/phone_specific.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vars/consts.java" />
-        <option value="$PROJECT_DIR$/TestNGParallel.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/utils/osutils.java" />
         <option value="$PROJECT_DIR$/src/main/java/AlphaTests/Methods.java" />
         <option value="$PROJECT_DIR$/src/main/java/AlphaTests/AlphaTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/vars/vars.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/methods/common.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/methods/main_screens.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/methods/ped_add.java" />
+        <option value="$PROJECT_DIR$/src/main/java/NGParallelTests/Methods.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/methods/start_screens.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vars/consts.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/utils/screenshot.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tests/SingleDeviceSmoke.java" />
+        <option value="$PROJECT_DIR$/TestNGParallel.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/methods/setup.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/utils/setup.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/methods/common.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tests/sample.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tests/smoke.java" />
       </list>
     </option>
   </component>
@@ -257,10 +220,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-2560" />
     <option name="y" value="22" />
-    <option name="width" value="2560" />
-    <option name="height" value="1058" />
+    <option name="width" value="1920" />
+    <option name="height" value="994" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -309,6 +271,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -319,6 +284,11 @@
             <path>
               <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
               <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
+              <item name="screenshot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -333,14 +303,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="AlphaTests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
@@ -375,24 +337,20 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="vars" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
               <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="NGParallelTests" type="462c0819:PsiDirectoryNode" />
+              <item name="output" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -403,22 +361,8 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java/com" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/tests" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/pgs/screen" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/pgs/config" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="Methods" />
-      <recent name="ParallelTests" />
-      <recent name="NGParallelTests" />
-      <recent name="" />
-      <recent name="Autotests" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/Methods" />
@@ -426,6 +370,20 @@
       <recent name="$PROJECT_DIR$/src/test" />
       <recent name="$PROJECT_DIR$/src/test/java" />
       <recent name="$PROJECT_DIR$/src/main/java/ParallelAlpha" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.tests" />
+      <recent name="com.methods" />
+      <recent name="Methods" />
+      <recent name="ParallelTests" />
+      <recent name="NGParallelTests" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/tests" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/pgs/screen" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/pgs/config" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -440,32 +398,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.TestNGParallel">
+  <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
-    </configuration>
-    <configuration name="ParallelTestExecution" type="Application" factoryName="Application" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="JavaParallelTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="JavaParallelTests.ParallelTestExecution" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="AndroidTests" />
-      <envs />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -535,33 +474,6 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="SmokeTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="AndroidTests" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="com" />
-      <option name="MAIN_CLASS_NAME" value="com.SmokeTest" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-    </configuration>
     <configuration name="SoakTest" type="TestNG" factoryName="TestNG" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="AndroidTests" />
@@ -616,33 +528,6 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="/Users/vlad/IdeaProjects/AndroidTests/TestNGParallelSmoke.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="AndroidTests" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/TestNGParallelSmoke.xml" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -670,7 +555,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="sample" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="sample" type="TestNG" factoryName="TestNG" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="AndroidTests" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -697,28 +582,46 @@
       <properties />
       <listeners />
     </configuration>
+    <configuration name="smoke" type="TestNG" factoryName="TestNG" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="AndroidTests" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="com.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.tests.smoke" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" value="" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="7">
-      <item index="0" class="java.lang.String" itemvalue="Application.ParallelTestExecution" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="TestNG.smoke" />
       <item index="1" class="java.lang.String" itemvalue="TestNG.AlphaTests" />
       <item index="2" class="java.lang.String" itemvalue="TestNG.SoakTest" />
       <item index="3" class="java.lang.String" itemvalue="TestNG.TestNGParallel" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.SmokeTest" />
-      <item index="5" class="java.lang.String" itemvalue="TestNG./Users/vlad/IdeaProjects/AndroidTests/TestNGParallelSmoke.xml" />
-      <item index="6" class="java.lang.String" itemvalue="TestNG.sample" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.sample" />
     </list>
-    <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.sample" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG./Users/vlad/IdeaProjects/AndroidTests/TestNGParallelSmoke.xml" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.SmokeTest" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -888,59 +791,66 @@
       <option name="project" value="LOCAL" />
       <updated>1521012281897</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="New Framework for Parallel Testing">
+      <created>1521207764856</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1521207764856</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestNGParallel - 2018.03.16 at 15h 12m 55s.xml">
+    <history-entry file="TestNGParallel - 2018.03.20 at 15h 34m 51s.xml">
       <configuration name="TestNGParallel" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNGParallel - 2018.03.16 at 15h 38m 45s.xml">
+    <history-entry file="TestNGParallel - 2018.03.20 at 16h 17m 40s.xml">
       <configuration name="TestNGParallel" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNGParallel - 2018.03.16 at 15h 42m 04s.xml">
+    <history-entry file="TestNGParallel - 2018.03.20 at 16h 28m 20s.xml">
       <configuration name="TestNGParallel" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNGParallel - 2018.03.16 at 15h 56m 29s.xml">
+    <history-entry file="TestNGParallel - 2018.03.20 at 16h 29m 15s.xml">
       <configuration name="TestNGParallel" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNGParallel - 2018.03.16 at 16h 07m 08s.xml">
+    <history-entry file="TestNGParallel - 2018.03.20 at 16h 30m 25s.xml">
       <configuration name="TestNGParallel" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNGParallel - 2018.03.16 at 16h 09m 36s.xml">
+    <history-entry file="TestNGParallel - 2018.03.20 at 16h 31m 59s.xml">
       <configuration name="TestNGParallel" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNGParallel - 2018.03.16 at 16h 10m 35s.xml">
+    <history-entry file="TestNGParallel - 2018.03.20 at 16h 33m 11s.xml">
       <configuration name="TestNGParallel" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNGParallel - 2018.03.16 at 16h 13m 05s.xml">
-      <configuration name="TestNGParallel" configurationId="TestNG" />
+    <history-entry file="smoke - 2018.03.20 at 16h 56m 10s.xml">
+      <configuration name="smoke" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNGParallel - 2018.03.16 at 16h 39m 14s.xml">
-      <configuration name="TestNGParallel" configurationId="TestNG" />
+    <history-entry file="smoke - 2018.03.20 at 16h 57m 31s.xml">
+      <configuration name="smoke" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNGParallel - 2018.03.16 at 16h 42m 08s.xml">
-      <configuration name="TestNGParallel" configurationId="TestNG" />
+    <history-entry file="smoke - 2018.03.20 at 17h 15m 29s.xml">
+      <configuration name="smoke" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2560" y="22" width="2560" height="1058" extended-state="6" />
+    <frame x="0" y="22" width="1920" height="994" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287234" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32762557" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25344646" sideWeight="0.5015625" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.108510636" sideWeight="0.4984375" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35388127" sideWeight="0.4984375" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13463067" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17784877" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -976,7 +886,8 @@
     <MESSAGE value="Mac specified fixes" />
     <MESSAGE value="More damned Mac specified fixes" />
     <MESSAGE value="Additional tests for Sony Xperia" />
-    <option name="LAST_COMMIT_MESSAGE" value="Additional tests for Sony Xperia" />
+    <MESSAGE value="New Framework for Parallel Testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="New Framework for Parallel Testing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -985,40 +896,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/config/credentials.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tests/LoginTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pgs/obj/obj_splash.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pgs/pgs_splash.java" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="60">
-            <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidTests.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AbstractTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/screens.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/screens/AbstractScreen.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/screens/CalculatorScreen.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/utils/AppiumDriver.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/calculatortest/OperationTests.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/calculatortest/Calculator.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/calculatortest/AbstractTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/calculatortest/util/AppiumDriverBuilder.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/calculatortest/screen/AbstractScreen.java" />
     <entry file="file://$PROJECT_DIR$/src/framework/java/appium/Test01.java" />
@@ -1029,6 +906,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1036,6 +914,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-997">
           <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1054,78 +933,11 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/Methods/Constants.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Methods/Variables.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Methods/Methods.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/packageinfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/utils/ыскуутырще.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/utils/screenshot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/NGParallelTests/Variables.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="30" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/NGParallelTests/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestNG.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/NGParallelTests/Methods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="205" column="9" lean-forward="true" selection-start-line="205" selection-start-column="9" selection-end-line="205" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/utils/osutils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="66" column="38" lean-forward="true" selection-start-line="66" selection-start-column="38" selection-end-line="66" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/AlphaTests/Variables.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestNGParallel.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="45" lean-forward="false" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
           <folding />
         </state>
       </provider>
@@ -1146,25 +958,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/NGParallelTests/ParallelTestExecution.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/NGParallelTests/Variables.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="27" column="4" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="24" />
-          <folding>
-            <element signature="method#ParallelTestExecution#0;class#ParallelTestExecution#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AlphaTests/Methods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7380">
-          <caret line="492" column="1" lean-forward="false" selection-start-line="492" selection-start-column="1" selection-end-line="492" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5579#5580#0" expanded="true" />
-            <element signature="e#5608#5609#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1176,64 +974,246 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vars/consts.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/NGParallelTests/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="45" lean-forward="false" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+        <state relative-caret-position="75">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AlphaTests/AlphaTests.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/NGParallelTests/ParallelTestExecution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="55" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="55" />
+        <state relative-caret-position="304">
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#ParallelTestExecution#0;class#ParallelTestExecution#0" expanded="false" />
+            <element signature="e#1695#1696#0" expanded="false" />
+            <element signature="e#1726#1727#0" expanded="false" />
+            <element signature="e#1765#1766#0" expanded="false" />
+            <element signature="e#1787#1788#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/main_screens.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        <state relative-caret-position="165">
+          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.9/testng-6.9.9.jar!/org/testng/SuiteRunnerWorker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/NGParallelTests/Methods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1425">
+          <caret line="111" column="12" lean-forward="false" selection-start-line="111" selection-start-column="12" selection-end-line="111" selection-end-column="26" />
+          <folding>
+            <element signature="method#UserProfile#0;class#Methods#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.9/testng-6.9.9-sources.jar!/org/testng/SuiteRunnerWorker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AlphaTests/AlphaTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="48" column="56" lean-forward="false" selection-start-line="48" selection-start-column="56" selection-end-line="48" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/java/lang/reflect/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="497" column="0" lean-forward="false" selection-start-line="497" selection-start-column="0" selection-end-line="497" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.9/testng-6.9.9-sources.jar!/org/testng/TestNG.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="1214" column="0" lean-forward="false" selection-start-line="1214" selection-start-column="0" selection-end-line="1214" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.9/testng-6.9.9-sources.jar!/org/testng/TestRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="623" column="0" lean-forward="false" selection-start-line="623" selection-start-column="0" selection-end-line="623" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AlphaTests/Methods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="220" column="0" lean-forward="false" selection-start-line="220" selection-start-column="0" selection-end-line="228" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="method#SetUp#0;class#Methods#0" expanded="false" />
+            <element signature="method#Restart#0;class#Methods#0" expanded="false" />
+            <element signature="method#Register#0;class#Methods#0" expanded="false" />
+            <element signature="method#Login#0;class#Methods#0" expanded="false" />
+            <element signature="method#AddPet#0;class#Methods#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/screenshot/LastFailScreenshot.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/ped_add.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/output/screenshots/LastFailScreenshot.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vars/consts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="76" lean-forward="true" selection-start-line="11" selection-start-column="76" selection-end-line="11" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/packageinfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="30" lean-forward="true" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/output/screenshots/LGK430V479D6E6_SplashScreen_fail.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestNG.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/utils/setup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="32" lean-forward="true" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/common.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        <state relative-caret-position="360">
+          <caret line="34" column="5" lean-forward="false" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#244#245#0" expanded="true" />
-            <element signature="e#280#281#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/start_screens.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="69" column="21" lean-forward="false" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#AndroidAllowAccess#0;class#common#0" expanded="false" />
+            <element signature="method#SwipeUp#0;class#common#0" expanded="false" />
+            <element signature="method#SwipeDown#0;class#common#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tests/sample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+        <state relative-caret-position="341">
+          <caret line="68" column="15" lean-forward="true" selection-start-line="68" selection-start-column="15" selection-end-line="68" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/output/screenshots/asus_Register_fail.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/output/screenshots/LGK430V479D6E6_Register_fail.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/output/screenshots/samsung_edge_Register_fail.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/utils/osutils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <element signature="class#OS#0;class#osutils#0" expanded="false" />
+            <element signature="initializer##0;class#osutils#0" expanded="false" />
+            <element signature="method#getOs#0;class#osutils#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestNGParallel.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="54" lean-forward="true" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/utils/screenshot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#sample#0;class#sample#0" expanded="false" />
-            <element signature="method#ParallelSetup#0;class#sample#0" expanded="false" />
-            <element signature="e#2090#2091#0" expanded="true" />
-            <element signature="e#2126#2127#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/start_screens.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="74" column="35" lean-forward="false" selection-start-line="74" selection-start-column="35" selection-end-line="74" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tests/smoke.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="121" column="0" lean-forward="true" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#smoke#0;class#smoke#0" expanded="false" />
+            <element signature="method#BeforeSuite#0;class#smoke#0" expanded="false" />
+            <element signature="method#StartUp#0;class#smoke#0" expanded="false" />
+            <element signature="method#afterMethod#0;class#smoke#0" expanded="false" />
           </folding>
         </state>
       </provider>

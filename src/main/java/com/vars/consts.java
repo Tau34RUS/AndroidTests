@@ -9,6 +9,7 @@ public class consts {
     public static final Integer Timeout = 20;
     public static final File appath_win = new File("D:\\APK\\ru.averia.tracker.alpha.apk");
     public static final File appath_mac = new File("/Users/vlad/Public/Android/ru.averia.tracker.alpha.apk");
+    public static final String folder_name = "src/main/output/screenshots/";
 
     //Android phones IDs
     public static final String phone_asuszenpad = "G1NPFP1202437HN";

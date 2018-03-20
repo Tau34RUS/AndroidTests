@@ -10,6 +10,7 @@ import org.testng.*;
 import java.util.*;
 import java.util.concurrent.*;
 
+import static com.vars.consts.*;
 import static com.vars.vars.*;
 
 public class start_screens extends common{
@@ -19,7 +20,7 @@ public class start_screens extends common{
     public start_screens(AppiumDriver<MobileElement> driver)  {
         super(driver);
         logger = Logger.getLogger("AndroidTestLogger");
-        PageFactory.initElements(new AppiumFieldDecorator(driver, com.vars.consts.Timeout, TimeUnit.SECONDS), this);
+        PageFactory.initElements(new AppiumFieldDecorator(driver, Timeout, TimeUnit.SECONDS), this);
     }
 
     public void SplashScreen() {
@@ -32,9 +33,9 @@ public class start_screens extends common{
 
     }
 
-    public void Register() {
+    public void Register(String device) {
 
-        logger.info("Starting Registration");
+        logger.info(device + ": Starting Registration");
 
         Random login = new Random();
 
@@ -55,8 +56,8 @@ public class start_screens extends common{
 
         driver.findElementById("ru.averia.tracker:id/et_password").sendKeys(userpass);
 
-        logger.info("Userlogin: " + userlogin);
-        logger.info("Userpass:  " + userpass);
+        logger.info(device + ": Userlogin: " + userlogin);
+        logger.info(device + ": Userpass:  " + userpass);
 
         //HideKeyboard();
         //driver.navigate().back();
@@ -67,11 +68,11 @@ public class start_screens extends common{
 
         Assert.assertEquals("Добавить", driver.findElementById("ru.averia.tracker:id/bt_add_pet").getText());
 
-        logger.info("Registration done");
+        logger.info(device + ": Registration done");
 
     }
 
-    public void Login() {
+    public void Login(String device) {
 
         Assert.assertEquals("Войти", driver.findElement(By.id("ru.averia.tracker:id/bt_login")).getText());
         driver.findElement(By.id("ru.averia.tracker:id/bt_login")).click();
@@ -89,7 +90,7 @@ public class start_screens extends common{
         try {
             Assert.assertEquals("Добавить", driver.findElement(By.id("ru.averia.tracker:id/bt_add_pet")).getText());
         }catch (org.openqa.selenium.NoSuchElementException e) {
-            logger.info("No Add Pet button, already added?");
+            logger.info(device + ": No Add Pet button, already added?");
         }
     }
 
