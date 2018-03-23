@@ -5,7 +5,7 @@ import AlphaTests.OsUtils;
 import java.io.IOException;
 import java.util.Locale;
 
-public class osutils {
+public class OSutils {
     public enum OS {
         WINDOWS,
         UNIX,

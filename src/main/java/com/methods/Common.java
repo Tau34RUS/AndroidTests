@@ -10,16 +10,16 @@ import java.util.*;
 import static com.vars.consts.*;
 import static com.vars.vars.*;
 
-public class common {
+public class Common {
 
     public AppiumDriver driver;
-    Logger logger = Logger.getLogger(common.class);
+    Logger logger = Logger.getLogger(Common.class);
 
-    public common(AppiumDriver<MobileElement> driver) {
+    public Common(AppiumDriver<MobileElement> driver) {
         this.driver = driver;
     }
 
-    public void AndroidAllowAccess() {
+    public void androidAllowAccess() {
         try {
             driver.findElementById("com.android.packageinstaller:id/permission_allow_button").click();
         }
@@ -29,7 +29,7 @@ public class common {
 
     }
 
-    public void Sleep (Integer seconds) {
+    public void sleep (Integer seconds) {
 
         try {
             Thread.sleep(1000 * seconds);
@@ -39,39 +39,39 @@ public class common {
 
     }
 
-    public void SwipeUp() {
+    public void swipeUp() {
 
         int starty = (int) (screensize.height * 0.50);
         int endy = (int) (screensize.height * 0.20);
         int startx = screensize.width / 2;
         driver.swipe(startx,starty,startx,endy,300);
         driver.swipe(startx,starty,startx,endy,300);
-        Sleep(1);
+        sleep(1);
     }
 
-    public void SwipeDown() {
+    public void swipeDown() {
 
         int starty = (int) (screensize.height * 0.20);
         int endy = (int) (screensize.height * 0.70);
         int startx = screensize.width / 2;
         driver.swipe(startx,starty,startx,endy,300);
         driver.swipe(startx,starty,startx,endy,300);
-        Sleep(1);
+        sleep(1);
     }
 
-    public void goto_MainScreen() {
+    public void gotoMainScreen() {
 
         driver.findElementById("ru.averia.tracker:id/maim_menu_action_pet").click();
 
     }
 
-    public void goto_MapScreen() {
+    public void gotoMapScreen() {
 
         driver.findElementById("ru.averia.tracker:id/maim_menu_action_map").click();
 
     }
 
-    public void goto_ProfileScreen() {
+    public void gotoProfileScreen() {
 
         driver.findElementById("ru.averia.tracker:id/main_menu_action_profile").click();
 
@@ -83,8 +83,8 @@ public class common {
         driver.findElementById("ru.averia.tracker:id/maim_menu_action_pet").click();
     }
 
-    public void PhonePhoto() {
-        AndroidAllowAccess();
+    public void phonePhoto() {
+        androidAllowAccess();
         switch (devicename) {
 
             case (phone_sony_xperia):
@@ -120,7 +120,7 @@ public class common {
             case (phone_samsung_edge):
                 logger.info("Samsung Edge photo sequence applied");
                 driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ScrollView/android.widget.ScrollView/android.widget.LinearLayout/com.android.internal.widget.ViewPager/android.widget.LinearLayout/android.widget.GridView/android.widget.LinearLayout[1]").click();
-                Sleep(5);
+                sleep(5);
                 driver.findElementByXPath("(//GLButton[@content-desc=\"NONE\"])[3]").click();
                 driver.findElementById("com.sec.android.app.camera:id/okay").click();
 
@@ -128,11 +128,11 @@ public class common {
             case (phone_lg):
                 logger.info("LG photo sequence applied");
                 driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ListView/android.widget.LinearLayout/android.widget.LinearLayout[2]").click();
-                Sleep(2);
+                sleep(2);
                 (new TouchAction(driver)).tap(109, 203).perform();
-                Sleep(2);
+                sleep(2);
                 (new TouchAction(driver)).tap(109, 203).perform();
-                Sleep(1);
+                sleep(1);
 
                 break;
             case (phone_meizu_n5):
@@ -161,7 +161,7 @@ public class common {
                 break;
             case (phone_nexus_5):
                 logger.info("Nexus 5 photo sequence applied");
-                AndroidAllowAccess();
+                androidAllowAccess();
                 driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ScrollView/android.widget.ListView/android.widget.LinearLayout[1]/android.widget.LinearLayout").click();
                 driver.findElementByAccessibilityId("Затвор").click();
                 driver.findElementByAccessibilityId("Готово").click();
@@ -169,8 +169,8 @@ public class common {
                 break;
             default:
                 logger.info("Default photo action applied");
-                Sleep(2);
-                AndroidAllowAccess();
+                sleep(2);
+                androidAllowAccess();
                 List<MobileElement> choiseslist = driver.findElements(By.className("android.widget.LinearLayout"));
                 logger.info("List: " + choiseslist);
                 choiseslist.get(1).click();
@@ -194,7 +194,7 @@ public class common {
 
         driver.findElement(By.id("ru.averia.tracker:id/iv_pet_ava")).click();
 
-        PhonePhoto();
+        phonePhoto();
 
         driver.findElement(By.id("ru.averia.tracker:id/crop_image_menu_crop")).click();
 

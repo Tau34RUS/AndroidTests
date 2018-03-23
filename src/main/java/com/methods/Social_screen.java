@@ -9,11 +9,11 @@ import java.util.concurrent.*;
 
 import static com.vars.consts.*;
 
-public class social_screen extends common{
+public class Social_screen extends Common{
 
     protected Logger logger;
 
-    public social_screen(AppiumDriver<MobileElement> driver)  {
+    public Social_screen(AppiumDriver<MobileElement> driver)  {
         super(driver);
         logger = Logger.getLogger("AndroidTestLogger");
         PageFactory.initElements(new AppiumFieldDecorator(driver, Timeout, TimeUnit.SECONDS), this);

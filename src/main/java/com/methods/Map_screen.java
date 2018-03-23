@@ -9,17 +9,17 @@ import java.util.concurrent.*;
 
 import static com.vars.consts.*;
 
-public class map_screen extends common{
+public class Map_screen extends Common{
 
     protected Logger logger;
 
-    public map_screen(AppiumDriver<MobileElement> driver)  {
+    public Map_screen(AppiumDriver<MobileElement> driver)  {
         super(driver);
         logger = Logger.getLogger("AndroidTestLogger");
         PageFactory.initElements(new AppiumFieldDecorator(driver, Timeout, TimeUnit.SECONDS), this);
     }
 
-    public void MapActions() {
+    public void mapActions() {
 
         driver.findElementById("ru.averia.tracker:id/maim_menu_action_map").click();
         driver.findElementById("ru.averia.tracker:id/ib_pet_position").click();

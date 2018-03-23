@@ -14,7 +14,7 @@ import org.testng.annotations.*;
 import java.net.*;
 import java.util.concurrent.*;
 
-public class smoke {
+public class Smoke {
 
     Logger logger = Logger.getLogger("AndroidTestLogger");
 
@@ -22,15 +22,15 @@ public class smoke {
     public String device;
     public String testName;
 
-    public start_screen start;
-    public com.utils.screenshot screenshot;
-    public com.methods.common common;
+    public Start_screen start;
+    public com.utils.Screenshot screenshot;
+    public com.methods.Common common;
     static AppiumDriver<MobileElement> driver;
 
     DesiredCapabilities caps = new DesiredCapabilities();
 
     @Parameters({"server_port","device"})
-    public smoke(@Optional("4731") String port, @Optional("default") String device)
+    public Smoke(@Optional("4731") String port, @Optional("default") String device)
     {
         this.port = port;
         this.device = device;
@@ -53,8 +53,8 @@ public class smoke {
         }
 
         //Adding all needed methods and utils
-        start = new start_screen(driver);
-        screenshot = new com.utils.screenshot(driver);
+        start = new Start_screen(driver);
+        screenshot = new com.utils.Screenshot(driver);
 
         driver.manage().timeouts().implicitlyWait(consts.Timeout, TimeUnit.SECONDS);
 

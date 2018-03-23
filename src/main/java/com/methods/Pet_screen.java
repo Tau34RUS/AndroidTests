@@ -10,17 +10,17 @@ import java.util.concurrent.*;
 
 import static com.vars.consts.*;
 
-public class pet_screen extends common{
+public class Pet_screen extends Common{
 
     protected Logger logger;
 
-    public pet_screen(AppiumDriver<MobileElement> driver)  {
+    public Pet_screen(AppiumDriver<MobileElement> driver)  {
         super(driver);
         logger = Logger.getLogger("AndroidTestLogger");
         PageFactory.initElements(new AppiumFieldDecorator(driver, Timeout, TimeUnit.SECONDS), this);
     }
 
-    public void AddCollar() {
+    public void addCollar() {
 
         Assert.assertEquals("Добавьте ошейник" ,driver.findElementById("ru.averia.tracker:id/tv_add_collar_title1").getText());
         driver.findElementById("ru.averia.tracker:id/tv_add_collar").click();
@@ -40,7 +40,7 @@ public class pet_screen extends common{
 
     }
 
-    public void PetEdit() {
+    public void petEdit() {
 
         driver.findElementById("ru.averia.tracker:id/main_menu_action_profile").click();
 
@@ -52,7 +52,7 @@ public class pet_screen extends common{
 
         //HideKeyboard();
 
-        SwipeUp();
+        swipeUp();
 
         driver.findElementById("ru.averia.tracker:id/et_weight").sendKeys("33");
 

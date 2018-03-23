@@ -12,11 +12,11 @@ import java.util.concurrent.*;
 
 import static com.vars.consts.folder_name;
 
-public class screenshot extends com.methods.common {
+public class Screenshot extends com.methods.Common {
 
     protected Logger logger;
 
-    public screenshot(AppiumDriver<MobileElement> driver)
+    public Screenshot(AppiumDriver<MobileElement> driver)
     {
         super(driver);
         logger = Logger.getLogger("Screenshot");

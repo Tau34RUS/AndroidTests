@@ -7,11 +7,11 @@ import org.openqa.selenium.support.*;
 
 import java.util.concurrent.*;
 
-public class main_screen extends common {
+public class Main_screen extends Common {
 
     protected Logger logger;
 
-    public main_screen(AppiumDriver<MobileElement> driver)  {
+    public Main_screen(AppiumDriver<MobileElement> driver)  {
 
         super(driver);
         logger = Logger.getLogger("AndroidTestLogger");

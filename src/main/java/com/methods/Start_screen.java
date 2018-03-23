@@ -13,18 +13,18 @@ import java.util.concurrent.*;
 import static com.vars.consts.*;
 import static com.vars.vars.*;
 
-public class start_screen extends common{
+public class Start_screen extends Common{
 
     protected Logger logger;
 
-    public start_screen(AppiumDriver<MobileElement> driver)  {
+    public Start_screen(AppiumDriver<MobileElement> driver)  {
         super(driver);
         logger = Logger.getLogger("AndroidTestLogger");
         PageFactory.initElements(new AppiumFieldDecorator(driver, Timeout, TimeUnit.SECONDS), this);
     }
 
     public void SplashScreen() {
-        Sleep(5);
+        sleep(5);
         Assert.assertEquals("Больше никаких потерянных животных", driver.findElement(By.id("ru.averia.tracker:id/about_title_dog_1")).getText());
         driver.findElement(By.id("ru.averia.tracker:id/bt_next")).click();
         Assert.assertEquals("Мониторинг активности вашего питомца", driver.findElement(By.id("ru.averia.tracker:id/about_title_dog_2")).getText());
@@ -50,7 +50,7 @@ public class start_screen extends common{
 
         //Assert.assertEquals("Регистрация", driver.findElement(By.id("ru.averia.tracker:id/tv_title")).getText());
 
-        Sleep(5);
+        sleep(5);
 
         driver.findElementById("ru.averia.tracker:id/et_email").sendKeys(userlogin);
 
@@ -64,7 +64,7 @@ public class start_screen extends common{
         driver.findElement(By.id("ru.averia.tracker:id/bt_register")).click();
 
         //Allow android actions
-        AndroidAllowAccess();
+        androidAllowAccess();
 
         Assert.assertEquals("Добавить", driver.findElementById("ru.averia.tracker:id/bt_add_pet").getText());
 
@@ -79,13 +79,13 @@ public class start_screen extends common{
 
         //Assert.assertEquals("Войти", driver.findElement(By.id("ru.averia.tracker:id/tv_title")).getText());
         Assert.assertEquals("Войти", driver.findElement(By.id("ru.averia.tracker:id/bt_login")).getText());
-        Sleep(5);
+        sleep(5);
         driver.findElement(By.id("ru.averia.tracker:id/et_email")).sendKeys(userlogin);
 
         driver.findElement(By.id("ru.averia.tracker:id/et_password")).sendKeys(userpass);
         driver.findElementById("ru.averia.tracker:id/bt_login").click();
 
-        AndroidAllowAccess();
+        androidAllowAccess();
 
         try {
             Assert.assertEquals("Добавить", driver.findElement(By.id("ru.averia.tracker:id/bt_add_pet")).getText());
