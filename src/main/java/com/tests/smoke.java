@@ -22,7 +22,7 @@ public class smoke {
     public String device;
     public String testName;
 
-    public com.methods.start_screens start;
+    public start_screen start;
     public com.utils.screenshot screenshot;
     public com.methods.common common;
     static AppiumDriver<MobileElement> driver;
@@ -53,7 +53,7 @@ public class smoke {
         }
 
         //Adding all needed methods and utils
-        start = new start_screens(driver);
+        start = new start_screen(driver);
         screenshot = new com.utils.screenshot(driver);
 
         driver.manage().timeouts().implicitlyWait(consts.Timeout, TimeUnit.SECONDS);

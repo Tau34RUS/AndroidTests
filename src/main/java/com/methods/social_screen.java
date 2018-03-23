@@ -7,15 +7,16 @@ import org.openqa.selenium.support.*;
 
 import java.util.concurrent.*;
 
-public class main_screens extends common {
+import static com.vars.consts.*;
+
+public class social_screen extends common{
 
     protected Logger logger;
 
-    public main_screens(AppiumDriver<MobileElement> driver)  {
-
+    public social_screen(AppiumDriver<MobileElement> driver)  {
         super(driver);
         logger = Logger.getLogger("AndroidTestLogger");
-        PageFactory.initElements(new AppiumFieldDecorator(driver, com.vars.consts.Timeout, TimeUnit.SECONDS), this);
+        PageFactory.initElements(new AppiumFieldDecorator(driver, Timeout, TimeUnit.SECONDS), this);
     }
 
 }

@@ -7,11 +7,12 @@ import org.openqa.selenium.support.*;
 
 import java.util.concurrent.*;
 
-public class ped_add extends common {
+public class main_screen extends common {
 
     protected Logger logger;
 
-    public ped_add(AppiumDriver<MobileElement> driver)  {
+    public main_screen(AppiumDriver<MobileElement> driver)  {
+
         super(driver);
         logger = Logger.getLogger("AndroidTestLogger");
         PageFactory.initElements(new AppiumFieldDecorator(driver, com.vars.consts.Timeout, TimeUnit.SECONDS), this);

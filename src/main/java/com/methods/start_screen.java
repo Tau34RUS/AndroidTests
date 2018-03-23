@@ -13,11 +13,11 @@ import java.util.concurrent.*;
 import static com.vars.consts.*;
 import static com.vars.vars.*;
 
-public class start_screens extends common{
+public class start_screen extends common{
 
     protected Logger logger;
 
-    public start_screens(AppiumDriver<MobileElement> driver)  {
+    public start_screen(AppiumDriver<MobileElement> driver)  {
         super(driver);
         logger = Logger.getLogger("AndroidTestLogger");
         PageFactory.initElements(new AppiumFieldDecorator(driver, Timeout, TimeUnit.SECONDS), this);
@@ -59,7 +59,6 @@ public class start_screens extends common{
         logger.info(device + ": Userlogin: " + userlogin);
         logger.info(device + ": Userpass:  " + userpass);
 
-        //HideKeyboard();
         //driver.navigate().back();
 
         driver.findElement(By.id("ru.averia.tracker:id/bt_register")).click();
