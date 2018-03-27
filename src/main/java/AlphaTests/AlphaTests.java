@@ -73,15 +73,6 @@ public class AlphaTests {
 
     }
 
-    @Test(dependsOnMethods = "AndroidTestAddPet")
-    public void AndroidTestAddCollar() {
-
-        logger.info("- - -");
-        logger.info("Adding the Collar");
-        App.AddCollar();
-
-    }
-
     @Test(dependsOnMethods = "AndroidTestRegister")
     public void AndroidTestCheckScreens() {
 

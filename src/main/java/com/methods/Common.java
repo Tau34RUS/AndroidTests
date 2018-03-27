@@ -13,6 +13,7 @@ import static com.vars.vars.*;
 public class Common {
 
     public AppiumDriver driver;
+
     Logger logger = Logger.getLogger(Common.class);
 
     public Common(AppiumDriver<MobileElement> driver) {

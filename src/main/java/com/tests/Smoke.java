@@ -24,7 +24,6 @@ public class Smoke {
 
     public Start_screen start;
     public com.utils.Screenshot screenshot;
-    public com.methods.Common common;
     static AppiumDriver<MobileElement> driver;
 
     DesiredCapabilities caps = new DesiredCapabilities();
