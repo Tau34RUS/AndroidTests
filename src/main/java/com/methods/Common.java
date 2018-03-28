@@ -47,7 +47,7 @@ public class Common {
         int startx = screensize.width / 2;
         driver.swipe(startx,starty,startx,endy,300);
         driver.swipe(startx,starty,startx,endy,300);
-        sleep(1);
+        sleep(2);
     }
 
     public void swipeDown() {
@@ -57,7 +57,7 @@ public class Common {
         int startx = screensize.width / 2;
         driver.swipe(startx,starty,startx,endy,300);
         driver.swipe(startx,starty,startx,endy,300);
-        sleep(1);
+        sleep(2);
     }
 
     public void gotoMainScreen() {
@@ -79,9 +79,19 @@ public class Common {
     }
 
     public void ScreensShuffle() {
-        driver.findElementById("ru.averia.tracker:id/maim_menu_action_map").click();
-        driver.findElementById("ru.averia.tracker:id/main_menu_action_profile").click();
-        driver.findElementById("ru.averia.tracker:id/maim_menu_action_pet").click();
+
+        for(int i=0; i<4; i++) {
+            driver.findElementById("ru.averia.tracker:id/maim_menu_action_map").click();
+            sleep(1);
+            driver.findElementById("ru.averia.tracker:id/main_menu_action_profile").click();
+            sleep(1);
+            swipeUp();
+            swipeDown();
+            driver.findElementById("ru.averia.tracker:id/maim_menu_action_pet").click();
+            sleep(1);
+            swipeUp();
+            swipeDown();
+        }
     }
 
     public void phonePhoto() {

@@ -3,8 +3,8 @@ package com.tests;
 /* Smoke Tests */
 
 import com.methods.*;
-import com.vars.*;
 import com.utils.*;
+import com.vars.*;
 import io.appium.java_client.*;
 import io.appium.java_client.android.*;
 import org.apache.log4j.*;
@@ -15,7 +15,7 @@ import org.testng.annotations.*;
 import java.net.*;
 import java.util.concurrent.*;
 
-public class Smoke {
+public class AlphaBuild {
 
     Logger logger = Logger.getLogger("AndroidTestLogger");
 
@@ -33,7 +33,7 @@ public class Smoke {
     DesiredCapabilities caps = new DesiredCapabilities();
 
     @Parameters({"server_port","device"})
-    public Smoke(@Optional("4731") String port, @Optional("default") String device)
+    public AlphaBuild(@Optional("4731") String port, @Optional("default") String device)
     {
         this.port = port;
         this.device = device;

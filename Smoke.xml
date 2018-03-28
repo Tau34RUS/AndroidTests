@@ -30,7 +30,7 @@
                 <inherited>true</inherited>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>TestNGAlpha.xml</suiteXmlFile>
+                        <suiteXmlFile>TestNGSmoke.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>

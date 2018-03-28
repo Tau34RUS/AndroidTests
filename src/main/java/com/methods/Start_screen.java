@@ -94,4 +94,22 @@ public class Start_screen extends Common{
         }
     }
 
+    public void Login_old(String device) {
+
+        Assert.assertEquals("Войти", driver.findElement(By.id("ru.averia.tracker:id/bt_login")).getText());
+        driver.findElement(By.id("ru.averia.tracker:id/bt_login")).click();
+
+        Assert.assertEquals("Войти", driver.findElement(By.id("ru.averia.tracker:id/bt_login")).getText());
+        sleep(5);
+        driver.findElement(By.id("ru.averia.tracker:id/et_email")).click();
+        driver.findElement(By.id("ru.averia.tracker:id/et_email")).sendKeys(old_user);
+
+        driver.findElement(By.id("ru.averia.tracker:id/et_password")).click();
+        driver.findElement(By.id("ru.averia.tracker:id/et_password")).sendKeys(old_pass);
+        driver.findElementById("ru.averia.tracker:id/bt_login").click();
+
+        androidAllowAccess();
+
+    }
+
 }

@@ -22,7 +22,16 @@ public class Profile_screen extends Common{
         PageFactory.initElements(new AppiumFieldDecorator(driver, Timeout, TimeUnit.SECONDS), this);
     }
 
-    public void userProfile() {
+    public void userProfileView(String device) {
+
+        driver.findElementById("ru.averia.tracker:id/main_menu_action_profile").click();
+        driver.findElementById("ru.averia.tracker:id/iv_ava").clear();
+        driver.findElementById("ru.averia.tracker:id/tv_name").clear();
+        driver.findElementById("ru.averia.tracker:id/tv_info").clear();
+
+    }
+
+    public void userProfileEdit(String device) {
 
         driver.findElementById("ru.averia.tracker:id/main_menu_action_profile").click();
         driver.findElementById("ru.averia.tracker:id/iv_ava").clear();
