@@ -15,7 +15,7 @@ import org.testng.annotations.*;
 import java.net.*;
 import java.util.concurrent.*;
 
-public class AlphaBuild {
+public class FullBuildTest {
 
     Logger logger = Logger.getLogger("AndroidTestLogger");
 
@@ -28,12 +28,13 @@ public class AlphaBuild {
     public GetScreenSize screensize;
     public Common common;
     public Profile_screen profile_screen;
+    public Main_screen main_screen;
     static AppiumDriver<MobileElement> driver;
 
     DesiredCapabilities caps = new DesiredCapabilities();
 
     @Parameters({"server_port","device"})
-    public AlphaBuild(@Optional("4731") String port, @Optional("default") String device)
+    public FullBuildTest(@Optional("4731") String port, @Optional("default") String device)
     {
         this.port = port;
         this.device = device;
@@ -61,6 +62,7 @@ public class AlphaBuild {
         screensize = new GetScreenSize(driver);
         common = new Common(driver);
         profile_screen = new Profile_screen(driver);
+        main_screen = new Main_screen(driver);
 
         driver.manage().timeouts().implicitlyWait(consts.Timeout, TimeUnit.SECONDS);
 
@@ -137,8 +139,8 @@ public class AlphaBuild {
     {
 
         common.ScreensShuffle();
-        common.gotoProfileScreen();
-        profile_screen.userProfileView(device);
+        common.gotoMainScreen();
+        main_screen.checkScreen(device);
 
     }
 

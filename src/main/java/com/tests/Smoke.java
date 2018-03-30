@@ -28,6 +28,8 @@ public class Smoke {
     public GetScreenSize screensize;
     public Common common;
     public Profile_screen profile_screen;
+    public Main_screen main_screen;
+
     static AppiumDriver<MobileElement> driver;
 
     DesiredCapabilities caps = new DesiredCapabilities();
@@ -61,6 +63,7 @@ public class Smoke {
         screensize = new GetScreenSize(driver);
         common = new Common(driver);
         profile_screen = new Profile_screen(driver);
+        main_screen = new Main_screen(driver);
 
         driver.manage().timeouts().implicitlyWait(consts.Timeout, TimeUnit.SECONDS);
 
@@ -137,8 +140,24 @@ public class Smoke {
     {
 
         common.ScreensShuffle();
+
+    }
+
+    @Test(dependsOnMethods = "MainActivity")
+    void ProfileScreenElements()
+    {
+
         common.gotoProfileScreen();
         profile_screen.userProfileView(device);
+
+    }
+
+    @Test(dependsOnMethods = "MainActivity")
+    void MainScreenElements()
+    {
+
+        common.gotoMainScreen();
+        main_screen.checkScreen(device);
 
     }
 

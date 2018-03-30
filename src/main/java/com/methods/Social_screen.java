@@ -19,4 +19,6 @@ public class Social_screen extends Common{
         PageFactory.initElements(new AppiumFieldDecorator(driver, Timeout, TimeUnit.SECONDS), this);
     }
 
+
+
 }
