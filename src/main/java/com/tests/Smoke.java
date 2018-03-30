@@ -152,7 +152,7 @@ public class Smoke {
 
     }
 
-    @Test(dependsOnMethods = "MainActivity")
+    @Test(dependsOnMethods = "Login")
     void MainScreenElements()
     {
 
