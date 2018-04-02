@@ -29,6 +29,8 @@ public class FullBuildTest {
     public Common common;
     public Profile_screen profile_screen;
     public Main_screen main_screen;
+    public Pet_screen pet_screen;
+    public Socials social;
     static AppiumDriver<MobileElement> driver;
 
     DesiredCapabilities caps = new DesiredCapabilities();
@@ -42,6 +44,8 @@ public class FullBuildTest {
 
     public void StartUp()
     {
+
+        logger.info(device + ": Starting app");
 
         caps.setCapability("deviceName", device);
         caps.setCapability("platformName", "Android");
@@ -63,13 +67,18 @@ public class FullBuildTest {
         common = new Common(driver);
         profile_screen = new Profile_screen(driver);
         main_screen = new Main_screen(driver);
+        pet_screen = new Pet_screen(driver);
+        social = new Socials(driver);
 
         driver.manage().timeouts().implicitlyWait(consts.Timeout, TimeUnit.SECONDS);
+
+        logger.info(device + ": App launched");
 
     }
 
     public void Exit() {
 
+        logger.info(device + ": closing app");
         driver.quit();
 
     }
@@ -126,21 +135,81 @@ public class FullBuildTest {
     }
 
     @Test
+    void Register()
+    {
+
+        start.SplashScreen();
+        start.Register(device);
+
+    }
+
+    @Test(dependsOnMethods = "Register")
     void Login()
     {
+
+        start.SplashScreen();
+        start.Login(device);
+
+    }
+
+    @Test(dependsOnMethods = "Login")
+    void AddPet()
+    {
+
+        pet_screen.addPet(device);
+
+    }
+
+    @Test(dependsOnMethods = "AddPet")
+    void MainActivity()
+    {
+
+        common.ScreensShuffle();
+        common.gotoMainScreen(device);
+
+    }
+
+    @Test(dependsOnMethods = "AddPet")
+    void UserProfile()
+    {
+
+        common.gotoProfileScreen(device);
+        profile_screen.userProfileEdit(device);
+        common.gotoMainScreen(device);
+
+    }
+
+    @Test(dependsOnMethods = "UserProfile")
+    void PetProfile()
+    {
+
+        common.gotoProfileScreen(device);
+        profile_screen.userProfileEdit(device);
+
+    }
+
+    @Test(dependsOnMethods = "PetProfile")
+    void Restart(){
+
+        Exit();
+        StartUp();
+
+    }
+
+    @Test(dependsOnMethods = "Restart")
+    void LoginExistingUser(){
 
         start.SplashScreen();
         start.Login_old(device);
 
     }
 
-    @Test(dependsOnMethods = "Login")
-    void MainActivity()
-    {
+    @Test(dependsOnMethods = "LoginExistingUser")
+    void Achievements(){
 
-        common.ScreensShuffle();
-        common.gotoMainScreen();
-        main_screen.checkScreen(device);
+        common.gotoMainScreen(device);
+        common.swipeDown();
+        social.share_Achievement(device);
 
     }
 

@@ -74,6 +74,8 @@ public class Start_screen extends Common{
 
     public void Login(String device) {
 
+        logger.info(device + ": Logging with just registered user");
+
         Assert.assertEquals("Войти", driver.findElement(By.id("ru.averia.tracker:id/bt_login")).getText());
         driver.findElement(By.id("ru.averia.tracker:id/bt_login")).click();
 
@@ -95,6 +97,8 @@ public class Start_screen extends Common{
     }
 
     public void Login_old(String device) {
+
+        logger.info(device + ": Logging with existing user");
 
         Assert.assertEquals("Войти", driver.findElement(By.id("ru.averia.tracker:id/bt_login")).getText());
         driver.findElement(By.id("ru.averia.tracker:id/bt_login")).click();

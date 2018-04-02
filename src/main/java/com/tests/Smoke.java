@@ -48,7 +48,7 @@ public class Smoke {
         caps.setCapability("platformName", "Android");
         caps.setCapability("appPackage", "ru.averia.tracker");
         caps.setCapability("appActivity", "ru.averia.tracker.ui.activities.SplashActivity");
-        caps.setCapability("APP", consts.Timeout);
+        caps.setCapability("APP", consts.app_path_mac);
 
         try {
             driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:" + port + "/wd/hub"), caps);
@@ -147,7 +147,7 @@ public class Smoke {
     void ProfileScreenElements()
     {
 
-        common.gotoProfileScreen();
+        common.gotoProfileScreen(device);
         profile_screen.userProfileView(device);
 
     }
@@ -156,7 +156,7 @@ public class Smoke {
     void MainScreenElements()
     {
 
-        common.gotoMainScreen();
+        common.gotoMainScreen(device);
         main_screen.checkScreen(device);
 
     }
