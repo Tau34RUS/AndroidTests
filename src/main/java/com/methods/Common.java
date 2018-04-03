@@ -65,21 +65,21 @@ public class Common {
 
     public void gotoMainScreen(String device) {
 
-        logger.info(device + ":GOTO Main Screen");
+        logger.info(device + ": GOTO Main Screen");
         driver.findElementById("ru.averia.tracker:id/maim_menu_action_pet").click();
 
     }
 
     public void gotoMapScreen(String device) {
 
-        logger.info(device + ":GOTO Map Screen");
+        logger.info(device + ": GOTO Map Screen");
         driver.findElementById("ru.averia.tracker:id/maim_menu_action_map").click();
 
     }
 
     public void gotoProfileScreen(String device) {
 
-        logger.info(device + ":GOTO Profile Screen");
+        logger.info(device + ": GOTO Profile Screen");
         driver.findElementById("ru.averia.tracker:id/main_menu_action_profile").click();
 
     }

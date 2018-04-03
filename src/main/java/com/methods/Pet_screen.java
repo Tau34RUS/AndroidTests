@@ -76,15 +76,13 @@ public class Pet_screen extends Common{
         Assert.assertEquals("Добавить питомца", driver.findElement(By.id("ru.averia.tracker:id/tv_title")).getText());
         driver.findElement(By.id("ru.averia.tracker:id/et_name")).click();
         driver.findElement(By.id("ru.averia.tracker:id/et_name")).sendKeys(petname);
-        driver.navigate().back();
-        driver.findElement(By.id("ru.averia.tracker:id/bt_next")).click();
+/*       driver.findElement(By.id("ru.averia.tracker:id/iv_pet_ava")).click();
 
-        driver.findElement(By.id("ru.averia.tracker:id/iv_pet_ava")).click();
-
-        phonePhoto();
+       phonePhoto();
 
         driver.findElement(By.id("ru.averia.tracker:id/crop_image_menu_crop")).click();
 
+        driver.navigate().back();
         driver.findElement(By.id("ru.averia.tracker:id/bt_next")).click();
 
         Assert.assertEquals("Добавить питомца", driver.findElement(By.id("ru.averia.tracker:id/tv_title")).getText());
@@ -100,6 +98,8 @@ public class Pet_screen extends Common{
         catch (org.openqa.selenium.NoSuchElementException e) {
             logger.warn("No List Element 'Breed' Found!");
         }
+*/
+        driver.navigate().back();
 
         driver.findElement(By.id("ru.averia.tracker:id/bt_next")).click();
 
