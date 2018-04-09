@@ -3,8 +3,8 @@ package com.tests;
 /* Smoke Tests */
 
 import com.methods.*;
-import com.vars.*;
 import com.utils.*;
+import com.vars.*;
 import io.appium.java_client.*;
 import io.appium.java_client.android.*;
 import org.apache.log4j.*;
@@ -15,7 +15,7 @@ import org.testng.annotations.*;
 import java.net.*;
 import java.util.concurrent.*;
 
-public class Smoke {
+public class FullBuildTest {
 
     Logger logger = Logger.getLogger("AndroidTestLogger");
 
@@ -29,13 +29,14 @@ public class Smoke {
     public Common common;
     public Profile_screen profile_screen;
     public Main_screen main_screen;
-
+    public Pet_screen pet_screen;
+    public Socials social;
     static AppiumDriver<MobileElement> driver;
 
     DesiredCapabilities caps = new DesiredCapabilities();
 
     @Parameters({"server_port","device"})
-    public Smoke(@Optional("4731") String port, @Optional("default") String device)
+    public FullBuildTest(@Optional("4731") String port, @Optional("default") String device)
     {
         this.port = port;
         this.device = device;
@@ -44,12 +45,14 @@ public class Smoke {
     public void StartUp()
     {
 
+        logger.info(device + ": Starting app");
+
         caps.setCapability("deviceName", device);
-        caps.setCapability("app", consts.app_path_mac);
         caps.setCapability("platformName", "Android");
         caps.setCapability("appPackage", "ru.averia.tracker");
         caps.setCapability("appActivity", "ru.averia.tracker.ui.activities.SplashActivity");
-
+        caps.setCapability("app", consts.app_path_mac);
+        caps.setCapability("udid",consts.phone_lg);
 
         try {
             driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:" + port + "/wd/hub"), caps);
@@ -65,13 +68,18 @@ public class Smoke {
         common = new Common(driver);
         profile_screen = new Profile_screen(driver);
         main_screen = new Main_screen(driver);
+        pet_screen = new Pet_screen(driver);
+        social = new Socials(driver);
 
         driver.manage().timeouts().implicitlyWait(consts.Timeout, TimeUnit.SECONDS);
+
+        logger.info(device + ": App launched");
 
     }
 
     public void Exit() {
 
+        logger.info(device + ": Closing app");
         driver.quit();
 
     }
@@ -93,7 +101,7 @@ public class Smoke {
 
     @AfterTest
     void AfterSuite() {
-        Exit();
+     //   Exit();
     }
 
     @AfterMethod
@@ -128,39 +136,84 @@ public class Smoke {
     }
 
     @Test
-    void Login()
-    {
+        void Register()
+        {
+
+            start.SplashScreen();
+            start.Register(device);
+
+
+        }
+    @Test(dependsOnMethods = "Register")
+        void Login()
+        {
+            Exit();
+            StartUp();
+            start.SplashScreen();
+            start.Login(device);
+
+        }
+    @Test(dependsOnMethods = "Login")
+        void AddPet()
+        {
+
+            pet_screen.addPet(device);
+            common.gotoProfileScreen(device);
+            pet_screen.petEdit(device);
+
+        }
+
+    @Test(dependsOnMethods = "AddPet")
+        void MainActivity()
+        {
+
+            common.ScreensShuffle();
+            common.gotoMainScreen(device);
+
+        }
+
+    @Test(dependsOnMethods = "AddPet")
+        void UserProfile()
+        {
+
+            common.gotoProfileScreen(device);
+            profile_screen.userProfileEdit(device);
+            common.gotoMainScreen(device);
+
+        }
+
+    @Test(dependsOnMethods = "UserProfile")
+        void PetProfile()
+        {
+
+            common.gotoProfileScreen(device);
+            profile_screen.userProfileEdit(device);
+
+        }
+
+    @Test(dependsOnMethods = "PetProfile")
+        void Restart(){
+
+            Exit();
+            StartUp();
+
+        }
+
+    @Test(dependsOnMethods = "Restart")
+    void LoginExistingUser(){
 
         start.SplashScreen();
         start.Login_old(device);
 
     }
 
-    @Test(dependsOnMethods = "Login")
-    void MainActivity()
-    {
 
-        common.ScreensShuffle();
-
-    }
-
-    @Test(dependsOnMethods = "MainActivity")
-    void ProfileScreenElements()
-    {
-
-        common.gotoProfileScreen(device);
-        profile_screen.userProfileView(device);
-
-    }
-
-    @Test(dependsOnMethods = "Login")
-    void MainScreenElements()
-    {
+    @Test(dependsOnMethods = "LoginExistingUser")
+    void Achievements(){
 
         common.gotoMainScreen(device);
-        main_screen.checkScreen(device);
+        social.share_Achievement(device);
 
     }
-
 
 }

@@ -3,12 +3,14 @@ package com.methods;
 import io.appium.java_client.*;
 import io.appium.java_client.pagefactory.*;
 import org.apache.log4j.*;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.*;
 import org.testng.*;
 
 import java.util.concurrent.*;
 
 import static com.vars.consts.*;
+import static com.vars.vars.*;
 
 public class Pet_screen extends Common{
 
@@ -40,28 +42,67 @@ public class Pet_screen extends Common{
 
     }
 
-    public void petEdit() {
+    public void petEdit(String device) {
 
-        driver.findElementById("ru.averia.tracker:id/main_menu_action_profile").click();
+            swipeUpToElementId("ru.averia.tracker:id/tv_about");
 
-        driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.support.v4.view.ViewPager/android.view.ViewGroup/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.view.ViewGroup[1]").click();
+    }
 
-        driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.view.ViewGroup/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.Button").click();
+    public void addPet (String device){
 
-        driver.findElementById("ru.averia.tracker:id/et_name").sendKeys("1");
+        logger.info(device + ": Adding Pet");
 
-        //HideKeyboard();
+        driver.findElement(By.id("ru.averia.tracker:id/maim_menu_action_pet")).click();
+        Assert.assertEquals("Добавить питомца", driver.findElement(By.id("ru.averia.tracker:id/tv_description_large")).getText());
+        driver.findElement(By.id("ru.averia.tracker:id/bt_add_pet")).click();
+        Assert.assertEquals("Добавить питомца", driver.findElement(By.id("ru.averia.tracker:id/tv_title")).getText());
+ //       driver.findElement(By.id("ru.averia.tracker:id/et_name")).click();
+        driver.findElement(By.id("ru.averia.tracker:id/et_name")).sendKeys(petname);
 
-        swipeUp();
 
-        driver.findElementById("ru.averia.tracker:id/et_weight").sendKeys("33");
+        driver.findElement(By.id("ru.averia.tracker:id/iv_pet_ava")).click();
 
-        driver.findElementById("ru.averia.tracker:id/et_height").sendKeys("33");
+        phonePhoto();
 
-        driver.findElementById("ru.averia.tracker:id/iv_save").click();
+        driver.findElement(By.id("ru.averia.tracker:id/crop_image_menu_crop")).click();
 
-        //HideKeyboard();
+        driver.navigate().back();
+        driver.findElement(By.id("ru.averia.tracker:id/bt_next")).click();
 
+        Assert.assertEquals("Добавить питомца", driver.findElement(By.id("ru.averia.tracker:id/tv_title")).getText());
+        driver.findElement(By.id("ru.averia.tracker:id/bt_next")).click();
+/*
+        //Shitty Magic
+        (new TouchAction(driver)).tap(462, 710).perform();
+        (new TouchAction(driver)).tap(400, 400).perform();
+
+        try {
+            driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.view.ViewGroup[4]").click();
+        }
+        catch (org.openqa.selenium.NoSuchElementException e) {
+            logger.warn("No List Element 'Breed' Found!");
+        }
+*/
+        driver.navigate().back();
+
+        driver.findElement(By.id("ru.averia.tracker:id/bt_next")).click();
+
+        //driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.View/android.widget.FrameLayout/android.view.View/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.view.View[2]").click();
+
+        driver.findElement(By.xpath("//*[@text='Австралийская келпи']")).click();
+        driver.findElementById("ru.averia.tracker:id/bt_next").click();
+
+        driver.findElementById("ru.averia.tracker:id/til_age").sendKeys("2");
+        driver.navigate().back();
+        driver.findElementById("ru.averia.tracker:id/bt_next").click();
+
+        driver.findElementById("ru.averia.tracker:id/til_weight").sendKeys("31");
+
+        driver.findElementById("ru.averia.tracker:id/til_height").sendKeys("22");
+
+        driver.navigate().back();
+
+        driver.findElementById("ru.averia.tracker:id/bt_next").click();
     }
 
 }

@@ -3,17 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="1281d1c0-0985-4127-85c8-4c8ed24b88a6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/TestNGParallel.xml" afterPath="$PROJECT_DIR$/TestNGParallel.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/methods/common.java" afterPath="$PROJECT_DIR$/src/main/java/com/methods/Common.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/methods/main_screen.java" afterPath="$PROJECT_DIR$/src/main/java/com/methods/Main_screen.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/methods/map_screen.java" afterPath="$PROJECT_DIR$/src/main/java/com/methods/Map_screen.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/methods/pet_screen.java" afterPath="$PROJECT_DIR$/src/main/java/com/methods/Pet_screen.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/methods/profile_screen.java" afterPath="$PROJECT_DIR$/src/main/java/com/methods/Profile_screen.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/methods/social_screen.java" afterPath="$PROJECT_DIR$/src/main/java/com/methods/Social_screen.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/methods/start_screen.java" afterPath="$PROJECT_DIR$/src/main/java/com/methods/Start_screen.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tests/smoke.java" afterPath="$PROJECT_DIR$/src/main/java/com/tests/Smoke.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utils/osutils.java" afterPath="$PROJECT_DIR$/src/main/java/com/utils/OSutils.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utils/screenshot.java" afterPath="$PROJECT_DIR$/src/main/java/com/utils/Screenshot.java" />
+      <change beforePath="$PROJECT_DIR$/screenshot/LastFailScreenshot.png" afterPath="$PROJECT_DIR$/screenshot/LastFailScreenshot.png" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/methods/Common.java" afterPath="$PROJECT_DIR$/src/main/java/com/methods/Common.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/methods/Pet_screen.java" afterPath="$PROJECT_DIR$/src/main/java/com/methods/Pet_screen.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/methods/Socials.java" afterPath="$PROJECT_DIR$/src/main/java/com/methods/Socials.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tests/FullBuildTest.java" afterPath="$PROJECT_DIR$/src/main/java/com/tests/FullBuildTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tests/Smoke.java" afterPath="$PROJECT_DIR$/src/main/java/com/tests/Smoke.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utils/GetScreenSize.java" afterPath="$PROJECT_DIR$/src/main/java/com/utils/GetDeviceInfo.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vars/vars.java" afterPath="$PROJECT_DIR$/src/main/java/com/vars/vars.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,21 +26,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="vars.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/vars/vars.java">
+      <file leaf-file-name="FullBuildTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tests/FullBuildTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="37" lean-forward="false" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-              <folding />
+            <state relative-caret-position="178">
+              <caret line="103" column="7" lean-forward="false" selection-start-line="103" selection-start-column="7" selection-end-line="103" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#FullBuildTest#0;class#FullBuildTest#0" expanded="false" />
+                <element signature="method#StartUp#0;class#FullBuildTest#0" expanded="false" />
+                <element signature="method#afterMethod#0;class#FullBuildTest#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="consts.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/vars/consts.java">
+      <file leaf-file-name="default_UserProfile_fail.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/output/screenshots/default_UserProfile_fail.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default_Achievements_fail.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/output/screenshots/default_Achievements_fail.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vars.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/vars/vars.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="39" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="39" />
+            <state relative-caret-position="390">
+              <caret line="26" column="23" lean-forward="false" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -52,59 +68,48 @@
       <file leaf-file-name="Pet_screen.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/Pet_screen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="42" column="26" lean-forward="false" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
+            <state relative-caret-position="210">
+              <caret line="46" column="64" lean-forward="false" selection-start-line="46" selection-start-column="64" selection-end-line="46" selection-end-column="64" />
               <folding>
                 <element signature="method#Pet_screen#0;class#Pet_screen#0" expanded="false" />
-                <element signature="method#petEdit#0;class#Pet_screen#0" expanded="false" />
-                <marker date="1521810333167" expanded="false" signature="598:1654" ph="{...}" />
+                <element signature="method#addCollar#0;class#Pet_screen#0" expanded="false" />
+                <element signature="method#addPet#0;class#Pet_screen#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Map_screen.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/Map_screen.java">
+      <file leaf-file-name="TestNGFull.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testng_xmls/TestNGFull.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="21" column="17" lean-forward="false" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-              <folding>
-                <element signature="method#Map_screen#0;class#Map_screen#0" expanded="false" />
-                <element signature="method#mapActions#0;class#Map_screen#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Profile_screen.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/Profile_screen.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="57" column="11" lean-forward="false" selection-start-line="57" selection-start-column="11" selection-end-line="57" selection-end-column="11" />
-              <folding>
-                <element signature="method#Profile_screen#0;class#Profile_screen#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OSutils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/utils/OSutils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="30">
+              <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Social_screen.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/Social_screen.java">
+      <file leaf-file-name="default_Register_fail.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/output/screenshots/default_Register_fail.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Common.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/Common.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="11" column="36" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+            <state relative-caret-position="45">
+              <caret line="200" column="34" lean-forward="true" selection-start-line="200" selection-start-column="16" selection-end-line="200" selection-end-column="34" />
               <folding>
-                <element signature="method#Social_screen#0;class#Social_screen#0" expanded="false" />
+                <element signature="method#androidAllowAccess#0;class#Common#0" expanded="false" />
+                <element signature="method#sleep#0;class#Common#0" expanded="false" />
+                <element signature="method#swipeUp#0;class#Common#0" expanded="false" />
+                <element signature="method#swipeDown#0;class#Common#0" expanded="false" />
+                <element signature="method#gotoMapScreen#0;class#Common#0" expanded="false" />
+                <element signature="method#gotoProfileScreen#0;class#Common#0" expanded="false" />
+                <element signature="method#ScreensShuffle#0;class#Common#0" expanded="false" />
+                <element signature="method#phonePhoto#0;class#Common#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -113,33 +118,24 @@
       <file leaf-file-name="Main_screen.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/Main_screen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="150">
+              <caret line="20" column="43" lean-forward="false" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
               <folding>
                 <element signature="method#Main_screen#0;class#Main_screen#0" expanded="false" />
+                <element signature="method#checkScreen#0;class#Main_screen#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Screenshot.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/utils/Screenshot.java">
+      <file leaf-file-name="Socials.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/Socials.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="38" column="1" lean-forward="false" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Start_screen.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/Start_screen.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="150">
+              <caret line="21" column="49" lean-forward="false" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
               <folding>
-                <element signature="method#Register#0;class#Start_screen#0" expanded="false" />
-                <element signature="method#Login#0;class#Start_screen#0" expanded="false" />
+                <element signature="method#Socials#0;class#Socials#0" expanded="false" />
+                <element signature="method#share_Achievement#0;class#Socials#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -167,6 +163,7 @@
       <find>HideKeyboard();</find>
       <find>logger.info(&quot;</find>
       <find>Variables.</find>
+      <find>add</find>
     </findStrings>
     <replaceStrings>
       <replace>Methods.driver</replace>
@@ -187,19 +184,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/caps/capabilities.json" />
-        <option value="$PROJECT_DIR$/src/main/java/com/pgs/obj/obj_splash.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/pgs/config/CommonAppiumTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/pgs/config/ViewFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/config/ViewFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/screen/AndroidFlow.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tests/LoginTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/pgs/pgs_splash.java" />
-        <option value="$PROJECT_DIR$/src/main/java/AlphaTests/Constants.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/utils/AppiumDriver.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/config/caps.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/pages/SplashScreen.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/SmokeTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/NGParallelTests/ParallelTestExecution.java" />
         <option value="$PROJECT_DIR$/TestNGParallelSmoke.xml" />
@@ -210,8 +194,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/methods/phone_specific.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/utils/osutils.java" />
         <option value="$PROJECT_DIR$/src/main/java/AlphaTests/Methods.java" />
-        <option value="$PROJECT_DIR$/src/main/java/AlphaTests/AlphaTests.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vars/vars.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/methods/ped_add.java" />
         <option value="$PROJECT_DIR$/src/main/java/NGParallelTests/Methods.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tests/SingleDeviceSmoke.java" />
@@ -220,7 +202,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/utils/setup.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tests/sample.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/methods/main_screens.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vars/consts.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tests/smoke.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/methods/start_screens.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/methods/start_screen.java" />
@@ -230,14 +211,30 @@
         <option value="$PROJECT_DIR$/src/main/java/com/methods/profile_screen.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/methods/common.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/utils/screenshot.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/methods/Main_screen.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/methods/Social_screen.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/methods/Start_screen.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tests/Smoke.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/methods/Map_screen.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/methods/Common.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/methods/Pet_screen.java" />
+        <option value="$PROJECT_DIR$/src/main/java/AlphaTests/AlphaTests.java" />
+        <option value="$PROJECT_DIR$/SmokeSingle.xml" />
+        <option value="$PROJECT_DIR$/TestNG.xml" />
+        <option value="$PROJECT_DIR$/TestNGSmoke.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/methods/Profile_screen.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/utils/GetScreenSize.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tests/AlphaBuild.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/methods/Social_screen.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/methods/Main_screen.java" />
+        <option value="$PROJECT_DIR$/Smoke.xml" />
+        <option value="$PROJECT_DIR$/Full.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/methods/Start_screen.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/testng_xmls/TestNGFull.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vars/consts.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/utils/GetDeviceInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tests/Smoke.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vars/vars.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/methods/Socials.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/methods/Common.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tests/FullBuildTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/methods/Pet_screen.java" />
       </list>
     </option>
   </component>
@@ -300,17 +297,16 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
               <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
-              <item name="screenshot" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
@@ -323,14 +319,89 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="AlphaTests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="methods" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="vars" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="output" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="output" type="462c0819:PsiDirectoryNode" />
+              <item name="screenshots" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
+              <item name="testng_xmls" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -345,8 +416,8 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java/Methods" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main/java/Methods" />
       <recent name="$PROJECT_DIR$/src/test" />
       <recent name="$PROJECT_DIR$/src/test/java" />
       <recent name="$PROJECT_DIR$/src/main/java/ParallelAlpha" />
@@ -359,11 +430,11 @@
       <recent name="NGParallelTests" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/testng_xmls" />
+      <recent name="$PROJECT_DIR$/target" />
       <recent name="$PROJECT_DIR$/src/main/java/com" />
       <recent name="$PROJECT_DIR$/src/main/java/com/tests" />
       <recent name="$PROJECT_DIR$/src/main/java/com/pgs/screen" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/pgs/config" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -378,7 +449,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.Smoke">
+  <component name="RunManager" selected="TestNG.Full">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -427,17 +498,17 @@
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
     </configuration>
-    <configuration name="AlphaTests" type="TestNG" factoryName="TestNG" nameIsGenerated="true">
+    <configuration name="Alpha" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="AndroidTests" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="AlphaTests" />
-      <option name="MAIN_CLASS_NAME" value="AlphaTests.AlphaTests" />
-      <option name="METHOD_NAME" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng_xmls/TestNGAlpha.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
       <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
@@ -454,17 +525,17 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="Smoke" type="TestNG" factoryName="TestNG" nameIsGenerated="true">
+    <configuration name="Full" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="AndroidTests" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="com.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.tests.Smoke" />
-      <option name="METHOD_NAME" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng_xmls/TestNGFull.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
       <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
@@ -481,17 +552,17 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="SoakTest" type="TestNG" factoryName="TestNG" nameIsGenerated="true">
+    <configuration name="ParallelFull" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="AndroidTests" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="SoakTest" />
-      <option name="MAIN_CLASS_NAME" value="SoakTest.SoakTest" />
-      <option name="METHOD_NAME" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng_xmls/TestNGParallel.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
       <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
@@ -508,12 +579,12 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="TestNGParallel" type="TestNG" factoryName="TestNG">
+    <configuration name="Smoke" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="AndroidTests" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/TestNGParallel.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng_xmls/TestNGSmoke.xml" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -562,45 +633,17 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="sample" type="TestNG" factoryName="TestNG" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="AndroidTests" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="com.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.tests.sample" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="TestNG.Smoke" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.AlphaTests" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.SoakTest" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.TestNGParallel" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.sample" />
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="TestNG.Full" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.Alpha" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.Smoke" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.ParallelFull" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -799,70 +842,127 @@
       <option name="project" value="LOCAL" />
       <updated>1521806340936</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Code Refactoring to please codacy">
+      <created>1521810373396</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1521810373396</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Code Refactoring to please codacy">
+      <created>1522153301623</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1522153301624</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Smoke Test">
+      <created>1522229071513</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1522229071514</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Smoke Test">
+      <created>1522395959565</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1522395959565</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Smoke Test">
+      <created>1522398203574</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1522398203574</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Smoke Test">
+      <created>1522683262970</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1522683262970</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Smoke Test">
+      <created>1522684691360</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1522684691360</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Smoke Test">
+      <created>1522771402719</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1522771402719</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="smoke - 2018.03.20 at 18h 26m 50s.xml">
-      <configuration name="smoke" configurationId="TestNG" />
+    <history-entry file="Full - 2018.04.06 at 16h 34m 46s.xml">
+      <configuration name="Full" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="smoke - 2018.03.20 at 18h 34m 54s.xml">
-      <configuration name="smoke" configurationId="TestNG" />
+    <history-entry file="Full - 2018.04.06 at 16h 36m 56s.xml">
+      <configuration name="Full" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="smoke - 2018.03.20 at 18h 40m 34s.xml">
-      <configuration name="smoke" configurationId="TestNG" />
+    <history-entry file="Full - 2018.04.06 at 16h 39m 02s.xml">
+      <configuration name="Full" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="smoke - 2018.03.20 at 18h 42m 24s.xml">
-      <configuration name="smoke" configurationId="TestNG" />
+    <history-entry file="Full - 2018.04.06 at 17h 36m 23s.xml">
+      <configuration name="Full" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="smoke - 2018.03.20 at 18h 51m 30s.xml">
-      <configuration name="smoke" configurationId="TestNG" />
+    <history-entry file="Full - 2018.04.09 at 10h 38m 20s.xml">
+      <configuration name="Full" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="smoke - 2018.03.20 at 18h 58m 59s.xml">
-      <configuration name="smoke" configurationId="TestNG" />
+    <history-entry file="Full - 2018.04.09 at 11h 01m 43s.xml">
+      <configuration name="Full" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="smoke - 2018.03.20 at 19h 01m 01s.xml">
-      <configuration name="smoke" configurationId="TestNG" />
+    <history-entry file="Full - 2018.04.09 at 11h 06m 06s.xml">
+      <configuration name="Full" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="smoke - 2018.03.20 at 19h 04m 57s.xml">
-      <configuration name="smoke" configurationId="TestNG" />
+    <history-entry file="Full - 2018.04.09 at 11h 19m 03s.xml">
+      <configuration name="Full" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="smoke - 2018.03.20 at 19h 09m 39s.xml">
-      <configuration name="smoke" configurationId="TestNG" />
+    <history-entry file="Full - 2018.04.09 at 11h 28m 32s.xml">
+      <configuration name="Full" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="smoke - 2018.03.20 at 19h 12m 17s.xml">
-      <configuration name="smoke" configurationId="TestNG" />
+    <history-entry file="Full - 2018.04.09 at 11h 33m 18s.xml">
+      <configuration name="Full" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1920" height="994" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32762557" sideWeight="0.4978701" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25344646" sideWeight="0.5015625" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4783105" sideWeight="0.3056443" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25913242" sideWeight="0.4984375" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.4985062" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4783105" sideWeight="0.6943557" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.185836" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.293379" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23961662" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3398058" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33904108" sideWeight="0.4978701" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16614583" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32762557" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27340424" sideWeight="0.49761716" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -890,121 +990,20 @@
     <MESSAGE value="New Framework for Parallel Testing v 0.1" />
     <MESSAGE value="New Framework for Parallel Testing v 0.11&#10;Code clean up" />
     <MESSAGE value="New Framework for Parallel Testing v 0.12&#10;Code clean up" />
-    <option name="LAST_COMMIT_MESSAGE" value="New Framework for Parallel Testing v 0.12&#10;Code clean up" />
+    <MESSAGE value="Code Refactoring to please codacy" />
+    <MESSAGE value="Smoke Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Smoke Test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="16" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="24" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/SoakTest/OsUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SoakTest/SoakTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-997">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/utils/TestUtils.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/SmokeTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pages/SplashScreen.java" />
-    <entry file="file://$PROJECT_DIR$/TestNGParallelSmoke.xml" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-385">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Methods/Constants.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Methods/Variables.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Methods/Methods.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/utils/ыскуутырще.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/AlphaTests/Variables.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AlphaTests/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="50" lean-forward="false" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AlphaTests/OsUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="69" column="1" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="69" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/NGParallelTests/Variables.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/NGParallelTests/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/NGParallelTests/ParallelTestExecution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.9/testng-6.9.9.jar!/org/testng/SuiteRunnerWorker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/NGParallelTests/Methods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="111" column="12" lean-forward="false" selection-start-line="111" selection-start-column="12" selection-end-line="111" selection-end-column="26" />
-          <folding>
-            <element signature="method#UserProfile#0;class#Methods#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.9/testng-6.9.9-sources.jar!/org/testng/SuiteRunnerWorker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AlphaTests/AlphaTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="48" column="56" lean-forward="false" selection-start-line="48" selection-start-column="56" selection-end-line="48" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/java/lang/reflect/Method.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1026,116 +1025,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/screenshot/LastFailScreenshot.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/output/screenshots/LastFailScreenshot.png" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/packageinfo.java" />
     <entry file="file://$PROJECT_DIR$/src/main/output/screenshots/LGK430V479D6E6_SplashScreen_fail.png" />
-    <entry file="file://$PROJECT_DIR$/TestNG.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/utils/setup.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tests/sample.java" />
     <entry file="file://$PROJECT_DIR$/src/main/output/screenshots/asus_Register_fail.png" />
     <entry file="file://$PROJECT_DIR$/src/main/output/screenshots/LGK430V479D6E6_Register_fail.png" />
     <entry file="file://$PROJECT_DIR$/src/main/output/screenshots/samsung_edge_Register_fail.png" />
-    <entry file="file://$PROJECT_DIR$/TestNGParallel.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="54" lean-forward="true" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/output/screenshots/default_Login_fail.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/output/screenshots/default_Register_fail.png">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/ped_actions.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/utils/OSutils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AlphaTests/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="50" lean-forward="false" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmokeSingle.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/utils/Screenshot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="26" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testng_xmls/TestNGSmoke.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="47" lean-forward="false" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Smoke.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="50" lean-forward="false" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="32" lean-forward="false" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/screenshot/LastFailScreenshot.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/ped_actions.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/AlphaTests/Methods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="218" column="5" lean-forward="true" selection-start-line="147" selection-start-column="0" selection-end-line="218" selection-end-column="5" />
-          <folding>
-            <element signature="method#SetUp#0;class#Methods#0" expanded="false" />
-            <element signature="method#Restart#0;class#Methods#0" expanded="false" />
-            <element signature="method#Register#0;class#Methods#0" expanded="false" />
-            <element signature="method#Login#0;class#Methods#0" expanded="false" />
-            <element signature="method#ScreensShuffle#0;class#Methods#0" expanded="false" />
-            <element signature="method#Map#0;class#Methods#0" expanded="false" />
-            <element signature="method#UserProfile#0;class#Methods#0" expanded="false" />
-            <element signature="method#Logout#0;class#Methods#0" expanded="false" />
-            <element signature="method#DeletePet#0;class#Methods#0" expanded="false" />
-            <element signature="method#PhonePhoto#0;class#Methods#0" expanded="false" />
-            <element signature="method#PetEdit#0;class#Methods#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tests/Smoke.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="39" column="4" lean-forward="false" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
-          <folding>
-            <element signature="method#Smoke#0;class#Smoke#0" expanded="false" />
-            <element signature="method#StartUp#0;class#Smoke#0" expanded="false" />
-            <element signature="e#2059#2060#0" expanded="true" />
-            <element signature="e#2081#2082#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/Common.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
-          <folding>
-            <element signature="method#androidAllowAccess#0;class#Common#0" expanded="false" />
-            <element signature="method#swipeUp#0;class#Common#0" expanded="false" />
-            <element signature="method#gotoMainScreen#0;class#Common#0" expanded="false" />
-            <element signature="method#gotoMapScreen#0;class#Common#0" expanded="false" />
-            <element signature="method#gotoProfileScreen#0;class#Common#0" expanded="false" />
-            <element signature="method#ScreensShuffle#0;class#Common#0" expanded="false" />
-            <element signature="method#phonePhoto#0;class#Common#0" expanded="false" />
-            <element signature="method#AddPet#0;class#Common#0" expanded="false" />
-            <marker date="1521810333163" expanded="false" signature="760:911" ph="{...}" />
-            <marker date="1521810333163" expanded="false" signature="1252:1535" ph="{...}" />
-          </folding>
-        </state>
+    <entry file="file://$PROJECT_DIR$/src/main/output/screenshots/default_MainScreenElements_fail.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/Start_screen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="method#Register#0;class#Start_screen#0" expanded="false" />
-            <element signature="method#Login#0;class#Start_screen#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/Social_screen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="11" column="36" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-          <folding>
-            <element signature="method#Social_screen#0;class#Social_screen#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="240">
+          <caret line="76" column="65" lean-forward="false" selection-start-line="76" selection-start-column="65" selection-end-line="76" selection-end-column="65" />
         </state>
       </provider>
     </entry>
@@ -1143,74 +1106,223 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="21" column="17" lean-forward="false" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-          <folding>
-            <element signature="method#Map_screen#0;class#Map_screen#0" expanded="false" />
-            <element signature="method#mapActions#0;class#Map_screen#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/Main_screen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="method#Main_screen#0;class#Main_screen#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/Pet_screen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="42" column="26" lean-forward="false" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
-          <folding>
-            <element signature="method#Pet_screen#0;class#Pet_screen#0" expanded="false" />
-            <element signature="method#petEdit#0;class#Pet_screen#0" expanded="false" />
-            <marker date="1521810333167" expanded="false" signature="598:1654" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/Profile_screen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="57" column="11" lean-forward="false" selection-start-line="57" selection-start-column="11" selection-end-line="57" selection-end-column="11" />
-          <folding>
-            <element signature="method#Profile_screen#0;class#Profile_screen#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/utils/OSutils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/utils/Screenshot.java">
+    <entry file="file://$PROJECT_DIR$/Full.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="38" column="1" lean-forward="false" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vars/vars.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="37" lean-forward="false" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+        <state relative-caret-position="468">
+          <caret line="32" column="50" lean-forward="false" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vars/consts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="39" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="39" />
+        <state relative-caret-position="270">
+          <caret line="18" column="57" lean-forward="false" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="57" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AlphaTests/Variables.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AlphaTests/AlphaTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="71" column="21" lean-forward="false" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AlphaTests/Methods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="55" column="60" lean-forward="true" selection-start-line="52" selection-start-column="8" selection-end-line="55" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testng_xmls/TestNGParallel.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="54" lean-forward="false" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/utils/GetDeviceInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="29" column="5" lean-forward="false" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/java/net/URLClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4890">
+          <caret line="380" column="0" lean-forward="false" selection-start-line="380" selection-start-column="0" selection-end-line="380" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/java/lang/ClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5580">
+          <caret line="435" column="0" lean-forward="false" selection-start-line="435" selection-start-column="0" selection-end-line="435" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/lib/rt.jar!/sun/misc/URLClassPath.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9240">
+          <caret line="690" column="0" lean-forward="false" selection-start-line="690" selection-start-column="0" selection-end-line="690" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/java/security/AccessController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9330">
+          <caret line="651" column="8" lean-forward="false" selection-start-line="651" selection-start-column="8" selection-end-line="651" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/output/screenshots/default_AddPet_fail.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tests/Smoke.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testng_xmls/TestNGAlpha.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/output/screenshots/default_MainActivity_fail.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/output/screenshots/default_Achievements_fail.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/Main_screen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="20" column="43" lean-forward="false" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+          <folding>
+            <element signature="method#Main_screen#0;class#Main_screen#0" expanded="false" />
+            <element signature="method#checkScreen#0;class#Main_screen#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/Socials.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="21" column="49" lean-forward="false" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+          <folding>
+            <element signature="method#Socials#0;class#Socials#0" expanded="false" />
+            <element signature="method#share_Achievement#0;class#Socials#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vars/vars.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="23" lean-forward="false" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/output/screenshots/default_Register_fail.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testng_xmls/TestNGFull.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tests/FullBuildTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="103" column="7" lean-forward="false" selection-start-line="103" selection-start-column="7" selection-end-line="103" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#FullBuildTest#0;class#FullBuildTest#0" expanded="false" />
+            <element signature="method#StartUp#0;class#FullBuildTest#0" expanded="false" />
+            <element signature="method#afterMethod#0;class#FullBuildTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/output/screenshots/default_UserProfile_fail.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/Pet_screen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="46" column="64" lean-forward="false" selection-start-line="46" selection-start-column="64" selection-end-line="46" selection-end-column="64" />
+          <folding>
+            <element signature="method#Pet_screen#0;class#Pet_screen#0" expanded="false" />
+            <element signature="method#addCollar#0;class#Pet_screen#0" expanded="false" />
+            <element signature="method#addPet#0;class#Pet_screen#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/Common.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="200" column="34" lean-forward="true" selection-start-line="200" selection-start-column="16" selection-end-line="200" selection-end-column="34" />
+          <folding>
+            <element signature="method#androidAllowAccess#0;class#Common#0" expanded="false" />
+            <element signature="method#sleep#0;class#Common#0" expanded="false" />
+            <element signature="method#swipeUp#0;class#Common#0" expanded="false" />
+            <element signature="method#swipeDown#0;class#Common#0" expanded="false" />
+            <element signature="method#gotoMapScreen#0;class#Common#0" expanded="false" />
+            <element signature="method#gotoProfileScreen#0;class#Common#0" expanded="false" />
+            <element signature="method#ScreensShuffle#0;class#Common#0" expanded="false" />
+            <element signature="method#phonePhoto#0;class#Common#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

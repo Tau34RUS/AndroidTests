@@ -1,15 +1,15 @@
 package com.vars;
 
-import java.io.File;
-
 public class consts {
 
     public static final String AppPKG = "ru.averia.tracker";
     public static final String AppAct = "ru.averia.tracker.ui.activities.SplashActivity";
     public static final Integer Timeout = 20;
-    public static final File app_path_win = new File("D:\\APK\\ru.averia.tracker.alpha.apk");
-    public static final File app_path_mac = new File("/Users/vlad/Public/Android/ru.averia.tracker.alpha.apk");
+    public static final String app_path_win = "D:\\APK\\ru.averia.tracker.alpha.apk";
+    public static final String app_path_mac = "/Users/vlad/Public/Android/ru.averia.tracker.alpha.apk";
     public static final String folder_name = "src/main/output/screenshots/";
+    public static final String old_user = "averiatester@gmail.com";
+    public static final String old_pass = "123456";
 
     //Android phones IDs
     public static final String phone_asuszenpad = "G1NPFP1202437HN";

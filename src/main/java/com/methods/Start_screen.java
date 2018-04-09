@@ -74,6 +74,8 @@ public class Start_screen extends Common{
 
     public void Login(String device) {
 
+        logger.info(device + ": Logging with just registered user");
+
         Assert.assertEquals("Войти", driver.findElement(By.id("ru.averia.tracker:id/bt_login")).getText());
         driver.findElement(By.id("ru.averia.tracker:id/bt_login")).click();
 
@@ -92,6 +94,26 @@ public class Start_screen extends Common{
         }catch (org.openqa.selenium.NoSuchElementException e) {
             logger.info(device + ": No Add Pet button, already added?");
         }
+    }
+
+    public void Login_old(String device) {
+
+        logger.info(device + ": Logging with existing user");
+
+        Assert.assertEquals("Войти", driver.findElement(By.id("ru.averia.tracker:id/bt_login")).getText());
+        driver.findElement(By.id("ru.averia.tracker:id/bt_login")).click();
+
+        Assert.assertEquals("Войти", driver.findElement(By.id("ru.averia.tracker:id/bt_login")).getText());
+        sleep(5);
+        driver.findElement(By.id("ru.averia.tracker:id/et_email")).click();
+        driver.findElement(By.id("ru.averia.tracker:id/et_email")).sendKeys(old_user);
+
+        driver.findElement(By.id("ru.averia.tracker:id/et_password")).click();
+        driver.findElement(By.id("ru.averia.tracker:id/et_password")).sendKeys(old_pass);
+        driver.findElementById("ru.averia.tracker:id/bt_login").click();
+
+        androidAllowAccess();
+
     }
 
 }

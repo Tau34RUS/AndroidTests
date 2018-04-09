@@ -20,11 +20,12 @@ public class vars {
     public static Integer port;
     public static String phonenumber;
 
+
     {
-        petweight="50";
-        petheight="43";
+        petweight="40";
+        petheight="33";
         birthmonth="5";
-        birthyear="2014";
+        birthyear="2016";
         petage="3";
         breed="овчарка";
     }
