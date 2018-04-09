@@ -25,7 +25,7 @@ public class vars {
         petweight="40";
         petheight="33";
         birthmonth="5";
-        birthyear="2014";
+        birthyear="2016";
         petage="3";
         breed="овчарка";
     }

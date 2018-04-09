@@ -198,4 +198,24 @@ public class Common {
         }
     }
 
+    public void swipeUpToElementId(String elementId) {
+
+        boolean isFoundTheElement = driver.findElements(By.id(elementId)).size() > 0;
+        while (!isFoundTheElement){
+            swipeUp();
+            isFoundTheElement  = driver.findElements(By.id(elementId)).size() > 0;
+        }
+
+    }
+
+    public void swipeDownToElementId(String elementId){
+
+        boolean isFoundTheElement = driver.findElements(By.id(elementId)).size() > 0;
+        while (!isFoundTheElement){
+            swipeDown();
+            isFoundTheElement  = driver.findElements(By.id(elementId)).size() > 0;
+        }
+
+    }
+
 }

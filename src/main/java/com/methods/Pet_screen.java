@@ -42,27 +42,9 @@ public class Pet_screen extends Common{
 
     }
 
-    public void petEdit() {
+    public void petEdit(String device) {
 
-        driver.findElementById("ru.averia.tracker:id/main_menu_action_profile").click();
-
-        driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.support.v4.view.ViewPager/android.view.ViewGroup/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.view.ViewGroup[1]").click();
-
-        driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.view.ViewGroup/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.Button").click();
-
-        driver.findElementById("ru.averia.tracker:id/et_name").sendKeys("1");
-
-        //HideKeyboard();
-
-        swipeUp();
-
-        driver.findElementById("ru.averia.tracker:id/et_weight").sendKeys("33");
-
-        driver.findElementById("ru.averia.tracker:id/et_height").sendKeys("33");
-
-        driver.findElementById("ru.averia.tracker:id/iv_save").click();
-
-        //HideKeyboard();
+            swipeUpToElementId("ru.averia.tracker:id/tv_about");
 
     }
 
@@ -74,11 +56,13 @@ public class Pet_screen extends Common{
         Assert.assertEquals("Добавить питомца", driver.findElement(By.id("ru.averia.tracker:id/tv_description_large")).getText());
         driver.findElement(By.id("ru.averia.tracker:id/bt_add_pet")).click();
         Assert.assertEquals("Добавить питомца", driver.findElement(By.id("ru.averia.tracker:id/tv_title")).getText());
-        driver.findElement(By.id("ru.averia.tracker:id/et_name")).click();
+ //       driver.findElement(By.id("ru.averia.tracker:id/et_name")).click();
         driver.findElement(By.id("ru.averia.tracker:id/et_name")).sendKeys(petname);
-/*       driver.findElement(By.id("ru.averia.tracker:id/iv_pet_ava")).click();
 
-       phonePhoto();
+
+        driver.findElement(By.id("ru.averia.tracker:id/iv_pet_ava")).click();
+
+        phonePhoto();
 
         driver.findElement(By.id("ru.averia.tracker:id/crop_image_menu_crop")).click();
 
@@ -87,7 +71,7 @@ public class Pet_screen extends Common{
 
         Assert.assertEquals("Добавить питомца", driver.findElement(By.id("ru.averia.tracker:id/tv_title")).getText());
         driver.findElement(By.id("ru.averia.tracker:id/bt_next")).click();
-
+/*
         //Shitty Magic
         (new TouchAction(driver)).tap(462, 710).perform();
         (new TouchAction(driver)).tap(400, 400).perform();
@@ -103,39 +87,22 @@ public class Pet_screen extends Common{
 
         driver.findElement(By.id("ru.averia.tracker:id/bt_next")).click();
 
-        Assert.assertEquals("Возраст и дата рождения", driver.findElement(By.id("ru.averia.tracker:id/tv_cap")).getText());
+        //driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.View/android.widget.FrameLayout/android.view.View/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.view.View[2]").click();
 
-        driver.findElementById("ru.averia.tracker:id/et_age").sendKeys(birthyear);
+        driver.findElement(By.xpath("//*[@text='Австралийская келпи']")).click();
+        driver.findElementById("ru.averia.tracker:id/bt_next").click();
 
-        driver.findElementById("ru.averia.tracker:id/et_month").click();
+        driver.findElementById("ru.averia.tracker:id/til_age").sendKeys("2");
+        driver.navigate().back();
+        driver.findElementById("ru.averia.tracker:id/bt_next").click();
 
-        try {
-            driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.CheckedTextView[5]").click();
-        }
-        catch (org.openqa.selenium.NoSuchElementException e) {
-            logger.warn("Selecting Month Error!");
-        }
-        try {
-            driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.ListView/android.widget.CheckedTextView[5]").click();
-        }
-        catch (org.openqa.selenium.NoSuchElementException e) {
-            logger.warn("Selecting Month Error!");
-        }
+        driver.findElementById("ru.averia.tracker:id/til_weight").sendKeys("31");
+
+        driver.findElementById("ru.averia.tracker:id/til_height").sendKeys("22");
 
         driver.navigate().back();
-        driver.findElement(By.id("ru.averia.tracker:id/bt_next")).click();
 
-        driver.findElement(By.id("ru.averia.tracker:id/til_weight")).click();
-        driver.findElement(By.id("ru.averia.tracker:id/til_weight")).sendKeys(petweight);
-
-        driver.findElement(By.id("ru.averia.tracker:id/et_height")).click();
-        driver.findElement(By.id("ru.averia.tracker:id/et_height")).sendKeys(petheight);
-
-        driver.navigate().back();
-        driver.findElement(By.id("ru.averia.tracker:id/bt_next")).click();
-
-        Assert.assertEquals("Добавьте ошейник", driver.findElement(By.id("ru.averia.tracker:id/tv_add_collar_title1")).getText());
-        Assert.assertEquals(petname, driver.findElement(By.id("ru.averia.tracker:id/tv_pet_name")).getText());
+        driver.findElementById("ru.averia.tracker:id/bt_next").click();
     }
 
 }

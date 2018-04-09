@@ -21,7 +21,7 @@ public class Socials extends Common{
 
     public void share_Achievement(String device) {
 
-        swipeDown();
+        swipeUp();
 
         logger.info(device + ": Sharing achievement");
 

@@ -25,7 +25,7 @@ public class FullBuildTest {
 
     public Start_screen start;
     public Screenshot screenshot;
-    public GetScreenSize screensize;
+    public GetDeviceInfo deviceinfo;
     public Common common;
     public Profile_screen profile_screen;
     public Main_screen main_screen;
@@ -64,7 +64,7 @@ public class FullBuildTest {
         //Adding all needed methods and utils
         start = new Start_screen(driver);
         screenshot = new Screenshot(driver);
-        screensize = new GetScreenSize(driver);
+        deviceinfo = new GetDeviceInfo(driver);
         common = new Common(driver);
         profile_screen = new Profile_screen(driver);
         main_screen = new Main_screen(driver);
@@ -79,7 +79,7 @@ public class FullBuildTest {
 
     public void Exit() {
 
-        logger.info(device + ": closing app");
+        logger.info(device + ": Closing app");
         driver.quit();
 
     }
@@ -95,13 +95,13 @@ public class FullBuildTest {
 
         logger.info(device+": "+"Settings Applied");
 
-        screensize.getScreenSize();
+        deviceinfo.getDeviceInfo(device);
 
     }
 
     @AfterTest
     void AfterSuite() {
-        Exit();
+     //   Exit();
     }
 
     @AfterMethod
@@ -136,68 +136,68 @@ public class FullBuildTest {
     }
 
     @Test
-    void Register()
-    {
+        void Register()
+        {
 
-        start.SplashScreen();
-        start.Register(device);
-        Exit();
-        StartUp();
+            start.SplashScreen();
+            start.Register(device);
 
-    }
 
+        }
     @Test(dependsOnMethods = "Register")
-    void Login()
-    {
+        void Login()
+        {
+            Exit();
+            StartUp();
+            start.SplashScreen();
+            start.Login(device);
 
-        start.SplashScreen();
-        start.Login(device);
-
-    }
-
+        }
     @Test(dependsOnMethods = "Login")
-    void AddPet()
-    {
+        void AddPet()
+        {
 
-        pet_screen.addPet(device);
+            pet_screen.addPet(device);
+            common.gotoProfileScreen(device);
+            pet_screen.petEdit(device);
 
-    }
-
-    @Test(dependsOnMethods = "AddPet")
-    void MainActivity()
-    {
-
-        common.ScreensShuffle();
-        common.gotoMainScreen(device);
-
-    }
+        }
 
     @Test(dependsOnMethods = "AddPet")
-    void UserProfile()
-    {
+        void MainActivity()
+        {
 
-        common.gotoProfileScreen(device);
-        profile_screen.userProfileEdit(device);
-        common.gotoMainScreen(device);
+            common.ScreensShuffle();
+            common.gotoMainScreen(device);
 
-    }
+        }
+
+    @Test(dependsOnMethods = "AddPet")
+        void UserProfile()
+        {
+
+            common.gotoProfileScreen(device);
+            profile_screen.userProfileEdit(device);
+            common.gotoMainScreen(device);
+
+        }
 
     @Test(dependsOnMethods = "UserProfile")
-    void PetProfile()
-    {
+        void PetProfile()
+        {
 
-        common.gotoProfileScreen(device);
-        profile_screen.userProfileEdit(device);
+            common.gotoProfileScreen(device);
+            profile_screen.userProfileEdit(device);
 
-    }
+        }
 
     @Test(dependsOnMethods = "PetProfile")
-    void Restart(){
+        void Restart(){
 
-        Exit();
-        StartUp();
+            Exit();
+            StartUp();
 
-    }
+        }
 
     @Test(dependsOnMethods = "Restart")
     void LoginExistingUser(){
@@ -207,14 +207,13 @@ public class FullBuildTest {
 
     }
 
+
     @Test(dependsOnMethods = "LoginExistingUser")
     void Achievements(){
 
         common.gotoMainScreen(device);
-        common.swipeDown();
         social.share_Achievement(device);
 
     }
-
 
 }

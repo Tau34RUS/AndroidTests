@@ -25,7 +25,7 @@ public class Smoke {
 
     public Start_screen start;
     public Screenshot screenshot;
-    public GetScreenSize screensize;
+    public GetDeviceInfo deviceinfo;
     public Common common;
     public Profile_screen profile_screen;
     public Main_screen main_screen;
@@ -61,7 +61,7 @@ public class Smoke {
         //Adding all needed methods and utils
         start = new Start_screen(driver);
         screenshot = new Screenshot(driver);
-        screensize = new GetScreenSize(driver);
+        deviceinfo = new GetDeviceInfo(driver);
         common = new Common(driver);
         profile_screen = new Profile_screen(driver);
         main_screen = new Main_screen(driver);
@@ -87,7 +87,7 @@ public class Smoke {
 
         logger.info(device+": "+"Settings Applied");
 
-        screensize.getScreenSize();
+        deviceinfo.getDeviceInfo(device);
 
     }
 
