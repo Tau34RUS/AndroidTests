@@ -15,7 +15,7 @@ import org.testng.annotations.*;
 import java.net.*;
 import java.util.concurrent.*;
 
-public class FullBuildTest {
+public class TestingTests {
 
     Logger logger = Logger.getLogger("AndroidTestLogger");
 
@@ -36,7 +36,7 @@ public class FullBuildTest {
     DesiredCapabilities caps = new DesiredCapabilities();
 
     @Parameters({"server_port","device"})
-    public FullBuildTest(@Optional("4731") String port, @Optional("default") String device)
+    public TestingTests(@Optional("4731") String port, @Optional("default") String device)
     {
         this.port = port;
         this.device = device;
@@ -144,7 +144,7 @@ public class FullBuildTest {
 
 
         }
-    @Test(dependsOnMethods = "Register")
+/*    @Test(dependsOnMethods = "Register")
         void Login()
         {
             Exit();
@@ -152,8 +152,8 @@ public class FullBuildTest {
             start.SplashScreen();
             start.Login(device);
 
-        }
-    @Test(dependsOnMethods = "Login")
+        }*/
+    @Test(dependsOnMethods = "Register")
         void AddPet()
         {
 
@@ -162,7 +162,7 @@ public class FullBuildTest {
             pet_screen.petEdit(device);
 
         }
-
+/*
     @Test(dependsOnMethods = "AddPet")
         void MainActivity()
         {
@@ -223,6 +223,6 @@ public class FullBuildTest {
         common.gotoMainScreen(device);
         social.share_Achievement(device);
 
-    }
+    } */
 
 }

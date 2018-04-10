@@ -3,6 +3,7 @@ package com.methods;
 import io.appium.java_client.*;
 import org.apache.log4j.*;
 import org.openqa.selenium.*;
+import org.openqa.selenium.NoSuchElementException;
 
 import java.util.*;
 
@@ -200,22 +201,34 @@ public class Common {
 
     public void swipeUpToElementId(String elementId) {
 
+        int loopCounter = 0;
         boolean isFoundTheElement = driver.findElements(By.id(elementId)).size() > 0;
-        while (!isFoundTheElement){
+        while (!isFoundTheElement && loopCounter < 10){
             swipeUp();
             isFoundTheElement  = driver.findElements(By.id(elementId)).size() > 0;
+            loopCounter++;
         }
 
     }
 
     public void swipeDownToElementId(String elementId){
-
+        int loopCounter = 0;
         boolean isFoundTheElement = driver.findElements(By.id(elementId)).size() > 0;
-        while (!isFoundTheElement){
+        while (!isFoundTheElement && loopCounter < 10){
             swipeDown();
             isFoundTheElement  = driver.findElements(By.id(elementId)).size() > 0;
+            loopCounter++;
         }
 
+    }
+
+    public boolean isElementPresent(By by){
+        try {
+            driver.findElements(by);
+            return true;
+        } catch (NoSuchElementException e){
+            return false;
+        }
     }
 
 }

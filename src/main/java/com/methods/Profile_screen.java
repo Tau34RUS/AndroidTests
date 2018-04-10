@@ -68,8 +68,6 @@ public class Profile_screen extends Common{
                 driver.findElementById("ru.averia.tracker:id/iv_save").click();
                 sleep(5);
                 logger.info("Saving user profile changes");
-                try {driver.findElementById("ru.averia.tracker:id/iv_save").click();}
-                catch (org.openqa.selenium.NoSuchElementException e) {logger.info("Already saved?");}
                 break;
 
         }
