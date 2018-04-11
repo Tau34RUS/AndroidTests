@@ -30,11 +30,9 @@ public class Socials extends Common{
         driver.findElementById("ru.averia.tracker:id/bt_share").click();
         driver.findElementById("com.android.packageinstaller:id/permission_allow_button").click();
         driver.findElementById("ru.averia.tracker:id/tv_next").click();
-        driver.findElementByXPath("//*[@text='ПОДЕЛИТЬСЯ'").click();
         driver.navigate().back();
         driver.navigate().back();
         driver.navigate().back();
-        //driver.findElementById("ru.averia.tracker:id/iv_back").click();
 
     }
 

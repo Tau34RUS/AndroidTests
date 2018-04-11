@@ -48,7 +48,7 @@ public class Profile_screen extends Common{
                 logger.info("Swipe up");
                 swipeUp();
 
-                logger.info("Fill phone number");
+                logger.info(device + ": Fill phone number");
                 Random login = new Random();
 
                 String alphabet = "1234567890";
