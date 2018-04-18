@@ -64,7 +64,7 @@ public class Start_screen extends Common{
         driver.findElement(By.id("ru.averia.tracker:id/bt_register")).click();
 
         //Allow android actions
-        androidAllowAccess();
+//        androidAllowAccess();
 
         Assert.assertEquals("Добавить", driver.findElementById("ru.averia.tracker:id/bt_add_pet").getText());
 
@@ -86,8 +86,6 @@ public class Start_screen extends Common{
 
         driver.findElement(By.id("ru.averia.tracker:id/et_password")).sendKeys(userpass);
         driver.findElementById("ru.averia.tracker:id/bt_login").click();
-
-        androidAllowAccess();
 
         try {
             Assert.assertEquals("Добавить", driver.findElement(By.id("ru.averia.tracker:id/bt_add_pet")).getText());
@@ -111,8 +109,6 @@ public class Start_screen extends Common{
         driver.findElement(By.id("ru.averia.tracker:id/et_password")).click();
         driver.findElement(By.id("ru.averia.tracker:id/et_password")).sendKeys(old_pass);
         driver.findElementById("ru.averia.tracker:id/bt_login").click();
-
-        androidAllowAccess();
 
     }
 

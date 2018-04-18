@@ -47,12 +47,14 @@ public class FullBuildTest {
 
         logger.info(device + ": Starting app");
 
+        //Adding all Caps
         caps.setCapability("deviceName", device);
         caps.setCapability("platformName", "Android");
         caps.setCapability("appPackage", "ru.averia.tracker");
         caps.setCapability("appActivity", "ru.averia.tracker.ui.activities.SplashActivity");
         caps.setCapability("app", consts.app_path_mac);
-        caps.setCapability("udid",consts.phone_lg);
+        //caps.setCapability("udid",consts.phone_lg);
+        caps.setCapability("autoGrantPermissions", true);
 
         try {
             driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:" + port + "/wd/hub"), caps);
@@ -71,6 +73,8 @@ public class FullBuildTest {
         pet_screen = new Pet_screen(driver);
         social = new Socials(driver);
 
+
+        //All done, start driver
         driver.manage().timeouts().implicitlyWait(consts.Timeout, TimeUnit.SECONDS);
 
         logger.info(device + ": App launched");

@@ -22,7 +22,7 @@ public class Common {
 
     public void androidAllowAccess() {
         try {
-            driver.findElementById("com.android.packageinstaller:id/permission_allow_button").click();
+            driver.findElementById("com.android.packageinstaller1:id/permission_allow_button").click();
         }
         catch (org.openqa.selenium.NoSuchElementException e) {
             logger.info("No Permissions requested");
@@ -102,7 +102,7 @@ public class Common {
     }
 
     public void phonePhoto() {
-        androidAllowAccess();
+        //androidAllowAccess();
         switch (devicename) {
 
             case (phone_sony_xperia):
