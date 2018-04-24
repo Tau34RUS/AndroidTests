@@ -48,7 +48,7 @@ public class Profile_screen extends Common{
                 logger.info("Swipe up");
                 swipeUp();
 
-                logger.info("Fill phone number");
+                logger.info(device + ": Fill phone number");
                 Random login = new Random();
 
                 String alphabet = "1234567890";
@@ -68,8 +68,6 @@ public class Profile_screen extends Common{
                 driver.findElementById("ru.averia.tracker:id/iv_save").click();
                 sleep(5);
                 logger.info("Saving user profile changes");
-                try {driver.findElementById("ru.averia.tracker:id/iv_save").click();}
-                catch (org.openqa.selenium.NoSuchElementException e) {logger.info("Already saved?");}
                 break;
 
         }

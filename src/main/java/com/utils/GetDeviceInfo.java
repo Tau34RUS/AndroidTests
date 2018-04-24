@@ -16,7 +16,7 @@ public class GetDeviceInfo extends Common {
     public GetDeviceInfo(AppiumDriver<MobileElement> driver)
     {
         super(driver);
-        logger = Logger.getLogger("Screenshot");
+        logger = Logger.getLogger("DeviceInfo");
         PageFactory.initElements(new AppiumFieldDecorator(driver, com.vars.consts.Timeout, TimeUnit.SECONDS), this);
     }
 

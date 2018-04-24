@@ -2,33 +2,85 @@
 
 <!-- TestNG Documentation: http://testng.org/doc/documentation-main.html -->
 <!-- Change "false" to "tests", "methods", "classes" or "instances" for running in parallel. See more details in the TestNG documentation. -->
-<suite name="Parallel Device Test" parallel="tests" thread-count="4" verbose="2">
+<suite name="Parallel Device Test" parallel="tests" thread-count="1" verbose="2">
     <test name="LG_k10">
         <parameter name="server_port" value="4750" />
-        <parameter name="device" value="samsung_j1" />
+        <parameter name="device" value="lg_k10" />
+        <parameter name="udid" value="LGK430V479D6E6" />
         <classes>
-            <class name="com.tests.Smoke" />
-        </classes>
-    </test>
-    <test name="SonyXperia">
-        <parameter name="server_port" value="4751" />
-        <parameter name="device" value="samsung_edge" />
-        <classes>
-            <class name="com.tests.Smoke" />
+            <class name="com.tests.FullBuildTest" />
         </classes>
     </test>
     <test name="HTC U10">
-        <parameter name="server_port" value="4752" />
-        <parameter name="device" value="honor_3c" />
+        <parameter name="server_port" value="4751" />
+        <parameter name="device" value="htc_u10" />
+        <parameter name="udid" value="HT66LBP00429" />
         <classes>
-            <class name="com.tests.Smoke" />
+            <class name="com.tests.FullBuildTest" />
+        </classes>
+    </test>
+    <test name="Sony Xperia">
+        <parameter name="server_port" value="4752" />
+        <parameter name="device" value="sony_xperia" />
+        <parameter name="udid" value="CB512B042S" />
+        <classes>
+            <class name="com.tests.FullBuildTest" />
+        </classes>
+    </test>
+    <test name="Samsung Edge">
+        <parameter name="server_port" value="4753" />
+        <parameter name="device" value="samsung_edge" />
+        <parameter name="udid" value="05157df5a3a5c407" />
+        <classes>
+            <class name="com.tests.FullBuildTest" />
+        </classes>
+    </test>
+    <test name="Meizu">
+        <parameter name="server_port" value="4754" />
+        <parameter name="device" value="meizu" />
+        <parameter name="udid" value="621HEBRB2A2W3" />
+        <classes>
+            <class name="com.tests.FullBuildTest" />
+        </classes>
+    </test>
+    <test name="Samsung J1">
+        <parameter name="server_port" value="4755" />
+        <parameter name="device" value="samsung_j1" />
+        <parameter name="udid" value="32011059ac215467" />
+        <classes>
+            <class name="com.tests.FullBuildTest" />
+        </classes>
+    </test>
+    <test name="Asus Zenfone">
+        <parameter name="server_port" value="4756" />
+        <parameter name="device" value="asus_zenfone" />
+        <parameter name="udid" value="H9AXB7751177BRE" />
+        <classes>
+            <class name="com.tests.FullBuildTest" />
+        </classes>
+    </test>
+    <test name="Huawei C3">
+        <parameter name="server_port" value="4757" />
+        <parameter name="device" value="huawei_c3" />
+        <parameter name="udid" value="5PH6NRWGTOGQWCPR" />
+        <classes>
+            <class name="com.tests.FullBuildTest" />
+        </classes>
+    </test>
+    <test name="Xiaomi x3">
+        <parameter name="server_port" value="4758" />
+        <parameter name="device" value="xiaomi_x3" />
+        <parameter name="udid" value="2062e4f77d63" />
+        <classes>
+            <class name="com.tests.FullBuildTest" />
         </classes>
     </test>
     <test name="Asus Zenpad">
-        <parameter name="server_port" value="4753" />
-        <parameter name="device" value="asus" />
+        <parameter name="server_port" value="4759" />
+        <parameter name="device" value="asus_zenfone" />
+        <parameter name="udid" value="G1NPFP1202437HN" />
         <classes>
-            <class name="com.tests.Smoke" />
+            <class name="com.tests.FullBuildTest" />
         </classes>
     </test>
 </suite>

@@ -15,7 +15,7 @@ import org.testng.annotations.*;
 import java.net.*;
 import java.util.concurrent.*;
 
-public class FullBuildTest {
+public class TestingTests {
 
     Logger logger = Logger.getLogger("AndroidTestLogger");
 
@@ -36,7 +36,7 @@ public class FullBuildTest {
     DesiredCapabilities caps = new DesiredCapabilities();
 
     @Parameters({"server_port","device"})
-    public FullBuildTest(@Optional("4731") String port, @Optional("default") String device)
+    public TestingTests(@Optional("4731") String port, @Optional("default") String device)
     {
         this.port = port;
         this.device = device;
@@ -47,14 +47,12 @@ public class FullBuildTest {
 
         logger.info(device + ": Starting app");
 
-        //Adding all Caps
         caps.setCapability("deviceName", device);
         caps.setCapability("platformName", "Android");
         caps.setCapability("appPackage", "ru.averia.tracker");
         caps.setCapability("appActivity", "ru.averia.tracker.ui.activities.SplashActivity");
         caps.setCapability("app", consts.app_path_mac);
-        //caps.setCapability("udid",consts.phone_lg);
-        caps.setCapability("autoGrantPermissions", true);
+        caps.setCapability("udid",consts.phone_lg);
 
         try {
             driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:" + port + "/wd/hub"), caps);
@@ -73,8 +71,6 @@ public class FullBuildTest {
         pet_screen = new Pet_screen(driver);
         social = new Socials(driver);
 
-
-        //All done, start driver
         driver.manage().timeouts().implicitlyWait(consts.Timeout, TimeUnit.SECONDS);
 
         logger.info(device + ": App launched");
@@ -148,7 +144,7 @@ public class FullBuildTest {
 
 
         }
-    @Test(dependsOnMethods = "Register")
+/*    @Test(dependsOnMethods = "Register")
         void Login()
         {
             Exit();
@@ -156,8 +152,8 @@ public class FullBuildTest {
             start.SplashScreen();
             start.Login(device);
 
-        }
-    @Test(dependsOnMethods = "Login")
+        }*/
+    @Test(dependsOnMethods = "Register")
         void AddPet()
         {
 
@@ -166,7 +162,7 @@ public class FullBuildTest {
             pet_screen.petEdit(device);
 
         }
-
+/*
     @Test(dependsOnMethods = "AddPet")
         void MainActivity()
         {
@@ -227,6 +223,6 @@ public class FullBuildTest {
         common.gotoMainScreen(device);
         social.share_Achievement(device);
 
-    }
+    } */
 
 }

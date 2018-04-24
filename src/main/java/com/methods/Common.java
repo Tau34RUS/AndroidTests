@@ -3,6 +3,7 @@ package com.methods;
 import io.appium.java_client.*;
 import org.apache.log4j.*;
 import org.openqa.selenium.*;
+import org.openqa.selenium.NoSuchElementException;
 
 import java.util.*;
 
@@ -21,7 +22,7 @@ public class Common {
 
     public void androidAllowAccess() {
         try {
-            driver.findElementById("com.android.packageinstaller:id/permission_allow_button").click();
+            driver.findElementById("com.android.packageinstaller1:id/permission_allow_button").click();
         }
         catch (org.openqa.selenium.NoSuchElementException e) {
             logger.info("No Permissions requested");
@@ -101,7 +102,7 @@ public class Common {
     }
 
     public void phonePhoto() {
-        androidAllowAccess();
+        //androidAllowAccess();
         switch (devicename) {
 
             case (phone_sony_xperia):
@@ -200,22 +201,34 @@ public class Common {
 
     public void swipeUpToElementId(String elementId) {
 
+        int loopCounter = 0;
         boolean isFoundTheElement = driver.findElements(By.id(elementId)).size() > 0;
-        while (!isFoundTheElement){
+        while (!isFoundTheElement && loopCounter < 10){
             swipeUp();
             isFoundTheElement  = driver.findElements(By.id(elementId)).size() > 0;
+            loopCounter++;
         }
 
     }
 
     public void swipeDownToElementId(String elementId){
-
+        int loopCounter = 0;
         boolean isFoundTheElement = driver.findElements(By.id(elementId)).size() > 0;
-        while (!isFoundTheElement){
+        while (!isFoundTheElement && loopCounter < 10){
             swipeDown();
             isFoundTheElement  = driver.findElements(By.id(elementId)).size() > 0;
+            loopCounter++;
         }
 
+    }
+
+    public boolean isElementPresent(By by){
+        try {
+            driver.findElements(by);
+            return true;
+        } catch (NoSuchElementException e){
+            return false;
+        }
     }
 
 }

@@ -43,9 +43,7 @@ public class Pet_screen extends Common{
     }
 
     public void petEdit(String device) {
-
             swipeUpToElementId("ru.averia.tracker:id/tv_about");
-
     }
 
     public void addPet (String device){
@@ -69,7 +67,7 @@ public class Pet_screen extends Common{
         driver.navigate().back();
         driver.findElement(By.id("ru.averia.tracker:id/bt_next")).click();
 
-        Assert.assertEquals("Добавить питомца", driver.findElement(By.id("ru.averia.tracker:id/tv_title")).getText());
+        Assert.assertEquals("Порода", driver.findElement(By.id("ru.averia.tracker:id/tv_title")).getText());
         driver.findElement(By.id("ru.averia.tracker:id/bt_next")).click();
 /*
         //Shitty Magic
