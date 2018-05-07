@@ -49,7 +49,7 @@ public class Smoke {
         caps.setCapability("platformName", "Android");
         caps.setCapability("appPackage", "ru.averia.tracker");
         caps.setCapability("appActivity", "ru.averia.tracker.ui.activities.SplashActivity");
-
+        caps.setCapability("maxTypingFrequency","4");
 
         try {
             driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:" + port + "/wd/hub"), caps);

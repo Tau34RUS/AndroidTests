@@ -71,20 +71,20 @@ public class Main_screen extends Common {
         sleep(5);
         Assert.assertEquals("Ходьба", driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.view.ViewGroup/android.widget.TextView").getText());
 //        Assert.assertNotEquals("0", driver.findElementById("ru.averia.tracker:id/tv_total").getText());
-        if(isElementPresent(By.id("ru.averia.tracker:id/container_no_stats"))) {logger.error("Stats1");}
-        else {logger.error("No stats1");}
-        if(isElementPresent(By.id("ru.averia.tracker:id/tv_error"))) {logger.error("Stats2");}
-        else {logger.error("No stats2");}
+        if(isElementPresent(By.id("ru.averia.tracker:id/container_no_stats"))) {logger.error(device + ": Stats1");}
+        else {logger.error(device + ": No stats1");}
+        if(isElementPresent(By.id("ru.averia.tracker:id/tv_error"))) {logger.error(device + ": Stats2");}
+        else {logger.error(device + ": No stats2");}
         int i=2;
         while (i<=4){
             String s = String.valueOf(i);
             String xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.support.v7.app.ActionBar.Tab[" + s + "]";
             driver.findElementByXPath(xpath).click();
             //           Assert.assertNotEquals("0", driver.findElementById("ru.averia.tracker:id/tv_total").getText());
-            if(isElementPresent(By.id("ru.averia.tracker:id/container_no_stats"))) {logger.error("Stats1");}
-            else {logger.error("No stats1");}
-            if(isElementPresent(By.id("ru.averia.tracker:id/tv_error"))) {logger.error("Stats2");}
-            else {logger.error("No stats2");}
+            if(isElementPresent(By.id("ru.averia.tracker:id/container_no_stats"))) {logger.error(device + ": Stats1");}
+            else {logger.error(device + ": No stats1");}
+            if(isElementPresent(By.id("ru.averia.tracker:id/tv_error"))) {logger.error(device + ": Stats2");}
+            else {logger.error(device + ": No stats2");}
             i++;
         }
 
