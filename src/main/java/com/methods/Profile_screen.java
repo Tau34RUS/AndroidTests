@@ -45,7 +45,7 @@ public class Profile_screen extends Common{
 
                 driver.findElementById("ru.averia.tracker:id/bt_edit_profile").click();
                 driver.findElementById("ru.averia.tracker:id/et_last_name").sendKeys("Tester");
-                logger.info("Swipe up");
+                logger.info(device + ": Swipe up");
                 swipeUp();
 
                 logger.info(device + ": Fill phone number");
@@ -56,7 +56,7 @@ public class Profile_screen extends Common{
                 for (int i = 0; i < 11; i++) phonenumber += login.nextInt(alphabet.length());
                 driver.findElementById("ru.averia.tracker:id/et_phone").sendKeys(phonenumber);
 
-                logger.info("Swipe down");
+                logger.info(device + ": Swipe down");
                 swipeDown();
 
                 driver.findElementById("ru.averia.tracker:id/container_avatar").click();
@@ -67,7 +67,7 @@ public class Profile_screen extends Common{
                 sleep(5);
                 driver.findElementById("ru.averia.tracker:id/iv_save").click();
                 sleep(5);
-                logger.info("Saving user profile changes");
+                logger.info(device + ": Saving user profile changes");
                 break;
 
         }

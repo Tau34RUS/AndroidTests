@@ -42,7 +42,6 @@ public class Common {
 
     public void swipeUp() {
 
-        logger.info("Swipe Up");
         int starty = (int) (screensize.height * 0.50);
         int endy = (int) (screensize.height * 0.20);
         int startx = screensize.width / 2;
@@ -54,7 +53,6 @@ public class Common {
 
     public void swipeDown() {
 
-        logger.info("Swipe Down");
         int starty = (int) (screensize.height * 0.20);
         int endy = (int) (screensize.height * 0.70);
         int startx = screensize.width / 2;
