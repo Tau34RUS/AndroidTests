@@ -20,7 +20,7 @@ public class consts {
     public static final String phone_meizu_n5 = "621HEBRB2A2W3";
     public static final String phone_xiomi_x4_note = "420268870104";
     public static final String phone_honor_c3 = "5PH6NRWGTOGQWCPR";
-    public static final String phone_xiomi_x3 = "2062e4f77d63"; //USB-install restricted
+    public static final String phone_xiomi_x3 = "2062e4f77d63";
     public static final String phone_nexus_5 = "0aa9469c027f7669";
     public static final String phone_sony_xperia="CB512B042S";
 

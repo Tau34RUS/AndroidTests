@@ -3,8 +3,8 @@ package com.tests;
 /* Smoke Tests */
 
 import com.methods.*;
-import com.vars.*;
 import com.utils.*;
+import com.vars.*;
 import io.appium.java_client.*;
 import io.appium.java_client.android.*;
 import org.apache.log4j.*;
@@ -50,6 +50,8 @@ public class Smoke {
         caps.setCapability("appPackage", "ru.averia.tracker");
         caps.setCapability("appActivity", "ru.averia.tracker.ui.activities.SplashActivity");
         caps.setCapability("maxTypingFrequency","4");
+        caps.setCapability("autoGrantPermissions", true);
+        caps.setCapability("gpsEnabled", true);
 
         try {
             driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:" + port + "/wd/hub"), caps);
