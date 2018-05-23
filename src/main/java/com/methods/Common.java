@@ -21,6 +21,7 @@ public class Common {
     }
 
     public void androidAllowAccess() {
+
         try {
             driver.findElementById("com.android.packageinstaller1:id/permission_allow_button").click();
         }
@@ -97,6 +98,7 @@ public class Common {
             swipeUp();
             swipeDown();
         }
+
     }
 
     public void phonePhoto() {
@@ -210,6 +212,7 @@ public class Common {
     }
 
     public void swipeDownToElementId(String elementId){
+
         int loopCounter = 0;
         boolean isFoundTheElement = driver.findElements(By.id(elementId)).size() > 0;
         while (!isFoundTheElement && loopCounter < 10){
@@ -221,12 +224,14 @@ public class Common {
     }
 
     public boolean isElementPresent(By by){
+
         try {
             driver.findElements(by);
             return true;
         } catch (NoSuchElementException e){
             return false;
         }
+
     }
 
 }

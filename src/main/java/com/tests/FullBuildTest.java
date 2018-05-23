@@ -31,6 +31,7 @@ public class FullBuildTest {
     public Main_screen main_screen;
     public Pet_screen pet_screen;
     public Socials social;
+    public Map_screen map_screen;
     static AppiumDriver<MobileElement> driver;
 
     DesiredCapabilities caps = new DesiredCapabilities();
@@ -55,6 +56,7 @@ public class FullBuildTest {
         caps.setCapability("app", consts.app_path_mac);
         //caps.setCapability("udid",consts.phone_lg);
         caps.setCapability("autoGrantPermissions", true);
+        caps.setCapability("gpsEnabled", true);
 
         try {
             driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:" + port + "/wd/hub"), caps);
@@ -71,6 +73,7 @@ public class FullBuildTest {
         profile_screen = new Profile_screen(driver);
         main_screen = new Main_screen(driver);
         pet_screen = new Pet_screen(driver);
+        map_screen = new Map_screen(driver);
         social = new Socials(driver);
 
 
@@ -204,8 +207,8 @@ public class FullBuildTest {
 
         }
 
-    @Test(dependsOnMethods = "Restart")
-    void LoginExistingUser(){
+   @Test(dependsOnMethods = "Restart")
+        void LoginExistingUser(){
 
         start.SplashScreen();
         start.Login_old(device);
@@ -213,7 +216,7 @@ public class FullBuildTest {
     }
 
     @Test(dependsOnMethods = "LoginExistingUser")
-    void ChekingStatistic(){
+        void ChekingStatistic(){
 
         common.gotoMainScreen(device);
         main_screen.walkStats(device);
@@ -229,4 +232,13 @@ public class FullBuildTest {
 
     }
 
+    @Test(dependsOnMethods = "LoginExistingUser")
+    void SafeZone(){
+
+        common.gotoMapScreen(device);
+        common.gotoProfileScreen(device);
+        common.swipeUp();
+        map_screen.addSafeZone(device);
+
+    }
 }
