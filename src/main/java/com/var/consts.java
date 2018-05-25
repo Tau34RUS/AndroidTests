@@ -1,4 +1,4 @@
-package com.vars;
+package com.var;
 
 public class consts {
 

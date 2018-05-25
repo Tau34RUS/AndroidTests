@@ -1,4 +1,4 @@
-package com.vars;
+package com.var;
 
 import org.openqa.selenium.Dimension;
 
@@ -9,24 +9,16 @@ public class vars {
     public static String userlogin = new String();
     public static String userpass = "12345678";
     public static String petname="Alessia";
-    public static String breed;
-    public static String petweight;
-    public static String petheight;
+    public static String temp_petname="TempPet";
+    public static String breed="овчарка";
+    public static String petweight="40";
+    public static String petheight="33";
     public static String birthmonth;
-    public static String birthyear;
-    public static String petage;
+    public static String birthyear="2016";
+    public static String petage="3";
     public static Dimension screensize;
     public static String devicename;
     public static Integer port;
     public static String phonenumber;
 
-
-    {
-        petweight="40";
-        petheight="33";
-        birthmonth="5";
-        birthyear="2016";
-        petage="3";
-        breed="овчарка";
-    }
 }

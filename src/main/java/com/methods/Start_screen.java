@@ -10,8 +10,8 @@ import org.testng.*;
 import java.util.*;
 import java.util.concurrent.*;
 
-import static com.vars.consts.*;
-import static com.vars.vars.*;
+import static com.var.consts.*;
+import static com.var.vars.*;
 
 public class Start_screen extends Common{
 

@@ -9,8 +9,8 @@ import org.openqa.selenium.support.*;
 import java.util.*;
 import java.util.concurrent.*;
 
-import static com.vars.consts.*;
-import static com.vars.vars.*;
+import static com.var.consts.*;
+import static com.var.vars.*;
 
 public class Profile_screen extends Common{
 
