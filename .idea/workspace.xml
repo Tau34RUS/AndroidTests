@@ -3,20 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1281d1c0-0985-4127-85c8-4c8ed24b88a6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/methods/Common.java" afterPath="$PROJECT_DIR$/src/main/java/com/methods/Common.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/methods/Main_screen.java" afterPath="$PROJECT_DIR$/src/main/java/com/methods/Main_screen.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/methods/Map_screen.java" afterPath="$PROJECT_DIR$/src/main/java/com/methods/Map_screen.java" />
+      <change beforePath="$PROJECT_DIR$/Full.xml" afterPath="$PROJECT_DIR$/Full.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/methods/Pet_screen.java" afterPath="$PROJECT_DIR$/src/main/java/com/methods/Pet_screen.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/methods/Profile_screen.java" afterPath="$PROJECT_DIR$/src/main/java/com/methods/Profile_screen.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/methods/Socials.java" afterPath="$PROJECT_DIR$/src/main/java/com/methods/Socials.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/methods/Start_screen.java" afterPath="$PROJECT_DIR$/src/main/java/com/methods/Start_screen.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tests/FullBuildTest.java" afterPath="$PROJECT_DIR$/src/main/java/com/tests/FullBuildTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tests/Smoke.java" afterPath="$PROJECT_DIR$/src/main/java/com/tests/Smoke.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tests/TestingTests.java" afterPath="$PROJECT_DIR$/src/main/java/com/tests/TestingTests.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utils/GetDeviceInfo.java" afterPath="$PROJECT_DIR$/src/main/java/com/utils/GetDeviceInfo.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utils/Screenshot.java" afterPath="$PROJECT_DIR$/src/main/java/com/utils/Screenshot.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vars/consts.java" afterPath="$PROJECT_DIR$/src/main/java/com/var/consts.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vars/vars.java" afterPath="$PROJECT_DIR$/src/main/java/com/var/vars.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,8 +33,8 @@
       <file leaf-file-name="Pet_screen.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/Pet_screen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="146" column="33" lean-forward="true" selection-start-line="146" selection-start-column="33" selection-end-line="146" selection-end-column="33" />
+            <state relative-caret-position="187">
+              <caret line="138" column="71" lean-forward="false" selection-start-line="138" selection-start-column="71" selection-end-line="138" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#addCollar#0;class#Pet_screen#0" expanded="false" />
@@ -102,8 +90,8 @@
       <file leaf-file-name="FullBuildTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tests/FullBuildTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="166" column="0" lean-forward="false" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
+            <state relative-caret-position="397">
+              <caret line="251" column="0" lean-forward="false" selection-start-line="251" selection-start-column="0" selection-end-line="251" selection-end-column="0" />
               <folding>
                 <element signature="method#StartUp#0;class#FullBuildTest#0" expanded="false" />
                 <element signature="method#Exit#0;class#FullBuildTest#0" expanded="false" />
@@ -116,16 +104,18 @@
                 <element signature="method#LoginExistingUser#0;class#FullBuildTest#0" expanded="false" />
                 <element signature="method#ChekingStatistic#0;class#FullBuildTest#0" expanded="false" />
                 <element signature="method#Achievements#0;class#FullBuildTest#0" expanded="false" />
-                <element signature="method#SafeZone#0;class#FullBuildTest#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default_AddPet_fail.png" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/output/screenshots/default_AddPet_fail.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="Full.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Full.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="32" column="79" lean-forward="true" selection-start-line="32" selection-start-column="79" selection-end-line="32" selection-end-column="79" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -222,7 +212,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/tests/AlphaBuild.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/methods/Social_screen.java" />
         <option value="$PROJECT_DIR$/Smoke.xml" />
-        <option value="$PROJECT_DIR$/Full.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/testng_xmls/TestNGFull.xml" />
@@ -241,11 +230,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/vars/vars.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/methods/Common.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/utils/VarsInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/methods/Pet_screen.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/var/vars.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tests/TestingTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tests/Smoke.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tests/FullBuildTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/methods/Pet_screen.java" />
+        <option value="$PROJECT_DIR$/Full.xml" />
       </list>
     </option>
   </component>
@@ -384,14 +374,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="output" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-              <item name="screenshots" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
@@ -970,7 +952,14 @@
       <option name="project" value="LOCAL" />
       <updated>1526912425508</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Vars access fixed, tweaks for methods test&#10;Added Add/Delete pet from personal page.">
+      <created>1527253945416</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1527253945416</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -980,11 +969,11 @@
     <history-entry file="Full - 2018.05.25 at 16h 10m 15s.xml">
       <configuration name="Full" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="Full - 2018.05.25 at 17h 00m 30s.xml">
+      <configuration name="Full" configurationId="TestNG" />
+    </history-entry>
     <history-entry file="Smoke - 2018.05.25 at 15h 33m 47s.xml">
       <configuration name="Smoke" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestingTests - 2018.05.25 at 15h 12m 37s.xml">
-      <configuration name="TestingTests" configurationId="TestNG" />
     </history-entry>
     <history-entry file="TestingTests - 2018.05.25 at 15h 16m 30s.xml">
       <configuration name="TestingTests" configurationId="TestNG" />
@@ -1024,10 +1013,10 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45899773" sideWeight="0.31895635" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45841786" sideWeight="0.31895635" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.4985062" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39756593" sideWeight="0.6810437" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286004" sideWeight="0.4985062" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39756593" sideWeight="0.6810437" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1052,7 +1041,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Ubuntu control + swipe action" />
     <MESSAGE value="Jenkins CSS" />
     <MESSAGE value="Jenkins CSS2" />
     <MESSAGE value="iPhone serial" />
@@ -1077,7 +1065,8 @@
     <MESSAGE value="Added android phones ids" />
     <MESSAGE value="Small fixes" />
     <MESSAGE value="Small fixes here and there&#10;Safe zone add\remove&#10;Fixed permissions grant" />
-    <option name="LAST_COMMIT_MESSAGE" value="Small fixes here and there&#10;Safe zone add\remove&#10;Fixed permissions grant" />
+    <MESSAGE value="Vars access fixed, tweaks for methods test&#10;Added Add/Delete pet from personal page." />
+    <option name="LAST_COMMIT_MESSAGE" value="Vars access fixed, tweaks for methods test&#10;Added Add/Delete pet from personal page." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1213,13 +1202,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1200">
           <caret line="80" column="53" lean-forward="false" selection-start-line="80" selection-start-column="38" selection-end-line="80" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Full.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="80" lean-forward="false" selection-start-line="32" selection-start-column="80" selection-end-line="32" selection-end-column="80" />
         </state>
       </provider>
     </entry>
@@ -1363,17 +1345,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/Pet_screen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="146" column="33" lean-forward="true" selection-start-line="146" selection-start-column="33" selection-end-line="146" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#addCollar#0;class#Pet_screen#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/var/consts.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1410,10 +1381,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/output/screenshots/default_AddPet_fail.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/Pet_screen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="138" column="71" lean-forward="false" selection-start-line="138" selection-start-column="71" selection-end-line="138" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#addCollar#0;class#Pet_screen#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tests/FullBuildTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="166" column="0" lean-forward="false" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
+        <state relative-caret-position="397">
+          <caret line="251" column="0" lean-forward="false" selection-start-line="251" selection-start-column="0" selection-end-line="251" selection-end-column="0" />
           <folding>
             <element signature="method#StartUp#0;class#FullBuildTest#0" expanded="false" />
             <element signature="method#Exit#0;class#FullBuildTest#0" expanded="false" />
@@ -1426,14 +1413,16 @@
             <element signature="method#LoginExistingUser#0;class#FullBuildTest#0" expanded="false" />
             <element signature="method#ChekingStatistic#0;class#FullBuildTest#0" expanded="false" />
             <element signature="method#Achievements#0;class#FullBuildTest#0" expanded="false" />
-            <element signature="method#SafeZone#0;class#FullBuildTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/output/screenshots/default_AddPet_fail.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/Full.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="32" column="79" lean-forward="true" selection-start-line="32" selection-start-column="79" selection-end-line="32" selection-end-column="79" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
