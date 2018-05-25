@@ -9,8 +9,8 @@ import org.testng.*;
 
 import java.util.concurrent.*;
 
-import static com.vars.consts.*;
-import static com.vars.vars.*;
+import static com.var.consts.*;
+import static com.var.vars.*;
 
 public class Pet_screen extends Common{
 
@@ -90,17 +90,86 @@ public class Pet_screen extends Common{
         driver.findElement(By.xpath("//*[@text='Австралийская келпи']")).click();
         driver.findElementById("ru.averia.tracker:id/bt_next").click();
 
-        driver.findElementById("ru.averia.tracker:id/til_age").sendKeys("2");
+        driver.findElementById("ru.averia.tracker:id/til_age").sendKeys(petage);
         driver.navigate().back();
         driver.findElementById("ru.averia.tracker:id/bt_next").click();
 
-        driver.findElementById("ru.averia.tracker:id/til_weight").sendKeys("31");
+        driver.findElementById("ru.averia.tracker:id/til_weight").sendKeys(petweight);
 
-        driver.findElementById("ru.averia.tracker:id/til_height").sendKeys("22");
+        driver.findElementById("ru.averia.tracker:id/til_height").sendKeys(petheight);
 
         driver.navigate().back();
 
         driver.findElementById("ru.averia.tracker:id/bt_next").click();
+    }
+
+    public void addPetProfileScreen (String device){
+
+        logger.info(device + ": Adding Temp Pet");
+
+        swipeUpToElementId("ru.averia.tracker:id/container_add_pet");
+
+        //checking for existing temp pet
+
+        if (isElementPresent(By.xpath("//android.widget.TextView[@text='TempPet']"))) {
+
+            logger.error(device + ": Temp Pet already present!");
+            driver.findElement(By.xpath("//android.widget.TextView[@text='TempPet']")).click();
+            swipeUpToElementId("ru.averia.tracker:id/tv_remove_pet");
+            driver.findElementById("ru.averia.tracker:id/tv_remove_pet").click();
+            driver.findElementById("ru.averia.tracker:id/md_buttonDefaultPositive").click();
+            sleep (5);
+        }
+
+
+
+        //adding new one
+        driver.findElementById("ru.averia.tracker:id/container_add_pet").click();
+        Assert.assertEquals("Добавить питомца", driver.findElement(By.id("ru.averia.tracker:id/tv_title")).getText());
+
+        driver.findElement(By.id("ru.averia.tracker:id/et_name")).sendKeys(temp_petname);
+        driver.navigate().back();
+        driver.findElement(By.id("ru.averia.tracker:id/bt_next")).click();
+
+        Assert.assertEquals("Порода", driver.findElement(By.id("ru.averia.tracker:id/tv_title")).getText());
+        driver.findElement(By.id("ru.averia.tracker:id/bt_next")).click();
+        driver.navigate().back();
+        driver.findElement(By.id("ru.averia.tracker:id/bt_next")).click();
+        driver.findElement(By.xpath("//*[@text='Австралийская келпи']")).click();
+        driver.findElementById("ru.averia.tracker:id/bt_next").click();
+
+        logger.info (" => Strings:");
+        logger.info ("Age: " + petage);
+        logger.info ("Weight: " + petweight);
+        logger.info ("Height: " + petheight);
+
+        driver.findElementById("ru.averia.tracker:id/til_age").sendKeys(petage);
+        driver.navigate().back();
+        driver.findElementById("ru.averia.tracker:id/bt_next").click();
+
+        driver.findElementById("ru.averia.tracker:id/til_weight").sendKeys(petweight);
+        driver.findElementById("ru.averia.tracker:id/til_height").sendKeys(petheight);
+        driver.navigate().back();
+        driver.findElementById("ru.averia.tracker:id/bt_next").click();
+
+        if (isElementPresent(By.xpath("//android.widget.TextView[@text='TempPet']"))) { logger.error(device + ": Temp Pet Added!"); }
+
+    }
+
+    public void deletePetProfileScreen (String device){
+
+        logger.info(device + ": Deleting Temp Pet");
+
+        //checking for existing temp pet and deleting
+        swipeUp();
+
+        driver.findElement(By.xpath("//android.widget.TextView[@text='TempPet']")).click();
+        swipeUpToElementId("ru.averia.tracker:id/tv_remove_pet");
+        driver.findElementById("ru.averia.tracker:id/tv_remove_pet").click();
+        driver.findElementById("ru.averia.tracker:id/md_buttonDefaultPositive").click();
+        sleep (5);
+        if (isElementPresent(By.xpath("//android.widget.TextView[@text='TempPet']"))) { logger.error(device + ": Temp Pet Still Present!"); }
+
     }
 
 }

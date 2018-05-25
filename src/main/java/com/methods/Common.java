@@ -7,8 +7,8 @@ import org.openqa.selenium.NoSuchElementException;
 
 import java.util.*;
 
-import static com.vars.consts.*;
-import static com.vars.vars.*;
+import static com.var.consts.*;
+import static com.var.vars.*;
 
 public class Common {
 
@@ -226,11 +226,19 @@ public class Common {
     public boolean isElementPresent(By by){
 
         try {
-            driver.findElements(by);
+            driver.findElement(by);
             return true;
         } catch (NoSuchElementException e){
             return false;
         }
+
+    }
+
+    public void openNotifications (String device) {
+
+        sleep(2);
+        driver.swipe(130, 20, 280, 580, 500);
+        sleep(2);
 
     }
 

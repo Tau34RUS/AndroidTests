@@ -10,7 +10,7 @@ import org.openqa.selenium.support.*;
 import java.io.*;
 import java.util.concurrent.*;
 
-import static com.vars.consts.folder_name;
+import static com.var.consts.folder_name;
 
 public class Screenshot extends com.methods.Common {
 
@@ -20,7 +20,7 @@ public class Screenshot extends com.methods.Common {
     {
         super(driver);
         logger = Logger.getLogger("Screenshot");
-        PageFactory.initElements(new AppiumFieldDecorator(driver, com.vars.consts.Timeout, TimeUnit.SECONDS), this);
+        PageFactory.initElements(new AppiumFieldDecorator(driver, com.var.consts.Timeout, TimeUnit.SECONDS), this);
     }
 
     public void captureScreenShots(String device, String testName) throws IOException

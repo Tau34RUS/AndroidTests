@@ -4,7 +4,7 @@ package com.tests;
 
 import com.methods.*;
 import com.utils.*;
-import com.vars.*;
+import com.var.*;
 import io.appium.java_client.*;
 import io.appium.java_client.android.*;
 import org.apache.log4j.*;
@@ -191,15 +191,26 @@ public class FullBuildTest {
         }
 
     @Test(dependsOnMethods = "UserProfile")
-        void PetProfile()
+    void PetProfile()
+    {
+
+        common.gotoProfileScreen(device);
+        pet_screen.petEdit(device);
+
+    }
+
+
+    @Test(dependsOnMethods = "UserProfile")
+        void AddDeletePet()
         {
 
             common.gotoProfileScreen(device);
-            pet_screen.petEdit(device);
+            pet_screen.addPetProfileScreen(device);
+            pet_screen.deletePetProfileScreen(device);
 
         }
 
-    @Test(dependsOnMethods = "PetProfile")
+    @Test(dependsOnMethods = "AddDeletePet")
         void Restart(){
 
             Exit();

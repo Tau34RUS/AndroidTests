@@ -7,7 +7,7 @@ import org.openqa.selenium.support.*;
 
 import java.util.concurrent.*;
 
-import static com.vars.consts.*;
+import static com.var.consts.*;
 
 public class Socials extends Common{
 

@@ -4,7 +4,7 @@ package com.tests;
 
 import com.methods.*;
 import com.utils.*;
-import com.vars.*;
+import com.var.*;
 import io.appium.java_client.*;
 import io.appium.java_client.android.*;
 import org.apache.log4j.*;

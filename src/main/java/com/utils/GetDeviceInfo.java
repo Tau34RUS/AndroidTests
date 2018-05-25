@@ -1,7 +1,7 @@
 package com.utils;
 
 import com.methods.*;
-import com.vars.*;
+import com.var.*;
 import io.appium.java_client.*;
 import io.appium.java_client.pagefactory.*;
 import org.apache.log4j.*;
@@ -17,7 +17,7 @@ public class GetDeviceInfo extends Common {
     {
         super(driver);
         logger = Logger.getLogger("DeviceInfo");
-        PageFactory.initElements(new AppiumFieldDecorator(driver, com.vars.consts.Timeout, TimeUnit.SECONDS), this);
+        PageFactory.initElements(new AppiumFieldDecorator(driver, com.var.consts.Timeout, TimeUnit.SECONDS), this);
     }
 
     public void getDeviceInfo(String device) {

@@ -4,7 +4,7 @@ package com.tests;
 
 import com.methods.*;
 import com.utils.*;
-import com.vars.*;
+import com.var.*;
 import io.appium.java_client.*;
 import io.appium.java_client.android.*;
 import org.apache.log4j.*;
@@ -51,8 +51,11 @@ public class TestingTests {
         caps.setCapability("platformName", "Android");
         caps.setCapability("appPackage", "ru.averia.tracker");
         caps.setCapability("appActivity", "ru.averia.tracker.ui.activities.SplashActivity");
-        caps.setCapability("app", consts.app_path_mac);
         caps.setCapability("udid",consts.phone_lg);
+        caps.setCapability("autoGrantPermissions", true);
+        caps.setCapability("gpsEnabled", true);
+        caps.setCapability("noReset", true);
+        caps.setCapability("fullReset", false);
 
         try {
             driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:" + port + "/wd/hub"), caps);
@@ -99,11 +102,6 @@ public class TestingTests {
 
     }
 
-    @AfterTest
-    void AfterSuite() {
-        Exit();
-    }
-
     @AfterMethod
     void afterMethod(ITestResult result)
     {
@@ -134,95 +132,23 @@ public class TestingTests {
         }
 
     }
+/*
+    @Test
+        void LoginExistingUser()
+        {
+
+            start.SplashScreen();
+            start.Login_old(device);
+
+        }
+*/
 
     @Test
-        void Register()
-        {
+    void AddTempPet() {
 
-            start.SplashScreen();
-            start.Register(device);
-
-
-        }
-/*    @Test(dependsOnMethods = "Register")
-        void Login()
-        {
-            Exit();
-            StartUp();
-            start.SplashScreen();
-            start.Login(device);
-
-        }*/
-    @Test(dependsOnMethods = "Register")
-        void AddPet()
-        {
-
-            pet_screen.addPet(device);
-            common.gotoProfileScreen(device);
-            pet_screen.petEdit(device);
-
-        }
-/*
-    @Test(dependsOnMethods = "AddPet")
-        void MainActivity()
-        {
-
-            common.ScreensShuffle();
-            common.gotoMainScreen(device);
-
-
-        }
-
-    @Test(dependsOnMethods = "AddPet")
-        void UserProfile()
-        {
-
-            common.gotoProfileScreen(device);
-            profile_screen.userProfileEdit(device);
-            common.gotoMainScreen(device);
-
-        }
-
-    @Test(dependsOnMethods = "UserProfile")
-        void PetProfile()
-        {
-
-            common.gotoProfileScreen(device);
-            pet_screen.petEdit(device);
-
-        }
-
-    @Test(dependsOnMethods = "PetProfile")
-        void Restart(){
-
-            Exit();
-            StartUp();
-
-        }
-
-    @Test(dependsOnMethods = "Restart")
-    void LoginExistingUser(){
-
-        start.SplashScreen();
-        start.Login_old(device);
+        common.gotoProfileScreen(device);
+        pet_screen.addPetProfileScreen(device);
+        pet_screen.deletePetProfileScreen(device);
 
     }
-
-    @Test(dependsOnMethods = "LoginExistingUser")
-    void ChekingStatistic(){
-
-        common.gotoMainScreen(device);
-        main_screen.walkStats(device);
-
-    }
-
-
-    @Test(dependsOnMethods = "LoginExistingUser")
-    void Achievements(){
-
-        common.gotoMainScreen(device);
-        social.share_Achievement(device);
-
-    } */
-
 }

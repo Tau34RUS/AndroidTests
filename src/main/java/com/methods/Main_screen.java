@@ -19,7 +19,7 @@ public class Main_screen extends Common {
 
         super(driver);
         logger = Logger.getLogger("AndroidTestLogger");
-        PageFactory.initElements(new AppiumFieldDecorator(driver, com.vars.consts.Timeout, TimeUnit.SECONDS), this);
+        PageFactory.initElements(new AppiumFieldDecorator(driver, com.var.consts.Timeout, TimeUnit.SECONDS), this);
     }
 
     public void checkScreen(String device) {
