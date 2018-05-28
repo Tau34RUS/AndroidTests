@@ -252,4 +252,12 @@ public class FullBuildTest {
         map_screen.addSafeZone(device);
 
     }
+
+    @Test(dependsOnMethods = "LoginExistingUser")
+    void CheckNotifications() {
+
+        common.openNotifications(device);
+        common.checkNotifications(device);
+        common.gotoMainScreen(device);
+    }
 }

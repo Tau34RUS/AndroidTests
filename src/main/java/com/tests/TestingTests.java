@@ -144,11 +144,12 @@ public class TestingTests {
 */
 
     @Test
-    void AddTempPet() {
+    void openNotifications() {
 
-        common.gotoProfileScreen(device);
-        pet_screen.addPetProfileScreen(device);
-        pet_screen.deletePetProfileScreen(device);
-
+        //start.SplashScreen();
+        //start.Login_old(device);
+        common.openNotifications(device);
+        common.checkNotifications(device);
+        common.gotoMainScreen(device);
     }
 }

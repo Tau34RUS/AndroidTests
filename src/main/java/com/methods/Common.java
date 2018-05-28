@@ -236,9 +236,19 @@ public class Common {
 
     public void openNotifications (String device) {
 
+        logger.info(device + ": Opening notifications");
         sleep(2);
         driver.swipe(130, 20, 280, 580, 500);
-        sleep(2);
+        sleep(3);
+
+    }
+
+    public void checkNotifications (String device) {
+
+        logger.info(device + ": Checking notification");
+        String notification_text = "Подключено ошейников";
+        driver.findElement(MobileBy.AndroidUIAutomator("new UiSelector().textContains(\"" + notification_text + "\")")).click();
+
 
     }
 
