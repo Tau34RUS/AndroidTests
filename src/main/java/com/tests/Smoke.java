@@ -154,7 +154,7 @@ public class Smoke {
         profile_screen.userProfileView(device);
 
     }
-
+/*
     @Test(dependsOnMethods = "Login")
     void MainScreenElements()
     {
@@ -163,6 +163,6 @@ public class Smoke {
         main_screen.checkScreen(device);
 
     }
-
+*/
 
 }
