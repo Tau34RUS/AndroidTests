@@ -242,7 +242,7 @@ public class FullBuildTest {
         social.share_Achievement(device);
 
     }
-*/
+
     @Test(dependsOnMethods = "LoginExistingUser")
     void SafeZone(){
 

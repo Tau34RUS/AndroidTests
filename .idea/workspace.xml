@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1281d1c0-0985-4127-85c8-4c8ed24b88a6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/methods/Common.java" afterPath="$PROJECT_DIR$/src/main/java/com/methods/Common.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tests/FullBuildTest.java" afterPath="$PROJECT_DIR$/src/main/java/com/tests/FullBuildTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tests/Smoke.java" afterPath="$PROJECT_DIR$/src/main/java/com/tests/Smoke.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Smoke.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Smoke.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tests/Smoke.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="47" column="53" lean-forward="false" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="53" />
+            <state relative-caret-position="885">
+              <caret line="70" column="84" lean-forward="false" selection-start-line="70" selection-start-column="84" selection-end-line="70" selection-end-column="84" />
               <folding>
                 <element signature="method#afterMethod#0;class#Smoke#0" expanded="false" />
               </folding>
@@ -86,11 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FullBuildTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FullBuildTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tests/FullBuildTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1785">
-              <caret line="219" column="0" lean-forward="false" selection-start-line="219" selection-start-column="0" selection-end-line="219" selection-end-column="0" />
+            <state relative-caret-position="189">
+              <caret line="220" column="38" lean-forward="true" selection-start-line="220" selection-start-column="38" selection-end-line="220" selection-end-column="38" />
               <folding>
                 <element signature="method#StartUp#0;class#FullBuildTest#0" expanded="false" />
                 <element signature="method#Exit#0;class#FullBuildTest#0" expanded="false" />
@@ -227,8 +225,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/methods/Profile_screen.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tests/TestingTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/methods/Common.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tests/FullBuildTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tests/Smoke.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tests/FullBuildTest.java" />
       </list>
     </option>
   </component>
@@ -239,9 +237,10 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds">
+    <option name="y" value="22" />
     <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="height" value="994" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -290,6 +289,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -330,34 +331,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="methods" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="var" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
@@ -369,16 +343,16 @@
             <path>
               <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
               <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
-              <item name="testng_xmls" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -426,7 +400,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.Smoke">
+  <component name="RunManager" selected="TestNG.Full">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -966,39 +940,46 @@
       <option name="project" value="LOCAL" />
       <updated>1527517400829</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Test cuts due to new UI">
+      <created>1528213806108</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1528213806108</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Smoke - 2018.06.04 at 17h 01m 37s.xml">
-      <configuration name="Smoke" configurationId="TestNG" />
+    <history-entry file="Full - 2018.06.15 at 12h 42m 26s.xml">
+      <configuration name="Full" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Smoke - 2018.06.04 at 17h 03m 36s.xml">
-      <configuration name="Smoke" configurationId="TestNG" />
+    <history-entry file="Full - 2018.06.15 at 13h 21m 29s.xml">
+      <configuration name="Full" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Smoke - 2018.06.04 at 17h 44m 50s.xml">
-      <configuration name="Smoke" configurationId="TestNG" />
+    <history-entry file="Full - 2018.06.15 at 13h 32m 16s.xml">
+      <configuration name="Full" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Smoke - 2018.06.04 at 18h 12m 13s.xml">
-      <configuration name="Smoke" configurationId="TestNG" />
+    <history-entry file="Full - 2018.06.15 at 13h 49m 03s.xml">
+      <configuration name="Full" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Smoke - 2018.06.04 at 18h 14m 14s.xml">
-      <configuration name="Smoke" configurationId="TestNG" />
+    <history-entry file="Full - 2018.06.15 at 14h 04m 48s.xml">
+      <configuration name="Full" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Smoke - 2018.06.05 at 16h 21m 32s.xml">
-      <configuration name="Smoke" configurationId="TestNG" />
+    <history-entry file="Full - 2018.06.15 at 14h 50m 48s.xml">
+      <configuration name="Full" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Smoke - 2018.06.05 at 16h 23m 16s.xml">
-      <configuration name="Smoke" configurationId="TestNG" />
+    <history-entry file="Full - 2018.06.15 at 15h 51m 19s.xml">
+      <configuration name="Full" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Smoke - 2018.06.05 at 16h 25m 49s.xml">
-      <configuration name="Smoke" configurationId="TestNG" />
+    <history-entry file="Full - 2018.06.15 at 16h 25m 28s.xml">
+      <configuration name="Full" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Smoke - 2018.06.05 at 16h 28m 14s.xml">
-      <configuration name="Smoke" configurationId="TestNG" />
+    <history-entry file="Full - 2018.06.15 at 16h 42m 41s.xml">
+      <configuration name="Full" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Smoke - 2018.06.05 at 16h 46m 56s.xml">
-      <configuration name="Smoke" configurationId="TestNG" />
+    <history-entry file="Full - 2018.06.15 at 16h 56m 20s.xml">
+      <configuration name="Full" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -1011,7 +992,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="22" width="1920" height="994" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1022,17 +1003,17 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45841786" sideWeight="0.31895635" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32118452" sideWeight="0.6810437" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286004" sideWeight="0.4985062" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39756593" sideWeight="0.6810437" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27582535" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3024494" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33817428" sideWeight="0.4978701" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1048,7 +1029,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="iPhone serial" />
     <MESSAGE value="Android port and screenshot creation" />
     <MESSAGE value="App Path change" />
     <MESSAGE value="Better code view" />
@@ -1073,7 +1053,8 @@
     <MESSAGE value="Vars access fixed, tweaks for methods test&#10;Added Add/Delete pet from personal page." />
     <MESSAGE value="Fixed full test run" />
     <MESSAGE value="Added Notification tests to Full test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Notification tests to Full test" />
+    <MESSAGE value="Test cuts due to new UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test cuts due to new UI" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1216,7 +1197,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="47" lean-forward="false" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1231,7 +1211,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/output/screenshots/default_MainActivity_fail.png" />
     <entry file="file://$PROJECT_DIR$/src/main/output/screenshots/default_MainScreenElements_fail.png" />
     <entry file="file://$PROJECT_DIR$/src/main/output/screenshots/default_Achievements_fail.png" />
-    <entry file="file://$PROJECT_DIR$/src/main/output/screenshots/default_SafeZone_fail.png" />
     <entry file="file://$PROJECT_DIR$/src/main/output/screenshots/default_AddTempPet_fail.png" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/utils/OSutils.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1290,14 +1269,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/Pet_screen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="36" column="14" lean-forward="false" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tests/TestingTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1365">
@@ -1315,20 +1286,6 @@
         <state relative-caret-position="240">
           <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tests/FullBuildTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1785">
-          <caret line="219" column="0" lean-forward="false" selection-start-line="219" selection-start-column="0" selection-end-line="219" selection-end-column="0" />
-          <folding>
-            <element signature="method#StartUp#0;class#FullBuildTest#0" expanded="false" />
-            <element signature="method#Exit#0;class#FullBuildTest#0" expanded="false" />
-            <element signature="method#BeforeSuite#0;class#FullBuildTest#0" expanded="false" />
-            <element signature="method#afterMethod#0;class#FullBuildTest#0" expanded="false" />
-            <element signature="method#Login#0;class#FullBuildTest#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1356,12 +1313,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/Pet_screen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="36" column="14" lean-forward="false" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tests/Smoke.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="47" column="53" lean-forward="false" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="53" />
+        <state relative-caret-position="885">
+          <caret line="70" column="84" lean-forward="false" selection-start-line="70" selection-start-column="84" selection-end-line="70" selection-end-column="84" />
           <folding>
             <element signature="method#afterMethod#0;class#Smoke#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/output/screenshots/default_SafeZone_fail.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tests/FullBuildTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="220" column="38" lean-forward="true" selection-start-line="220" selection-start-column="38" selection-end-line="220" selection-end-column="38" />
+          <folding>
+            <element signature="method#StartUp#0;class#FullBuildTest#0" expanded="false" />
+            <element signature="method#Exit#0;class#FullBuildTest#0" expanded="false" />
+            <element signature="method#BeforeSuite#0;class#FullBuildTest#0" expanded="false" />
+            <element signature="method#afterMethod#0;class#FullBuildTest#0" expanded="false" />
+            <element signature="method#Login#0;class#FullBuildTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
