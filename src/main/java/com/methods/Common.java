@@ -7,8 +7,7 @@ import io.appium.java_client.TouchAction;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.*;
 
 import java.util.List;
 
@@ -251,15 +250,32 @@ public class Common {
         logger.info(device + ": Opening notifications");
         sleep(2);
         driver.swipe(130, 20, 280, 580, 500);
-                sleep(2);
-                sleep(3);
+        sleep(3);
 
-                        try {
-                        driver.findElementById("com.android.systemui:id/dismiss_text").click();
-                        } catch (org.openqa.selenium.NoSuchElementException e) {
-                        logger.info(device + ": No 'Clear all notifications' found");
-                        e.printStackTrace();
-                        }
+        try {
+            driver.findElementById("com.android.systemui:id/dismiss_text").click();
+        } catch (org.openqa.selenium.NoSuchElementException e) {
+            logger.info(device + ": No 'Clear all notifications' found");
+            e.printStackTrace();
+        }
+
+
+    }
+
+    public void checkNotifications (String device) {
+
+        logger.info(device + ": Checking notification");
+        String notification_text = "Подключено ошейников";
+        driver.findElement(MobileBy.AndroidUIAutomator("new UiSelector().textContains(\"" + notification_text + "\")")).click();
+
+
+    }
+
+    public void waitForElementByID (String device, String ID) {
+
+        logger.info(device + ": Waiting for element " + ID);
+        WebDriverWait wait = new WebDriverWait(driver,60);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.id(ID)));
 
     }
 
