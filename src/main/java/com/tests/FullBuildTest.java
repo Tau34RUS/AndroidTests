@@ -224,7 +224,7 @@ public class FullBuildTest {
         start.Login_old(device);
 
     }
-/*
+
     @Test(dependsOnMethods = "LoginExistingUser")
         void ChekingStatistic(){
 
@@ -232,7 +232,7 @@ public class FullBuildTest {
         main_screen.walkStats(device);
 
     }
-*/
+
 /*
     @Test(dependsOnMethods = "LoginExistingUser")
     void Achievements(){
@@ -241,6 +241,7 @@ public class FullBuildTest {
         social.share_Achievement(device);
 
     }
+*/
 
     @Test(dependsOnMethods = "LoginExistingUser")
     void SafeZone(){
@@ -252,7 +253,6 @@ public class FullBuildTest {
 
     }
 
-/*
     @Test(dependsOnMethods = "LoginExistingUser")
     void CheckNotifications() {
 
@@ -260,5 +260,5 @@ public class FullBuildTest {
         common.checkNotifications(device);
         common.gotoMainScreen(device);
     }
-    */
+
 }
