@@ -35,7 +35,7 @@ public class Smoke {
     DesiredCapabilities caps = new DesiredCapabilities();
 
     @Parameters({"server_port","device"})
-    public Smoke(@Optional("4723") String port, @Optional("default") String device)
+    public Smoke(@Optional("4731") String port, @Optional("default") String device)
     {
         this.port = port;
         this.device = device;
