@@ -1,15 +1,19 @@
 package com.methods;
 
-import io.appium.java_client.*;
-import org.apache.log4j.*;
-import org.openqa.selenium.*;
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileBy;
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.TouchAction;
+import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.support.ui.*;
 
-import java.util.*;
+import java.util.List;
 
 import static com.var.consts.*;
-import static com.var.vars.*;
+import static com.var.vars.devicename;
+import static com.var.vars.screensize;
 
 public class Common {
 
@@ -81,7 +85,12 @@ public class Common {
     public void gotoProfileScreen(String device) {
 
         logger.info(device + ": GOTO Profile Screen");
-        driver.findElementById("ru.averia.tracker:id/main_menu_action_profile").click();
+        if(isElementPresent(By.id("ru.averia.tracker:id/main_menu_action_profile")))
+        {driver.findElementById("ru.averia.tracker:id/main_menu_action_profile").click();}
+        else {
+            sleep(10);
+            driver.findElementById("ru.averia.tracker:id/main_menu_action_profile").click();
+        }
 
     }
 
@@ -145,6 +154,7 @@ public class Common {
 
                 break;
             case (phone_lg):
+            case (phone_lg_gold):
                 logger.info("LG photo sequence applied");
                 driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ListView/android.widget.LinearLayout/android.widget.LinearLayout[2]").click();
                 sleep(2);
@@ -269,4 +279,18 @@ public class Common {
 
     }
 
+    public void checkNotifications (String device) {
+
+                        logger.info(device + ": Checking notification");
+                String notification_text = "Подключено ошейников";
+                driver.findElement(MobileBy.AndroidUIAutomator("new UiSelector().textContains(\"" + notification_text + "\")")).click();
+    }
+
+    public void waitForElementByID (String device, String ID) {
+
+                       logger.info(device + ": Waiting for element " + ID);
+                WebDriverWait wait = new WebDriverWait(driver,60);
+                wait.until(ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.id(ID)));
+
+    }
 }
