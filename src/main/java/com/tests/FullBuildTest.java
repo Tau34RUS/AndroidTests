@@ -1,7 +1,5 @@
 package com.tests;
 
-/* Smoke Tests */
-
 import com.methods.*;
 import com.utils.*;
 import com.var.*;
@@ -37,7 +35,7 @@ public class FullBuildTest {
     DesiredCapabilities caps = new DesiredCapabilities();
 
     @Parameters({"server_port","device"})
-    public FullBuildTest(@Optional("4731") String port, @Optional("default") String device)
+    public FullBuildTest(@Optional("4723") String port, @Optional("default") String device)
     {
         this.port = port;
         this.device = device;
@@ -151,6 +149,7 @@ public class FullBuildTest {
 
 
         }
+
     @Test(dependsOnMethods = "Register")
         void Login()
         {
@@ -160,10 +159,10 @@ public class FullBuildTest {
             start.Login(device);
 
         }
+
     @Test(dependsOnMethods = "Login")
         void AddPet()
         {
-
             pet_screen.addPet(device);
             common.gotoProfileScreen(device);
             pet_screen.petEdit(device);
@@ -242,7 +241,7 @@ public class FullBuildTest {
         social.share_Achievement(device);
 
     }
-*/
+
     @Test(dependsOnMethods = "LoginExistingUser")
     void SafeZone(){
 
@@ -252,6 +251,7 @@ public class FullBuildTest {
         map_screen.addSafeZone(device);
 
     }
+
 /*
     @Test(dependsOnMethods = "LoginExistingUser")
     void CheckNotifications() {
