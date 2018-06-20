@@ -91,5 +91,23 @@ public class Main_screen extends Common {
 
     }
 
+    public void fromMainToSafeZone(String device){
+
+        logger.info(device + ": Go to the Safe zone list");
+
+        driver.findElementById("ru.averia.tracker:id/maim_menu_action_pet").click();
+        swipeUpToElementId("AddSafeZoneCard");
+        driver.findElementByAccessibilityId("AddSafeZoneCard").click();
+
+    }
+
+    public void goToPetProfile(String device){
+
+        logger.info(device + ": Go to Pet profile");
+
+        swipeUpToElementId("PetProfileCard");
+        driver.findElementByAccessibilityId("PetProfileCard").click();
+    }
+
 
 }

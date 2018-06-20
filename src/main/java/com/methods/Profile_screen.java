@@ -73,5 +73,15 @@ public class Profile_screen extends Common{
         }
 
     }
+
+    public void fromProfileToSafeZone(String device){
+        logger.info(device + ": Go to the Safe zone list");
+
+        driver.findElementById("ru.averia.tracker:id/main_menu_action_profile").click();
+        swipeUpToElementId("ru.averia.tracker:id/iv_collar_attached");
+        driver.findElement(By.xpath("//android.widget.TextView[@text='Ipkez']")).click();
+        swipeUp();
+        driver.findElementById("ru.averia.tracker:id/tv_safezones").click();
+    }
     
 }

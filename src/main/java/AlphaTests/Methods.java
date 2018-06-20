@@ -57,7 +57,6 @@ public class Methods {
 
     }
 
-
     public void Restart() throws MalformedURLException {
         Quit();
         SetUp();
@@ -83,7 +82,6 @@ public class Methods {
         Variables.userlogin = Variables.userlogin + "@test.user";
 
         Assert.assertEquals("Регистрация", driver.findElement(By.id("ru.averia.tracker:id/bt_register")).getText());
-
         driver.findElement(By.id("ru.averia.tracker:id/bt_register")).click();
 
         //Assert.assertEquals("Регистрация", driver.findElement(By.id("ru.averia.tracker:id/tv_title")).getText());
@@ -265,6 +263,8 @@ public class Methods {
         }
 
         driver.findElementById("ru.averia.tracker:id/iv_back").click();
+
+
 
     }
 
