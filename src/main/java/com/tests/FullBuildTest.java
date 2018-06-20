@@ -247,7 +247,7 @@ public class FullBuildTest {
 
         common.gotoMapScreen(device);
         common.gotoProfileScreen(device);
-        common.swipeUp();
+        profile_screen.fromProfileToSafeZone(device);
         map_screen.addSafeZone(device);
 
     }
