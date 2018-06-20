@@ -142,11 +142,6 @@ public class Pet_screen extends Common{
         driver.findElement(By.xpath("//*[@text='Австралийская келпи']")).click();
         driver.findElementById("ru.averia.tracker:id/bt_next").click();
 
-        /*logger.info (" => Strings:");
-        logger.info ("Age: " + petage);
-        logger.info ("Weight: " + petweight);
-        logger.info ("Height: " + petheight);*/
-
         driver.findElementById("ru.averia.tracker:id/til_age").sendKeys(petage);
         driver.navigate().back();
         driver.findElementById("ru.averia.tracker:id/bt_next").click();

@@ -36,7 +36,7 @@ public class TestingTests {
     DesiredCapabilities caps = new DesiredCapabilities();
 
     @Parameters({"server_port","device"})
-    public TestingTests(@Optional("4723") String port, @Optional("default") String device)
+    public TestingTests(@Optional("4731") String port, @Optional("default") String device)
     {
         this.port = port;
         this.device = device;
@@ -143,22 +143,12 @@ public class TestingTests {
         }
 */
 
-    /*@Test
+    @Test
     void AddTempPet() {
 
         common.gotoProfileScreen(device);
         pet_screen.addPetProfileScreen(device);
         pet_screen.deletePetProfileScreen(device);
 
-    }*/
-
-    @Test
-    void openNotifications() {
-
-                //start.SplashScreen();
-                        //start.Login_old(device);
-                                common.openNotifications(device);
-                common.checkNotifications(device);
-                common.gotoMainScreen(device);
     }
 }
