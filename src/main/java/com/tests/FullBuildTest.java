@@ -15,24 +15,23 @@ import java.util.concurrent.*;
 
 public class FullBuildTest {
 
-    Logger logger = Logger.getLogger("AndroidTestLogger");
+    public Logger logger = Logger.getLogger("AndroidTestLogger");
 
-    String port;
+    private String port;
     public String device;
-    public String testName;
 
-    public Start_screen start;
-    public Screenshot screenshot;
-    public GetDeviceInfo deviceinfo;
+    private Start_screen start;
+    private Screenshot screenshot;
+    private GetDeviceInfo deviceinfo;
     public Common common;
-    public Profile_screen profile_screen;
-    public Main_screen main_screen;
-    public Pet_screen pet_screen;
+    private Profile_screen profile_screen;
+    private Main_screen main_screen;
+    private Pet_screen pet_screen;
     public Socials social;
-    public Map_screen map_screen;
+    private Map_screen map_screen;
     static AppiumDriver<MobileElement> driver;
 
-    DesiredCapabilities caps = new DesiredCapabilities();
+    private DesiredCapabilities caps = new DesiredCapabilities();
 
     @Parameters({"server_port","device"})
     public FullBuildTest(@Optional("4731") String port, @Optional("default") String device)
@@ -41,7 +40,7 @@ public class FullBuildTest {
         this.device = device;
     }
 
-    public void StartUp()
+    private void StartUp()
     {
 
         logger.info(device + ": Starting app");
@@ -57,7 +56,7 @@ public class FullBuildTest {
         caps.setCapability("gpsEnabled", true);
 
         try {
-            driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:" + port + "/wd/hub"), caps);
+            driver = new AndroidDriver<>(new URL("http://127.0.0.1:" + port + "/wd/hub"), caps);
             //Thread.sleep(1000);
         } catch (MalformedURLException e) {
             e.printStackTrace();
@@ -82,7 +81,7 @@ public class FullBuildTest {
 
     }
 
-    public void Exit() {
+    private void Exit() {
 
         logger.info(device + ": Closing app");
         driver.quit();
@@ -109,28 +108,28 @@ public class FullBuildTest {
         Exit();
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     void afterMethod(ITestResult result)
     {
 
-        testName = result.getName();
+        String testName = result.getName();
 
         try
         {
             if(result.getStatus() == ITestResult.SUCCESS)
             {
-                logger.info(device + ": Passed " + testName);
+                logger.info("> " + device + ": Passed " + testName);
             }
 
             else if(result.getStatus() == ITestResult.FAILURE)
             {
-                logger.info(device + ": Failed " + testName);
+                logger.info("> " + device + ": Failed " + testName);
                 screenshot.captureScreenShots(device, testName);
             }
 
             else if(result.getStatus() == ITestResult.SKIP )
             {
-                logger.info(device + ": Skiped " + testName);
+                logger.info("> " + device + ": Skiped " + testName);
             }
         }
         catch(Exception e)
@@ -147,12 +146,12 @@ public class FullBuildTest {
             start.SplashScreen();
             start.Register(device);
 
-
         }
 
     @Test(dependsOnMethods = "Register")
         void Login()
         {
+
             Exit();
             StartUp();
             start.SplashScreen();
@@ -163,6 +162,7 @@ public class FullBuildTest {
     @Test(dependsOnMethods = "Login")
         void AddPet()
         {
+
             pet_screen.addPet(device);
             common.gotoProfileScreen(device);
             pet_screen.petEdit(device);
@@ -175,7 +175,6 @@ public class FullBuildTest {
 
             common.ScreensShuffle();
             common.gotoMainScreen(device);
-
 
         }
 
@@ -259,6 +258,7 @@ public class FullBuildTest {
         common.openNotifications(device);
         common.checkNotifications(device);
         common.gotoMainScreen(device);
+
     }
 
 }
