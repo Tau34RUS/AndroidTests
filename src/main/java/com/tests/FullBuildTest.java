@@ -29,7 +29,7 @@ public class FullBuildTest {
     private Pet_screen pet_screen;
     public Socials social;
     private Map_screen map_screen;
-    static AppiumDriver<MobileElement> driver;
+    protected static AppiumDriver<MobileElement> driver;
 
     private DesiredCapabilities caps = new DesiredCapabilities();
 
