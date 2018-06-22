@@ -101,13 +101,12 @@ public class Main_screen extends Common {
 
     }
 
-    public void goToPetProfile(String device){
+    public void fromMainToPet(String device){
 
         logger.info(device + ": Go to Pet profile");
 
         swipeUpToElementId("PetProfileCard");
         driver.findElementByAccessibilityId("PetProfileCard").click();
     }
-
 
 }
