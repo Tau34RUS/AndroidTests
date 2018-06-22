@@ -85,12 +85,9 @@ public class Common {
     public void gotoProfileScreen(String device) {
 
         logger.info(device + ": GOTO Profile Screen");
-        if(isElementPresent(By.id("ru.averia.tracker:id/main_menu_action_profile")))
-        {driver.findElementById("ru.averia.tracker:id/main_menu_action_profile").click();}
-        else {
-            sleep(10);
+
+            sleep(5);
             driver.findElementById("ru.averia.tracker:id/main_menu_action_profile").click();
-        }
 
     }
 
@@ -222,6 +219,18 @@ public class Common {
 
     }
 
+    public void swipeUpToElement(By by) {
+
+        int loopCounter = 0;
+        boolean isFoundTheElement = driver.findElements(by).size() > 0;
+        while (!isFoundTheElement && loopCounter < 10){
+            swipeUp();
+            isFoundTheElement  = driver.findElements(by).size() > 0;
+            loopCounter++;
+        }
+
+    }
+
     public void swipeDownToElementId(String elementId){
 
         int loopCounter = 0;
@@ -268,29 +277,6 @@ public class Common {
         String notification_text = "Подключено ошейников";
         driver.findElement(MobileBy.AndroidUIAutomator("new UiSelector().textContains(\"" + notification_text + "\")")).click();
 
-
-    }
-
-    public void waitForElementByID (String device, String ID) {
-
-        logger.info(device + ": Waiting for element " + ID);
-        WebDriverWait wait = new WebDriverWait(driver,60);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.id(ID)));
-
-    }
-
-    public void checkNotifications (String device) {
-
-                        logger.info(device + ": Checking notification");
-                String notification_text = "Подключено ошейников";
-                driver.findElement(MobileBy.AndroidUIAutomator("new UiSelector().textContains(\"" + notification_text + "\")")).click();
-    }
-
-    public void waitForElementByID (String device, String ID) {
-
-                       logger.info(device + ": Waiting for element " + ID);
-                WebDriverWait wait = new WebDriverWait(driver,60);
-                wait.until(ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.id(ID)));
 
     }
 }

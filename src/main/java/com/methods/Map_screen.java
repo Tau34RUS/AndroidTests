@@ -43,9 +43,7 @@ public class Map_screen extends Common{
     public void addSafeZone(String device) { //should be on other screen, but it is here
 
         logger.info(device + ": Adding test safe zone");
-        /*driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.support.v4.view.ViewPager/android.view.ViewGroup/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.support.v7.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.LinearLayout[1]").click();
-        swipeUp();
-        driver.findElementById("ru.averia.tracker:id/tv_safezones").click();*/
+
         if(isElementPresent(By.id("ru.averia.tracker:id/fab_add"))){
             driver.findElementById("ru.averia.tracker:id/fab_add").click();
             logger.info(device + ": Safe zone list is not empty");

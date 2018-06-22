@@ -13,6 +13,9 @@ import org.testng.annotations.*;
 import java.net.*;
 import java.util.concurrent.*;
 
+import static com.var.vars.petname;
+import static com.var.vars.temp_petname;
+
 public class FullBuildTest {
 
     Logger logger = Logger.getLogger("AndroidTestLogger");
@@ -163,7 +166,7 @@ public class FullBuildTest {
     @Test(dependsOnMethods = "Login")
         void AddPet()
         {
-            pet_screen.addPet(device);
+            pet_screen.addFirstPet(device, petname);
             common.gotoProfileScreen(device);
             pet_screen.petEdit(device);
 
@@ -202,10 +205,7 @@ public class FullBuildTest {
     @Test(dependsOnMethods = "UserProfile")
         void AddDeletePet()
         {
-
-            common.gotoProfileScreen(device);
-            pet_screen.addPetProfileScreen(device);
-            pet_screen.deletePetProfileScreen(device);
+            pet_screen.deletePet(device, temp_petname);
 
         }
 
@@ -222,9 +222,18 @@ public class FullBuildTest {
 
         start.SplashScreen();
         start.Login_old(device);
+        main_screen.checkScreen(device);
 
     }
-/*
+
+    @Test(dependsOnMethods = "LoginExistingUser")
+    void MainScreenElements()
+    {
+        common.gotoMainScreen(device);
+        main_screen.checkScreen(device);
+
+    }
+
     @Test(dependsOnMethods = "LoginExistingUser")
         void ChekingStatistic(){
 
@@ -232,7 +241,7 @@ public class FullBuildTest {
         main_screen.walkStats(device);
 
     }
-*/
+
 /*
     @Test(dependsOnMethods = "LoginExistingUser")
     void Achievements(){
@@ -240,19 +249,20 @@ public class FullBuildTest {
         common.gotoMainScreen(device);
         social.share_Achievement(device);
 
-    }
+    }*/
 
     @Test(dependsOnMethods = "LoginExistingUser")
     void SafeZone(){
 
         common.gotoMapScreen(device);
         common.gotoProfileScreen(device);
-        profile_screen.fromProfileToSafeZone(device);
+        profile_screen.fromProfileToPet(device, "Ipkez");
+        pet_screen.fromPetToSafeZone(device);
         map_screen.addSafeZone(device);
 
     }
 
-/*
+
     @Test(dependsOnMethods = "LoginExistingUser")
     void CheckNotifications() {
 
@@ -260,5 +270,5 @@ public class FullBuildTest {
         common.checkNotifications(device);
         common.gotoMainScreen(device);
     }
-    */
+
 }

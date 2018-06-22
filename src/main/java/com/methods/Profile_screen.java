@@ -74,7 +74,7 @@ public class Profile_screen extends Common{
 
     }
 
-    public void fromProfileToSafeZone(String device){
+    /*public void fromProfileToSafeZone(String device){
         logger.info(device + ": Go to the Safe zone list");
 
         driver.findElementById("ru.averia.tracker:id/main_menu_action_profile").click();
@@ -82,6 +82,15 @@ public class Profile_screen extends Common{
         driver.findElement(By.xpath("//android.widget.TextView[@text='Ipkez']")).click();
         swipeUp();
         driver.findElementById("ru.averia.tracker:id/tv_safezones").click();
+    }*/
+
+    public void fromProfileToPet(String device, String name){
+
+        logger.info(device + ": Go to Pet profile");
+
+        driver.findElementById("ru.averia.tracker:id/main_menu_action_profile").click();
+        swipeUpToElement(By.xpath("//android.widget.TextView[@text='"+name+"']"));
+        driver.findElement(By.xpath("//android.widget.TextView[@text='"+name+"']")).click();
     }
-    
+
 }
