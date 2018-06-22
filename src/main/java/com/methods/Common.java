@@ -282,4 +282,13 @@ public class Common {
 
 
     }
+
+    public void waitForElementByID (String device, String ID) {
+
+        logger.info(device + ": Waiting for element " + ID);
+        WebDriverWait wait = new WebDriverWait(driver,60);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.id(ID)));
+
+    }
+
 }
