@@ -1,7 +1,5 @@
 package com.utils;
 
-import AlphaTests.OsUtils;
-
 import java.io.IOException;
 import java.util.Locale;
 
@@ -25,10 +23,10 @@ public class OSutils {
         }
     }
 
-    private static OsUtils.OS os;
+    private static OS os;
 
     static {
-        os = OsUtils.OS.OTHER;
+        os = OS.OTHER;
         try {
             String osName = System.getProperty("os.name");
             if (osName == null) {
@@ -36,35 +34,35 @@ public class OSutils {
             }
             osName = osName.toLowerCase(Locale.ENGLISH);
             if (osName.contains("windows")) {
-                os = OsUtils.OS.WINDOWS;
+                os = OS.WINDOWS;
             } else if (osName.contains("linux")
                     || osName.contains("mpe/ix")
                     || osName.contains("freebsd")
                     || osName.contains("irix")
                     || osName.contains("digital unix")
                     || osName.contains("unix")) {
-                os = OsUtils.OS.UNIX;
+                os = OS.UNIX;
             } else if (osName.contains("mac os")) {
-                os = OsUtils.OS.MAC;
+                os = OS.MAC;
             } else if (osName.contains("sun os")
                     || osName.contains("sunos")
                     || osName.contains("solaris")) {
-                os = OsUtils.OS.POSIX_UNIX;
+                os = OS.POSIX_UNIX;
             } else if (osName.contains("hp-ux")
                     || osName.contains("aix")) {
-                os = OsUtils.OS.POSIX_UNIX;
+                os = OS.POSIX_UNIX;
             } else {
-                os = OsUtils.OS.OTHER;
+                os = OS.OTHER;
             }
 
         } catch (Exception ex) {
-            os = OsUtils.OS.OTHER;
+            os = OS.OTHER;
         } finally {
             os.setVersion(System.getProperty("os.version"));
         }
     }
 
-    public static OsUtils.OS getOs() {
+    public static OS getOs() {
 
         return os;
     }
