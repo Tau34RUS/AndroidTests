@@ -19,29 +19,28 @@ public class Smoke {
 
     Logger logger = Logger.getLogger("AndroidTestLogger");
 
-    String port;
+    private String port;
     public String device;
-    public String testName;
 
-    public Start_screen start;
-    public Screenshot screenshot;
-    public GetDeviceInfo deviceinfo;
+    private Start_screen start;
+    private Screenshot screenshot;
+    private GetDeviceInfo deviceinfo;
     public Common common;
-    public Profile_screen profile_screen;
+    private Profile_screen profile_screen;
     public Main_screen main_screen;
 
     static AppiumDriver<MobileElement> driver;
 
-    DesiredCapabilities caps = new DesiredCapabilities();
+    private DesiredCapabilities caps = new DesiredCapabilities();
 
     @Parameters({"server_port","device"})
-    public Smoke(@Optional("4723") String port, @Optional("default") String device)
+    public Smoke(@Optional("4731") String port, @Optional("default") String device)
     {
         this.port = port;
         this.device = device;
     }
 
-    public void StartUp()
+    private void StartUp()
     {
 
         caps.setCapability("deviceName", device);
@@ -72,7 +71,7 @@ public class Smoke {
 
     }
 
-    public void Exit() {
+    private void Exit() {
 
         driver.quit();
 
@@ -102,7 +101,7 @@ public class Smoke {
     void afterMethod(ITestResult result)
     {
 
-        testName = result.getName();
+        String testName = result.getName();
 
         try
         {
