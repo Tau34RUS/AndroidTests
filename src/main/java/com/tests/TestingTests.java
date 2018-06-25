@@ -141,7 +141,7 @@ public class TestingTests {
             start.Login_old(device);
 
         }
-*/
+
 
     @Test
     void AddTempPet() {
@@ -151,4 +151,6 @@ public class TestingTests {
         pet_screen.deletePetProfileScreen(device);
 
     }
+
+    */
 }
