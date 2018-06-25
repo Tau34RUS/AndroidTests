@@ -13,6 +13,9 @@ import org.testng.annotations.*;
 import java.net.*;
 import java.util.concurrent.*;
 
+import static com.var.vars.petname;
+import static com.var.vars.temp_petname;
+
 public class FullBuildTest {
 
     public Logger logger = Logger.getLogger("AndroidTestLogger");
@@ -163,7 +166,7 @@ public class FullBuildTest {
         void AddPet()
         {
 
-            pet_screen.addPet(device);
+            pet_screen.addFirstPet(device, petname);
             common.gotoProfileScreen(device);
             pet_screen.petEdit(device);
 
@@ -201,10 +204,7 @@ public class FullBuildTest {
     @Test(dependsOnMethods = "UserProfile")
         void AddDeletePet()
         {
-
-            common.gotoProfileScreen(device);
-            pet_screen.addPetProfileScreen(device);
-            pet_screen.deletePetProfileScreen(device);
+            pet_screen.deletePet(device, temp_petname);
 
         }
 
@@ -221,6 +221,15 @@ public class FullBuildTest {
 
         start.SplashScreen();
         start.Login_old(device);
+        main_screen.checkScreen(device);
+
+    }
+
+    @Test(dependsOnMethods = "LoginExistingUser")
+    void MainScreenElements()
+    {
+        common.gotoMainScreen(device);
+        main_screen.checkScreen(device);
 
     }
 
@@ -239,6 +248,7 @@ public class FullBuildTest {
         common.gotoMainScreen(device);
         social.share_Achievement(device);
 
+
     }
 */
 
@@ -247,7 +257,8 @@ public class FullBuildTest {
 
         common.gotoMapScreen(device);
         common.gotoProfileScreen(device);
-        profile_screen.fromProfileToSafeZone(device);
+        profile_screen.fromProfileToPet(device, "Ipkez");
+        pet_screen.fromPetToSafeZone(device);
         map_screen.addSafeZone(device);
 
     }

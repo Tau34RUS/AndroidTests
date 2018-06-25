@@ -85,12 +85,9 @@ public class Common {
     public void gotoProfileScreen(String device) {
 
         logger.info(device + ": GOTO Profile Screen");
-        if(isElementPresent(By.id("ru.averia.tracker:id/main_menu_action_profile")))
-        {driver.findElementById("ru.averia.tracker:id/main_menu_action_profile").click();}
-        else {
-            sleep(10);
+
+            sleep(5);
             driver.findElementById("ru.averia.tracker:id/main_menu_action_profile").click();
-        }
 
     }
 
@@ -217,6 +214,18 @@ public class Common {
         while (!isFoundTheElement && loopCounter < 10){
             swipeUp();
             isFoundTheElement  = driver.findElements(By.id(elementId)).size() > 0;
+            loopCounter++;
+        }
+
+    }
+
+    public void swipeUpToElement(By by) {
+
+        int loopCounter = 0;
+        boolean isFoundTheElement = driver.findElements(by).size() > 0;
+        while (!isFoundTheElement && loopCounter < 10){
+            swipeUp();
+            isFoundTheElement  = driver.findElements(by).size() > 0;
             loopCounter++;
         }
 
