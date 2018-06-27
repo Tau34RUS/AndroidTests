@@ -263,6 +263,10 @@ public class Common {
 
         try {
             driver.findElementById("com.android.systemui:id/dismiss_text").click();
+            //reopen notifications
+            sleep(3);
+            driver.swipe(130, 20, 280, 580, 500);
+            sleep(3);
         } catch (org.openqa.selenium.NoSuchElementException e) {
             logger.info(device + ": No 'Clear all notifications' found");
             e.printStackTrace();

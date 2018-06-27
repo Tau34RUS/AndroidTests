@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fe05b453-ab7e-484a-a6a5-1727125eea2d" name="Default" comment="- addPet method refactored: split on one common and three goto_addPet first screen from different entry points.&#10;- deletePet method refactored,&#10;- safe zone test refactored,&#10;- added MainScreenElements Test.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/methods/Common.java" afterPath="$PROJECT_DIR$/src/main/java/com/methods/Common.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tests/TestingTests.java" afterPath="$PROJECT_DIR$/src/main/java/com/tests/TestingTests.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utils/OSutils.java" afterPath="$PROJECT_DIR$/src/main/java/com/utils/OSutils.java" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="FullBuildTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tests/FullBuildTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="212">
+              <caret line="268" column="19" lean-forward="true" selection-start-line="268" selection-start-column="19" selection-end-line="268" selection-end-column="19" />
+              <folding>
+                <element signature="method#FullBuildTest#0;class#FullBuildTest#0" expanded="false" />
+                <element signature="method#StartUp#0;class#FullBuildTest#0" expanded="false" />
+                <element signature="method#Exit#0;class#FullBuildTest#0" expanded="false" />
+                <element signature="method#BeforeSuite#0;class#FullBuildTest#0" expanded="false" />
+                <element signature="method#afterMethod#0;class#FullBuildTest#0" expanded="false" />
+                <element signature="method#Register#0;class#FullBuildTest#0" expanded="false" />
+                <element signature="method#AddPet#0;class#FullBuildTest#0" expanded="false" />
+                <element signature="method#PetProfile#0;class#FullBuildTest#0" expanded="false" />
+                <element signature="method#Restart#0;class#FullBuildTest#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestingTests.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tests/TestingTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="532">
+              <caret line="153" column="5" lean-forward="false" selection-start-line="153" selection-start-column="5" selection-end-line="153" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="consts.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/var/consts.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="7" lean-forward="false" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Pet_screen.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/Pet_screen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="70" column="16" lean-forward="false" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="16" />
+              <folding>
+                <element signature="method#Pet_screen#0;class#Pet_screen#0" expanded="false" />
+                <element signature="method#addCollar#0;class#Pet_screen#0" expanded="false" />
+                <element signature="method#petEdit#0;class#Pet_screen#0" expanded="false" />
+                <element signature="method#checkTempPetExist#0;class#Pet_screen#0" expanded="false" />
+                <element signature="method#addFirstPet#0;class#Pet_screen#0" expanded="false" />
+                <element signature="method#addPetFromMain#0;class#Pet_screen#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SuiteRunnerWorker.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.9/testng-6.9.9.jar!/org/testng/SuiteRunnerWorker.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="143">
+              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+              <folding>
+                <marker date="1521720796782" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1521720796782" expanded="false" signature="134:383" ph="..." />
+                <marker date="1521720796782" expanded="true" signature="718:914" ph="{...}" />
+                <marker date="1521720796782" expanded="true" signature="992:2318" ph="{...}" />
+                <marker date="1521720796782" expanded="false" signature="2341:2352" ph=" { " />
+                <marker date="1521720796782" expanded="false" signature="2423:2429" ph=" }" />
+                <marker date="1521720796782" expanded="false" signature="2477:2488" ph=" { " />
+                <marker date="1521720796782" expanded="false" signature="2497:2503" ph=" }" />
+                <marker date="1521720796782" expanded="true" signature="2540:2689" ph="{...}" />
+                <marker date="1521720796782" expanded="true" signature="2720:2836" ph="{...}" />
+                <marker date="1521720796782" expanded="false" signature="2866:2877" ph=" { " />
+                <marker date="1521720796782" expanded="false" signature="2950:2956" ph=" }" />
+                <marker date="1521720796782" expanded="false" signature="2986:2997" ph=" { " />
+                <marker date="1521720796782" expanded="false" signature="3006:3012" ph=" }" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Profile_screen.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/Profile_screen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="331">
+              <caret line="95" column="1" lean-forward="false" selection-start-line="95" selection-start-column="1" selection-end-line="95" selection-end-column="1" />
+              <folding>
+                <element signature="method#Profile_screen#0;class#Profile_screen#0" expanded="false" />
+                <element signature="method#userProfileView#0;class#Profile_screen#0" expanded="false" />
+                <element signature="method#userProfileEdit#0;class#Profile_screen#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main_screen.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/Main_screen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="317">
+              <caret line="108" column="70" lean-forward="false" selection-start-line="108" selection-start-column="70" selection-end-line="108" selection-end-column="70" />
+              <folding>
+                <element signature="method#walkStats#0;class#Main_screen#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Common.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/Common.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="53">
+              <caret line="256" column="16" lean-forward="false" selection-start-line="256" selection-start-column="16" selection-end-line="256" selection-end-column="16" />
+              <folding>
+                <element signature="method#androidAllowAccess#0;class#Common#0" expanded="false" />
+                <element signature="method#sleep#0;class#Common#0" expanded="false" />
+                <element signature="method#swipeUp#0;class#Common#0" expanded="false" />
+                <element signature="method#swipeDown#0;class#Common#0" expanded="false" />
+                <element signature="method#gotoMainScreen#0;class#Common#0" expanded="false" />
+                <element signature="method#gotoMapScreen#0;class#Common#0" expanded="false" />
+                <element signature="method#ScreensShuffle#0;class#Common#0" expanded="false" />
+                <element signature="method#swipeDownToElementId#0;class#Common#0" expanded="false" />
+                <element signature="method#isElementPresent#0;class#Common#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>chec</find>
+      <find>mainScreen</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/AlphaTests/Constants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/methods/Map_screen.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/methods/Main_screen.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/methods/Profile_screen.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/methods/Pet_screen.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tests/FullBuildTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/methods/Common.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tests/TestingTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/utils/OSutils.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="797" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
+              <item name="screenshot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="methods" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="var" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidTests" type="462c0819:PsiDirectoryNode" />
+              <item name="testng_xmls" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="TestNG./Users/averiatester/IdeaProjects/AndroidTests/testng_xmls/TestNGTests.xml">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration name="FullBuildTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AndroidTests" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="com.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.tests.FullBuildTest" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="TestingTests" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AndroidTests" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="com.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.tests.TestingTests" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="/Users/averiatester/IdeaProjects/AndroidTests/testng_xmls/TestNGFull.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AndroidTests" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng_xmls/TestNGFull.xml" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="/Users/averiatester/IdeaProjects/AndroidTests/testng_xmls/TestNGSmoke.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AndroidTests" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng_xmls/TestNGSmoke.xml" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="/Users/averiatester/IdeaProjects/AndroidTests/testng_xmls/TestNGTests.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AndroidTests" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng_xmls/TestNGTests.xml" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="TestNG./Users/averiatester/IdeaProjects/AndroidTests/testng_xmls/TestNGFull.xml" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG./Users/averiatester/IdeaProjects/AndroidTests/testng_xmls/TestNGTests.xml" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.FullBuildTest" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.TestingTests" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG./Users/averiatester/IdeaProjects/AndroidTests/testng_xmls/TestNGSmoke.xml" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="TestNG./Users/averiatester/IdeaProjects/AndroidTests/testng_xmls/TestNGTests.xml" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG./Users/averiatester/IdeaProjects/AndroidTests/testng_xmls/TestNGFull.xml" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.FullBuildTest" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG./Users/averiatester/IdeaProjects/AndroidTests/testng_xmls/TestNGSmoke.xml" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.TestingTests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fe05b453-ab7e-484a-a6a5-1727125eea2d" name="Default" comment="" />
+      <created>1529504671087</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1529504671087</updated>
+    </task>
+    <task id="LOCAL-00001" summary="- addPet method refactored: split on one common and three goto_addPet first screen from different entry points.&#10;- deletePet method refactored,&#10;- safe zone test refactored,&#10;- added MainScreenElements Test.">
+      <created>1529681610638</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1529681610638</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="FullBuildTest - 2018.06.22 at 13h 04m 13s.xml">
+      <configuration name="FullBuildTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="FullBuildTest - 2018.06.22 at 13h 29m 34s.xml">
+      <configuration name="FullBuildTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_averiatester_IdeaProjects_AndroidTests_testng_xmls_TestNGFull_xml - 2018.06.22 at 12h 45m 27s.xml">
+      <configuration name="/Users/averiatester/IdeaProjects/AndroidTests/testng_xmls/TestNGFull.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_averiatester_IdeaProjects_AndroidTests_testng_xmls_TestNGFull_xml - 2018.06.22 at 16h 22m 00s.xml">
+      <configuration name="/Users/averiatester/IdeaProjects/AndroidTests/testng_xmls/TestNGFull.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_averiatester_IdeaProjects_AndroidTests_testng_xmls_TestNGFull_xml - 2018.06.22 at 17h 00m 25s.xml">
+      <configuration name="/Users/averiatester/IdeaProjects/AndroidTests/testng_xmls/TestNGFull.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_averiatester_IdeaProjects_AndroidTests_testng_xmls_TestNGFull_xml - 2018.06.22 at 17h 06m 47s.xml">
+      <configuration name="/Users/averiatester/IdeaProjects/AndroidTests/testng_xmls/TestNGFull.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_averiatester_IdeaProjects_AndroidTests_testng_xmls_TestNGFull_xml - 2018.06.22 at 17h 23m 43s.xml">
+      <configuration name="/Users/averiatester/IdeaProjects/AndroidTests/testng_xmls/TestNGFull.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_averiatester_IdeaProjects_AndroidTests_testng_xmls_TestNGFull_xml - 2018.06.22 at 18h 10m 15s.xml">
+      <configuration name="/Users/averiatester/IdeaProjects/AndroidTests/testng_xmls/TestNGFull.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_averiatester_IdeaProjects_AndroidTests_testng_xmls_TestNGFull_xml - 2018.06.22 at 18h 26m 41s.xml">
+      <configuration name="/Users/averiatester/IdeaProjects/AndroidTests/testng_xmls/TestNGFull.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_averiatester_IdeaProjects_AndroidTests_testng_xmls_TestNGTests_xml - 2018.06.22 at 18h 49m 49s.xml">
+      <configuration name="/Users/averiatester/IdeaProjects/AndroidTests/testng_xmls/TestNGTests.xml" configurationId="TestNG" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="797" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="- addPet method refactored: split on one common and three goto_addPet first screen from different entry points.&#10;- deletePet method refactored,&#10;- safe zone test refactored,&#10;- added MainScreenElements Test." />
+    <option name="LAST_COMMIT_MESSAGE" value="- addPet method refactored: split on one common and three goto_addPet first screen from different entry points.&#10;- deletePet method refactored,&#10;- safe zone test refactored,&#10;- added MainScreenElements Test." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/methods/Common.java</url>
+          <line>84</line>
+          <properties class="com.methods.Common" method="gotoProfileScreen">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/methods/Common.java</url>
+          <line>247</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="5" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/Start_screen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AlphaTests/Methods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/screenshot/LastFailScreenshot.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testng_xmls/TestNGSmoke.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/var/vars.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tests/Smoke.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="146" column="5" lean-forward="true" selection-start-line="146" selection-start-column="5" selection-end-line="147" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/Map_screen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/Main_screen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="108" column="70" lean-forward="false" selection-start-line="108" selection-start-column="70" selection-end-line="108" selection-end-column="70" />
+          <folding>
+            <element signature="method#walkStats#0;class#Main_screen#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/Profile_screen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="95" column="1" lean-forward="false" selection-start-line="95" selection-start-column="1" selection-end-line="95" selection-end-column="1" />
+          <folding>
+            <element signature="method#Profile_screen#0;class#Profile_screen#0" expanded="false" />
+            <element signature="method#userProfileView#0;class#Profile_screen#0" expanded="false" />
+            <element signature="method#userProfileEdit#0;class#Profile_screen#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/var/consts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="7" lean-forward="false" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.9/testng-6.9.9.jar!/org/testng/SuiteRunnerWorker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <marker date="1521720796782" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1521720796782" expanded="false" signature="134:383" ph="..." />
+            <marker date="1521720796782" expanded="true" signature="718:914" ph="{...}" />
+            <marker date="1521720796782" expanded="true" signature="992:2318" ph="{...}" />
+            <marker date="1521720796782" expanded="false" signature="2341:2352" ph=" { " />
+            <marker date="1521720796782" expanded="false" signature="2423:2429" ph=" }" />
+            <marker date="1521720796782" expanded="false" signature="2477:2488" ph=" { " />
+            <marker date="1521720796782" expanded="false" signature="2497:2503" ph=" }" />
+            <marker date="1521720796782" expanded="true" signature="2540:2689" ph="{...}" />
+            <marker date="1521720796782" expanded="true" signature="2720:2836" ph="{...}" />
+            <marker date="1521720796782" expanded="false" signature="2866:2877" ph=" { " />
+            <marker date="1521720796782" expanded="false" signature="2950:2956" ph=" }" />
+            <marker date="1521720796782" expanded="false" signature="2986:2997" ph=" { " />
+            <marker date="1521720796782" expanded="false" signature="3006:3012" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/Pet_screen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="70" column="16" lean-forward="false" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="16" />
+          <folding>
+            <element signature="method#Pet_screen#0;class#Pet_screen#0" expanded="false" />
+            <element signature="method#addCollar#0;class#Pet_screen#0" expanded="false" />
+            <element signature="method#petEdit#0;class#Pet_screen#0" expanded="false" />
+            <element signature="method#checkTempPetExist#0;class#Pet_screen#0" expanded="false" />
+            <element signature="method#addFirstPet#0;class#Pet_screen#0" expanded="false" />
+            <element signature="method#addPetFromMain#0;class#Pet_screen#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AlphaTests/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="49" lean-forward="true" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/utils/OSutils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="562">
+          <caret line="68" column="1" lean-forward="false" selection-start-line="68" selection-start-column="1" selection-end-line="68" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tests/TestingTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="153" column="5" lean-forward="false" selection-start-line="153" selection-start-column="5" selection-end-line="153" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tests/FullBuildTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="268" column="19" lean-forward="true" selection-start-line="268" selection-start-column="19" selection-end-line="268" selection-end-column="19" />
+          <folding>
+            <element signature="method#FullBuildTest#0;class#FullBuildTest#0" expanded="false" />
+            <element signature="method#StartUp#0;class#FullBuildTest#0" expanded="false" />
+            <element signature="method#Exit#0;class#FullBuildTest#0" expanded="false" />
+            <element signature="method#BeforeSuite#0;class#FullBuildTest#0" expanded="false" />
+            <element signature="method#afterMethod#0;class#FullBuildTest#0" expanded="false" />
+            <element signature="method#Register#0;class#FullBuildTest#0" expanded="false" />
+            <element signature="method#AddPet#0;class#FullBuildTest#0" expanded="false" />
+            <element signature="method#PetProfile#0;class#FullBuildTest#0" expanded="false" />
+            <element signature="method#Restart#0;class#FullBuildTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/methods/Common.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="256" column="16" lean-forward="false" selection-start-line="256" selection-start-column="16" selection-end-line="256" selection-end-column="16" />
+          <folding>
+            <element signature="method#androidAllowAccess#0;class#Common#0" expanded="false" />
+            <element signature="method#sleep#0;class#Common#0" expanded="false" />
+            <element signature="method#swipeUp#0;class#Common#0" expanded="false" />
+            <element signature="method#swipeDown#0;class#Common#0" expanded="false" />
+            <element signature="method#gotoMainScreen#0;class#Common#0" expanded="false" />
+            <element signature="method#gotoMapScreen#0;class#Common#0" expanded="false" />
+            <element signature="method#ScreensShuffle#0;class#Common#0" expanded="false" />
+            <element signature="method#swipeDownToElementId#0;class#Common#0" expanded="false" />
+            <element signature="method#isElementPresent#0;class#Common#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
