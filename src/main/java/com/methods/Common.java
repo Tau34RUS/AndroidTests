@@ -94,13 +94,13 @@ public class Common {
     public void ScreensShuffle() {
 
         for(int i=0; i<2; i++) {
-            driver.findElementById("ru.averia.tracker:id/maim_menu_action_map").click();
+            driver.findElementById("ru.averia.tracker:id/main_menu_action_map").click();
             sleep(1);
             driver.findElementById("ru.averia.tracker:id/main_menu_action_profile").click();
             sleep(1);
             swipeUp();
             swipeDown();
-            driver.findElementById("ru.averia.tracker:id/maim_menu_action_pet").click();
+            driver.findElementById("ru.averia.tracker:id/main_menu_action_pet").click();
             sleep(1);
             swipeUp();
             swipeDown();
