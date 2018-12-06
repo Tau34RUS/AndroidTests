@@ -82,9 +82,18 @@ public class Start_screen extends Common{
         //Assert.assertEquals("Войти", driver.findElement(By.id("ru.averia.tracker:id/tv_title")).getText());
         Assert.assertEquals("Войти", driver.findElement(By.id("ru.averia.tracker:id/bt_login")).getText());
         sleep(5);
+
+        /*
         driver.findElement(By.id("ru.averia.tracker:id/et_email")).sendKeys(userlogin);
 
         driver.findElement(By.id("ru.averia.tracker:id/et_password")).sendKeys(userpass);
+        */
+
+        driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.LinearLayout[1]/android.widget.FrameLayout/android.widget.EditText").sendKeys(userlogin);
+
+        driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.LinearLayout[2]/android.widget.FrameLayout/android.widget.EditText").sendKeys(userpass);
+
+
         driver.findElementById("ru.averia.tracker:id/bt_login").click();
 
         try {
@@ -103,11 +112,19 @@ public class Start_screen extends Common{
 
         Assert.assertEquals("Войти", driver.findElement(By.id("ru.averia.tracker:id/bt_login")).getText());
         sleep(5);
+        /*
         driver.findElement(By.id("ru.averia.tracker:id/et_email")).click();
         driver.findElement(By.id("ru.averia.tracker:id/et_email")).sendKeys(old_user);
 
         driver.findElement(By.id("ru.averia.tracker:id/et_password")).click();
         driver.findElement(By.id("ru.averia.tracker:id/et_password")).sendKeys(old_pass);
+        */
+
+        driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.LinearLayout[1]/android.widget.FrameLayout/android.widget.EditText").sendKeys(old_user);
+
+        driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.LinearLayout[2]/android.widget.FrameLayout/android.widget.EditText").sendKeys(old_pass);
+
+
         driver.findElementById("ru.averia.tracker:id/bt_login").click();
 
     }

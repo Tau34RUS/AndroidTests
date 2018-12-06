@@ -24,11 +24,12 @@ public class Profile_screen extends Common{
 
     public void userProfileView(String device) {
 
+        logger = Logger.getLogger("Profile screen check");
         driver.findElementById("ru.averia.tracker:id/main_menu_action_profile").click();
         driver.findElementById("ru.averia.tracker:id/iv_ava").clear();
         driver.findElementById("ru.averia.tracker:id/tv_name").clear();
-        driver.findElementById("ru.averia.tracker:id/tv_info").clear();
-
+        driver.findElementById("ru.averia.tracker:id/tv_note").clear();
+        driver.findElementById("ru.averia.tracker:id/tv_pets_title").clear();
     }
 
     public void userProfileEdit(String device) {

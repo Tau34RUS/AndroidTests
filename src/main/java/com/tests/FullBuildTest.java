@@ -51,8 +51,8 @@ public class FullBuildTest {
         //Adding all Caps
         caps.setCapability("deviceName", device);
         caps.setCapability("platformName", "Android");
-        caps.setCapability("appPackage", "ru.averia.tracker");
-        caps.setCapability("appActivity", "ru.averia.tracker.ui.activities.SplashActivity");
+        caps.setCapability("appPackage", consts.AppPKG);
+        caps.setCapability("appActivity", consts.AppAct);
         caps.setCapability("app", consts.app_path_mac);
         //caps.setCapability("udid",consts.phone_lg);
         caps.setCapability("autoGrantPermissions", true);
