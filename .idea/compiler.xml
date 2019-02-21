@@ -16,10 +16,9 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="AndroidTests" target="1.8" />
-      <module name="AndroidTests (1)" target="1.8" />
-      <module name="AndroidTests (2)" target="1.8" />
-      <module name="AndroidTests (3)" target="1.8" />
-      <module name="AndroidTests (3) (AndroidTestingTesting)" target="1.8" />
+      <module name="AndroidTests (1)" target="1.5" />
+      <module name="AndroidTests (2)" target="1.5" />
+      <module name="AndroidTests (3)" target="1.5" />
       <module name="AndroidTests (4) (AndroidTestingTesting)" target="1.8" />
     </bytecodeTargetLevel>
   </component>

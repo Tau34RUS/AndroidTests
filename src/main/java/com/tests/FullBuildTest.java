@@ -143,11 +143,19 @@ public class FullBuildTest {
     }
 
     @Test
+
         void Register()
         {
-
-            start.SplashScreen();
-            start.Register(device);
+            for(int i=0; i<50; i++) {
+                start.SplashScreen();
+                start.Register(device);
+                Exit();
+                StartUp();
+                start.SplashScreen();
+                start.Login(device);
+                Exit();
+                StartUp();
+            }
 
         }
 

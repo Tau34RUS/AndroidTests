@@ -26,5 +26,6 @@ public class consts {
     public static final String phone_xiomi_x3 = "2062e4f77d63";
     public static final String phone_nexus_5 = "0aa9469c027f7669";
     public static final String phone_sony_xperia="CB512B042S";
+    public static final String phone_xiomi_mi8="82c8a8ff";
 
 }

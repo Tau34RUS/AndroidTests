@@ -129,30 +129,30 @@ public class Smoke {
     }
 
     @Test
-    void Login()
-    {
+        void Login ()
+        {
 
-        start.SplashScreen();
-        start.Login_old(device);
+            start.SplashScreen();
+            start.Login_old(device);
 
-    }
+        }
 
     @Test(dependsOnMethods = "Login")
-    void MainActivity()
-    {
+        void MainActivity ()
+        {
 
-        common.ScreensShuffle();
+            common.ScreensShuffle();
 
-    }
+        }
 
     @Test(dependsOnMethods = "MainActivity")
-    void ProfileScreenElements()
-    {
+        void ProfileScreenElements ()
+        {
 
-        common.gotoProfileScreen(device);
-        profile_screen.userProfileView(device);
+            common.gotoProfileScreen(device);
+            profile_screen.userProfileView(device);
 
-    }
+        }
 /*
     @Test(dependsOnMethods = "Login")
     void MainScreenElements()

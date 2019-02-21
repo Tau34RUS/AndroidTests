@@ -11,5 +11,16 @@
       </list>
     </option>
   </component>
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/AndroidTests (1).iml" />
+    <file url="file://$PROJECT_DIR$/AndroidTests (1).iml" />
+    <file url="file://$PROJECT_DIR$/AndroidTests (2).iml" />
+    <file url="file://$PROJECT_DIR$/AndroidTests (2).iml" />
+    <file url="file://$PROJECT_DIR$/AndroidTests (3).iml" />
+    <file url="file://$PROJECT_DIR$/AndroidTests (3).iml" />
+    <file url="file://$PROJECT_DIR$/AndroidTests (4) (AndroidTestingTesting).iml" />
+    <file url="file://$PROJECT_DIR$/AndroidTests (4) (AndroidTestingTesting).iml" />
+    <file url="file://$PROJECT_DIR$/AndroidTests.iml" />
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_9" default="false" project-jdk-name="JDK_1.8" project-jdk-type="JavaSDK" />
 </project>
